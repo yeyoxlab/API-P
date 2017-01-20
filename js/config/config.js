@@ -19,6 +19,9 @@ config.config(function($routeProvider){
 	.when("/api", {
 		templateUrl : "templates/api.html",
 		controller : "apiController"
+	}).when("/login", {
+		templateUrl : "templates/login.html",
+		controller : "apiController"
 	})
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
