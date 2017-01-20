@@ -107,7 +107,7 @@ header .intro-text .skills {
   background: linear-gradient(to right, red , black);
 }
 .navbar-custom {
- background: linear-gradient(to right, black , red);
+ background: linear-gradient(to right, red,#1A0000);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
