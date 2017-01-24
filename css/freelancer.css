@@ -163,7 +163,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 40px 0;
+    padding: 10px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -507,5 +507,5 @@ fieldset[disabled] .btn-success.active {
   display: none;
 }
 .bodyPD{
-  padding-top: 150px;
+  padding-top: 75px;
 }
