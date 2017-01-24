@@ -23,6 +23,10 @@ config.config(function($routeProvider){
 		templateUrl : "templates/login.html",
 		controller : "apiController"
 	})
+	.when("/version", {
+		templateUrl : "templates/version.html",
+		controller : "apiController"
+	})
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
 	.otherwise({ reditrectTo : "/" });
