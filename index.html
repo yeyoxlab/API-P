@@ -36,11 +36,12 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <a  href="#"><img src="img/protcloud_mini.png"></a> 
+                <a  href="#"><img src="img/protcloud_mini.png" /></a> 
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#"></a>
@@ -54,7 +55,6 @@
                     <li class="page-scroll">
                         <a href="#">English</a>
                     </li>
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -88,11 +88,16 @@
                
             </ul>
         </div>
+        <br>
         <!-- /#sidebar-wrapper -->
-        
+        <a class="btn btn-default" id="menu-toggle"> <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+
         <!-- Page Content -->
         <div id="page-content-wrapper" >
+
             <div class="container-fluid">
+
+            
                 <div class="row" ng-view>
                     
                 </div>
@@ -100,9 +105,12 @@
         </div>
         <!-- /#page-content-wrapper -->
 
+
     </div>
     <!-- /#wrapper -->
+
 </div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -112,6 +120,16 @@
     <script src="js/angular.min2.js"></script>
     <script type="text/javascript" src="js/config/config.js"></script>
     <script type="text/javascript" src="js/config/ctrlConfig.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#menu-toggle1").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
 </body>
 
