@@ -19,14 +19,6 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body ng-app="prot_api" class="bodyPD">
@@ -77,10 +69,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#rest">Rest</a>
+                    <a href="#error">List of Error</a>
                 </li>
                 <li>
-                    <a href="#api">Api</a>
+                    <a href="#lista">List of API avialable</a>
                 </li>
                 <li>
                     <a href="#login">Login</a>
@@ -119,10 +111,12 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- AngularJS -->
-    <script src="js/angular.min2.js"></script>
-    <script src="js/angular-translate.min.js"></script>
+    <script type="text/javascript" src="js/angular.min2.js"></script>
+    <script type="text/javascript" src="js/angular_resource.js"></script>
     <script type="text/javascript" src="js/config/prot_api.js"></script>
     <script type="text/javascript" src="js/config/ctrl_prot_api.js"></script>
+    <script type="text/javascript" src="templates/ListACtrl.js"></script>
+    <script type="text/javascript" src="templates/ListECtrl.js"></script>
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
