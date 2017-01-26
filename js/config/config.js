@@ -33,6 +33,11 @@ config
 					.otherwise({
 						reditrectTo : "/"
 					});
+					  // agregar la tabla de traducción
+					$translateProvider
+					    .translations('es', translations)
+					    .preferredLanguage('es');
+					}]);
 
 					var translations = {
 						TITLE_ONE : "REST APIs",
