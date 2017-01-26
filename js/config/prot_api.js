@@ -31,6 +31,12 @@ prot_api.config(function($routeProvider){
 	}).when("/meters_search", {
 		templateUrl : "templates/meters_search.html",
 		
+	}).when("/meters_search_less", {
+		templateUrl : "templates/meters_search_less.html",
+		
+	}).when("/meters_", {
+		templateUrl : "templates/meters_.html",
+		
 	})
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
