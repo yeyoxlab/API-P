@@ -28,6 +28,9 @@ prot_api.config(function($routeProvider){
 	}).when("/less", {
 		templateUrl : "templates/less.html",
 		
+	}).when("/search", {
+		templateUrl : "templates/search.html",
+		
 	})
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
