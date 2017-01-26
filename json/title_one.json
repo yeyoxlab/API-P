@@ -1,0 +1,6 @@
+{
+	"title_one" : "REST APIs",
+	"paragraph_one" : "Una REST API proporciona acceso mediante programaci\u00F3n para leer y escribir datos de Protcloud. A\u00F1adir un nuevo medidor inteligente, eliminar un medidor inteligente, actualizar un medidor inteligente, leer y escribir informaci\u00F3n del sistema, y m\u00E1s. La REST API identifica aplicaciones PROTCLOUD y los usuarios usan JWE; las respuestas est\u00E1n disponibles en JSON.",
+	"title_two" : "Autenticaci\u00F3n JWE",
+	
+}
