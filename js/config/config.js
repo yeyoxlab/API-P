@@ -31,7 +31,7 @@ PROT_API.config(function($routeProvider){
 	//no hayamos concretado que nos redirija a la página principal
 	.otherwise({ reditrectTo : "/" });
 
-	
+	//Empieza contribución Karen
 });
 
 
