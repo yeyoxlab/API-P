@@ -24,6 +24,9 @@ prot_api.config(function($routeProvider){
 		
 	}).when("/meters", {
 		templateUrl : "templates/meters.html",
+	
+	}).when("/less", {
+		templateUrl : "templates/less.html",
 		
 	})
 	//este es digamos, al igual que en un switch el default, en caso que 
