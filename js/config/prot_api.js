@@ -11,11 +11,11 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	})
 	.when("/error", {
 		templateUrl : "templates/listE.html",
-		controller : "errorController"
+		
 	})
 	.when("/lista", {
 		templateUrl : "templates/listA.html",
-		controller : "appController"		
+		//controller : "appController"		
 	}).when("/login", {
 		templateUrl : "templates/login.html",
 		

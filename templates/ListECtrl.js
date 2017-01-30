@@ -4,7 +4,7 @@ prot_api.controller("errorController", function ($scope, $http, dataResource) {
 	});
     
     $scope.datosResource = dataResource.get();
-})
+});
  
 
 prot_api.factory("dataResource", function ($resource) {

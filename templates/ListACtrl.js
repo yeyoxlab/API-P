@@ -1,17 +1,16 @@
-prot_api.controller("appController", function ($scope, $http, dataResource) {
-	$http.get('json/ListA.json').then(function (dataA) {
-	 	$scope.datosA = dataA;
-	 	console.log(dataA);
-	});
-    console.log("adaswef");
-    $scope.datosResource = dataResource.get();
-})
+prot_api.controller("appController", function ($scope, $http) {
+	 $http.get("json/ListA.json").then(function(response) {
+        $scope.myData = response.data;
+        
+    });
+});
+prot_api.controller("errorController", function ($scope, $http) {
+	 $http.get("json/ListE.json").then(function(response) {
+        $scope.myData = response.data;
+        
+    });
+});
  
 
-prot_api.factory("dataResource", function ($resource) {
-    return $resource("json/ListA.json",
-        {}, 
-        { get: { method: "GET", isArray: true }
-    })
-    console.log("adaasdasdasds");
-})
+
+
