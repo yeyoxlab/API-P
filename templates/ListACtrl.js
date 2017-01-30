@@ -3,7 +3,7 @@ prot_api.controller("appController", function ($scope, $http, dataResource) {
 	 	$scope.datosA = dataA;
 	});
     
-    $scope.datosAResource = dataResource.get();
+    $scope.datosResource = dataResource.get();
 })
  
 
