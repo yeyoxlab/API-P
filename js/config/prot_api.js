@@ -1,9 +1,12 @@
+var prot_api = angular.module("prot_api",['ngRoute','ngResource', 'pascalprecht.translate']);
 
 
-var prot_api = angular.module("prot_api",['ngResource']);
- 
+prot_api.controller('Ctrl', ['$scope', function ($scope){
 
-prot_api.config(function($routeProvider){
+
+}]);
+
+prot_api.config(function($routeProvider, $translateProvider){
 	$routeProvider.when("/", {
 		templateUrl : "templates/index.html",
 		
@@ -46,6 +49,7 @@ prot_api.config(function($routeProvider){
 	.otherwise({ reditrectTo : "/" });
 
 	
+	//$locationProvider.html5Mode(true);
+
+	
 });
-
-

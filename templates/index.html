@@ -1,4 +1,6 @@
-<h1>REST APIs</h1>
+
+<div ng-controller ="Ctrl">
+<h1> {{ TITLE_ONE | translate }} </h1>
 
 <p>
 	
@@ -12,7 +14,7 @@
 JWE utilizes encryption to ensure the confidentiality of the contents of the Plaintext. JWE does not add a content integrity check if not provided by the underlying encryption algorithm. If such a check is needed, an algorithm providing it such as AES-GCM [NIST 800 38D] can be used, or alternatively, it can be provided through composition by encrypting a representation of the signed content (Jones Michael B., 2011).
 Thanks to the advantages of JWE, PROTCLOUD used JWE-based authentication, which allows interoperability and scalability to new technological needs.
 To obtain a JWT, its necessary login on PROTCLOUD with an app ID and password.
-This can be obtained by registering on the following link <a href="https://protcloud.com/app/v1/Register">https://protcloud.com/app/v1/Register<</a>> 
+This can be obtained by registering on the following link <a href="https://protcloud.com/app/v1/Register">https://protcloud.com/app/v1/Register</a>
 After registration of the application, we obtain the following information:
 •	name_app: "name_of_app"
 •	secret_key: "new_secret"
@@ -21,3 +23,4 @@ It will be used to obtain a JWE through a login.
 The following diagram shows how the API works.
 
 </p><br>
+</div>

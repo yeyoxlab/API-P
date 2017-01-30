@@ -1,5 +1,7 @@
-var moduleProtApi = angular.module("moduleProtApi", []);
+var moduleProtApi = angular.module("moduleProtApi", ['pascalprecht.translate']);
+
 var injectParams = [ "$scope" ];
+
 var controllerProtApi = function($scope) {
 	console.log("prueba2");
 };
