@@ -60,3 +60,8 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	
 });
 
+ prot_api.controller('CtrlPrin',['$scope', '$translate', function ($scope, $translate) {
+    $scope.changeLanguage = function(key){
+      $translate.use(key);
+    };
+  }]);

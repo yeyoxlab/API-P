@@ -21,7 +21,7 @@
     <link href="css/freelancer.css" rel="stylesheet">
 </head>
 
-<body ng-app="prot_api" class="bodyPD">
+<body ng-app="prot_api" class="bodyPD" ng-controller="CtrlPrin">
     <!-- Navigation -->
     <div>
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -39,13 +39,13 @@
                         <a href="#"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">Español</a>
+                        <a href="#" ng-click="changeLanguage('es')">Español</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#">/</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">English</a>
+                        <a href="#" ng-click="changeLanguage('en')">English</a>
                     </li>
                 </ul>
             </div>

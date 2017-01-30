@@ -1,8 +1,9 @@
 prot_api.controller("appController", function ($scope, $http, dataResource) {
 	$http.get('json/ListA.json').then(function (dataA) {
 	 	$scope.datosA = dataA;
+	 	console.log(dataA);
 	});
-    
+    console.log("adaswef");
     $scope.datosResource = dataResource.get();
 })
  
@@ -12,4 +13,5 @@ prot_api.factory("dataResource", function ($resource) {
         {}, 
         { get: { method: "GET", isArray: true }
     })
+    console.log("adaasdasdasds");
 })
