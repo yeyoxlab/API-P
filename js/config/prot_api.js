@@ -1,11 +1,12 @@
 
 
-var prot_api = angular.module("prot_api",['ngResource']);
+var prot_api = angular.module("prot_api",['ngRoute','pascalprecht.translate','ngResource']);
  
 
-prot_api.config(function($routeProvider){
+prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	$routeProvider.when("/", {
 		templateUrl : "templates/index.html",
+		
 		
 	})
 	.when("/error", {
@@ -42,7 +43,20 @@ prot_api.config(function($routeProvider){
 	//no hayamos concretado que nos redirija a la página principal
 	.otherwise({ reditrectTo : "/" });
 
+
+ 
+
+	 $translateProvider.translations('en', {
+		TITLE_LOGIN : 'Login or Create an Account'
+	});
+	$translateProvider.translations('es', {
+		TITLE_LOGIN : 'Iniciar Sessi\u00F3n'
+	});
+	$translateProvider.preferredLanguage('es');
+	$translateProvider.useSanitizeValueStrategy('escape');
+	$locationProvider.hashPrefix('');
+
+	
 	
 });
-
 

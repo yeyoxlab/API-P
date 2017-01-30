@@ -1,5 +1,5 @@
 prot_api.controller("errorController", function ($scope, $http, dataResource) {
-	$http.get('json/ListE.json').success(function (dataE) {
+	$http.get('json/ListE.json').then(function (dataE) {
 	 	$scope.datosE = dataE;
 	});
     
