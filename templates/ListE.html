@@ -1,6 +1,7 @@
 <h1>LIST OF API Errors</h1>
+<h3 translate="TITLE_LOGIN"></h3>
   <br>
-<div class="table-responsive"> 
+<div class="table-responsive" ng-controller="errorController"> 
 
 	<table class="table table-striped" class="table table-condensed">
           <thead>
@@ -10,9 +11,9 @@
               </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="dataE in datosResource">
-              <th scope="row">{{ dataE.id}}</th>
-              <td>{{ dataE.mean }}</td>
+            <tr ng-repeat="x in myData">
+              <th scope="row">{{ x.id}}</th>
+              <td>{{ x.mean }}</td>
                </tr>
             
 

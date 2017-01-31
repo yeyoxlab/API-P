@@ -1,37 +1,88 @@
-
-
-var PROT_API = angular.module("PROT_API",[]);
- 
-//realizamos la configuración del enrutado dependiendo de la url
-//con el objeto $routeProvider haciendo uso de when
-//en este caso, cuando estemos en la página principal, le decimos que
-//cargue el archivo templates/index.html y que haga uso del controlador
-//indexController, así en todos los casos
-PROT_API.config(function($routeProvider){
+prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	$routeProvider.when("/", {
 		templateUrl : "templates/index.html",
-		controller : "indexController"
+		
+		
 	})
-	.when("/rest", {
-		templateUrl : "templates/rest.html",
-		controller : "restController"
+	.when("/error", {
+		templateUrl : "templates/listE.html",
+		
 	})
-	.when("/api", {
-		templateUrl : "templates/api.html",
-		controller : "apiController"
+	.when("/lista", {
+		templateUrl : "templates/listA.html",
+		//controller : "appController"		
 	}).when("/login", {
 		templateUrl : "templates/login.html",
-		controller : "apiController"
+		
 	})
 	.when("/version", {
 		templateUrl : "templates/version.html",
-		controller : "versionController"
+		
+	}).when("/meters", {
+		templateUrl : "templates/meters.html",
+	
+	}).when("/meters_less", {
+		templateUrl : "templates/meters_less.html",
+		
+	}).when("/meters_search", {
+		templateUrl : "templates/meters_search.html",
+		
+	}).when("/meters_search_less", {
+		templateUrl : "templates/meters_search_less.html",
+		
+	}).when("/meters_", {
+		templateUrl : "templates/meters_.html",
+		
 	})
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
 	.otherwise({ reditrectTo : "/" });
 
+
+ 
+
+	 $translateProvider.translations('en', {
+	 	// Apartado Principal
+	 	TITLE_ONE : 'REST APIs',
+		PARAG_ONE : 'The REST APIs provide programmatic access to read and write Protcloud data. Add new smart meter, delete a smart meter, update a smart meter information, read and write system information, and more. The REST API identifies Protcloud applications and users using JWE; responses are available in JSON.',
+		TITLE_TWO : 'Authentication JWE',
+		PARAG_TWO : 'JWE represents encrypted content using JSON data structures and base64url encoding. The representation consists of three parts: the JWE Header, the JWE Encrypted Key, and the JWE Ciphertext. The three parts are base64url-encoded for transmission, and typically represented as the concatenation of the encoded strings in that order, with the three strings being separated by period (.) characters.',
+		PARAG_THR : 'JWE utilizes encryption to ensure the confidentiality of the contents of the Plaintext. JWE does not add a content integrity check if not provided by the underlying encryption algorithm. If such a check is needed, an algorithm providing it such as AES-GCM [NIST 800 38D] can be used, or alternatively, it can be provided through composition by encrypting a representation of the signed content (Jones Michael B., 2011).',
+		PARAG_FOU : 'Thanks to the advantages of JWE, PROTCLOUD used JWE-based authentication, which allows interoperability and scalability to new technological needs.',
+		PARAG_FIV : 'To obtain a JWT, its necessary login on PROTCLOUD with an app ID and password.',
+		PARAG_SIX : 'This can be obtained by registering on the following link https://protcloud.com/app/v1/Register',
+		PARAG_SEV : 'After registration of the application, we obtain the following information:',
+		PARAG_EIG : 'name_app: "name_of_app"',
+		PARAG_NIN : 'secret_key: "new_secret"',
+		PARAG_TEN : 'It will be used to obtain a JWE through a login.',
+		//TITLE_LOGIN : 'Login or Create an Account'
+	});
+	$translateProvider.translations('es', {
+		//
+		TITLE_ONE : 'REST APIs',
+		PARAG_ONE : 'Una REST API proporciona acceso mediante programación para leer y escribir datos de Protcloud. Añadir un nuevo medidor inteligente, eliminar un medidor inteligente, actualizar un medidor inteligente, leer y escribir información del sistema, y más. La REST API identifica aplicaciones Protcloud y los usuarios usan JWE; las respuestas están disponibles en JSON.',
+		TITLE_TWO : 'Autenticación JWE',
+		PARAG_TWO : 'JWE representa contenido cifrado usando estructuras de datos JSON y codificación base64url. La representación consta de tres partes: el encabezado JWE, la clave cifrada JWE y el texto cifrado JWE. Las tres partes están codificadas en base64url para la transmisión, y típicamente representadas como la concatenación de las cadenas codificadas en ese orden, con las tres cadenas separadas por caracteres de punto (.).',
+		PARAG_THR : 'JWE utiliza cifrado para garantizar la confidencialidad de los contenidos del texto sin formato. JWE no añade una comprobación de integridad del contenido si no es proporcionada por el algoritmo de encriptación subyacente. Si dicha verificación es necesaria, un algoritmo que lo proporciona como AES-GCM [NIST‑800‑38D] puede usarlo, alternativamente, puede proporcionar a través de la composición mediante la encriptación de una representación del contenido firmado (Jones Michael B., 2011).',
+		PARAG_FOU : 'Gracias a las ventajas de JWE, PROTCLOUD utiliza autenticación basada en JWE, que permite la interoperabilidad y escalabilidad a las nuevas necesidades tecnológicas.',
+		PARAG_FIV : 'Para obtener una JWT, es necesario iniciar sesión en PROTCLOUD con un ID de aplicación y una contraseña.',
+		PARAG_SIX : 'Esto puede obtenerse mediante el registro en el siguiente enlace https://protcloud.com/app/v1/Register',
+		PARAG_SEV : 'Después del registro de la aplicación, obtenemos la siguiente información:',
+		PARAG_EIG : 'name_app: "name_of_app"',
+		PARAG_NIN : 'secret_key: "new_secret"',
+		PARAG_TEN : 'Se utilizará para obtener un JWE a través de un inicio de sesión.',
+		//
+		TITLE_LOGIN : 'Iniciar Sesi\u00F3n'
+	});
+	$translateProvider.preferredLanguage('en');
+	$translateProvider.useSanitizeValueStrategy('escape');
+	$locationProvider.hashPrefix('');
+
+	
 	
 });
-
-
+ prot_api.controller('CtrlPrin',['$scope', '$translate', function ($scope, $translate) {
+    $scope.changeLanguage = function(key){
+      $translate.use(key);
+    };
+  }]);
