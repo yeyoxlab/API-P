@@ -3,54 +3,38 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/index.html",
 		
 		
-	})
-	.when("/error", {
+	}).when("/error", {
 		templateUrl : "templates/listE.html",
 		controller : "errorController"
-	})
-	.when("/lista", {
+	}).when("/lista", {
 		templateUrl : "templates/listA.html",
 		controller : "appController"		
 	}).when("/login", {
 		templateUrl : "templates/login.html",
-		
-	})
-	.when("/version", {
+	}).when("/version", {
 		templateUrl : "templates/version.html",
-		
 	}).when("/meters", {
 		templateUrl : "templates/meters.html",
-	
 	}).when("/meters_less", {
 		templateUrl : "templates/meters_less.html",
-		
 	}).when("/meters_search", {
 		templateUrl : "templates/meters_search.html",
-		
 	}).when("/meters_search_less", {
 		templateUrl : "templates/meters_search_less.html",
-		
 	}).when("/meters_", {
 		templateUrl : "templates/meters_.html",
-		
 	}).when("/meters_b_less", {
 		templateUrl : "templates/meters_b_less.html",
-		
 	}).when("/meters_2", {
 		templateUrl : "templates/meters_2.html",
-	
 	}).when("/meters_b_1", {
 		templateUrl : "templates/meters_b_1.html",
-	
 	}).when("/meters_b_2", {
 		templateUrl : "templates/meters_b_2.html",
-	
 	}).when("/meters_state_relay", {
 		templateUrl : "templates/meters_state_relay.html",
-	
 	}).when("/meters_reset_meter", {
 		templateUrl : "templates/meters_reset_meter.html",
-	
 	}).when("/alarms_startDate_endDate", {
 		templateUrl : "templates/alarms_startDate_endDate.html",
 	
@@ -211,7 +195,26 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'METERS_VI_NUEVE' : 'This section contains the demand maxim of the phases, identifying each of the phase in a different section.',
 			'METERS_VII' : 'Total demand in phase',
 			//api/v1/meters/less
-			'LESS_I' : 'Maxim demand in phase',
+			'LESS_' : 'PARAMETERS',
+			'LESS' : 'NONE',
+			'LESS_I' : 'Serial number of the smart meter',
+			'LESS_II' : 'Timestamp of data',
+			'LESS_III' : 'Meter status',
+			'LESS_IV' : 'Indicates state of relay',
+			'LESS_V' : 'Indicates the status of mesure voltaje',
+			'LESS_VI' : 'Maxim demand in phase',
+			
+			//meters/search/?
+			'METERSEARCH_I' : 'PARAMETERS URL',
+			'METERSEARCH_II' : 'UNIQUE ID METER',
+			'METERSEARCH_III' : 'INTEGER',
+			'METERSEARCH_IV' : 'OR',
+			'METERSEARCH_V' : 'SERIAL NUMBER',
+			'METERSEARCH_VI' : 'STRING',
+			//meters/search/?/less
+			
+			
+			
 			
 	});
 	$translateProvider.translations('es', {
@@ -365,7 +368,24 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'METERS_VI_NUEVE' : 'Esta sección contiene la máxima de demanda de las fases, identificando cada una de las fases en una sección diferente',
 		'METERS_VII' : 'Demanda total en fase',
 		//api/v1/meters/less
-		'LESS_I' : 'Demanda máxima en fase',
+		'LESS_' : 'PARÁMETROS',
+		'LESS' : 'NINGUNA',
+		'LESS_I' : 'Número de serie del medidor inteligente',
+		'LESS_II' : 'Fecha y hora de los datos',
+		'LESS_III' : 'Estado del medidor',
+		'LESS_IV' : 'Indica el estado del relay',
+		'LESS_V' : 'Indica el estado del voltaje de medición',
+		'LESS_VI' : 'Demanda máxima en fase',
+		
+		//meters/search/?
+		'METERSEARCH_I' : 'PARAMETERS URL',
+		'METERSEARCH_II' : 'UNIQUE ID METER',
+		'METERSEARCH_III' : 'INTEGER',
+		'METERSEARCH_IV' : 'OR',
+		'METERSEARCH_V' : 'SERIAL NUMBER',
+		'METERSEARCH_VI' : 'STRING',
+		
+		//meters/search/?/less
 		
 
 	});
