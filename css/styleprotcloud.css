@@ -1,5 +1,13 @@
 .titleAPI {
 	font-size: 30px;
-	text-align: center;
+	text-align: left;
+	position: relative;
+	top: 60px;
+	right: 200px;
+}
+
+.idiom {
+	font-size: 15px;
+	position: relative;
 	
 }
