@@ -5,7 +5,7 @@
 		},
 		{
 			"id":"2",
-			"mean":"API VACÍO"
+			"mean":"API VAC\u00CDO"
 		},
 		{
 			"id":"3",
@@ -21,7 +21,7 @@
 		},
 		{
 			"id":"6",
-			"mean":"TOKEN INCORRECT"
+			"mean":"TOKEN INCORRECTO"
 		},
 		{
 			"id":"7",
@@ -49,18 +49,18 @@
 		},
 		{
 			"id":"13",
-			"mean":"EL FORMATO DE NÚMERO DE SERIE ES INCORRECTO"
+			"mean":"EL FORMATO DE N\u00DAMERO DE SERIE ES INCORRECTO"
 		},
 		{
 			"id":"14",
-			"mean":"DIRECCIÓN NO ENCONTRADA"
+			"mean":"DIRECCI\u00D3N NO ENCONTRADA"
 		},
 		{
 			"id":"15",
 			"mean":"ERROR CMD"
 		},
 		{
-			"id":"dieciséis",
+			"id":"16",
 			"mean":"CMD ERROR ON DB"
 		},
 		{
@@ -73,15 +73,15 @@
 		},
 		{
 			"id":"19",
-			"mean":"NÚMERO DE SERIE INCORRECTO"
+			"mean":"N\u00DAMERO DE SERIE INCORRECTO"
 		},
 		{
 			"id":"20",
-			"mean":"MEDIDOR DE DATOS VACÍO"
+			"mean":"MEDIDOR DE DATOS VAC\u00CDO"
 		},
 		{
 			"id":"21",
-			"mean":"MEDIDOR DE DATOS VACÍO EN RESET"
+			"mean":"MEDIDOR DE DATOS VAC\u00CDO EN RESET"
 		},
 		{
 			"id":"22",
@@ -89,7 +89,7 @@
 		},
 		{
 			"id":"23",
-			"mean":"METRO OFFLINE EN EL RELÉ DEL ESTADO"
+			"mean":"METRO OFFLINE EN EL REL\u00C9 DEL ESTADO"
 		},
 		{
 			"id":"24",
@@ -97,7 +97,7 @@
 		},
 		{
 			"id":"25",
-			"mean":"METRO NO ENCONTRADO EN EL RELÉ ESTATAL"
+			"mean":"METRO NO ENCONTRADO EN EL REL\u00C9 ESTATAL"
 		},
 		{
 			"id":"26",
@@ -105,7 +105,7 @@
 		},
 		{
 			"id":"27",
-			"mean":"MEDIDOR DE DATOS VACÍO EN EL RELÉ ESTATAL"
+			"mean":"MEDIDOR DE DATOS VAC\u00CDO EN EL REL\u00C9 ESTATAL"
 		},
 		{
 			"id":"28",
@@ -133,7 +133,7 @@
 		},
 		{
 			"id":"34",
-			"mean":"DATOS ERRADOS EN EL SISTEMA DE ACTUALIZACIÓN"
+			"mean":"DATOS ERRADOS EN EL SISTEMA DE ACTUALIZACI\u00D3N"
 		},
 		{
 			"id":"35",
@@ -141,7 +141,7 @@
 		},
 		{
 			"id":"36",
-			"mean":"Se ha encontrado alguna pantalla"
+			"mean":"NO SE HA ENCONTRADO NINGUNA PANTALLA"
 		},
 		{
 			"id":"37",
@@ -157,15 +157,15 @@
 		},
 		{
 			"id":"40",
-			"mean":"ERROR EN BASE DE DATOS EN LA EXPRESIÓN DE BORRADO"
+			"mean":"ERROR EN BASE DE DATOS EN LA EXPRESI\u00D3N DE BORRADO"
 		},
 		{
 			"id":"41",
-			"mean":"LA EXHIBICIÓN NO EXISTE"
+			"mean":"LA EXHIBICI\u00D3N NO EXISTE"
 		},
 		{
 			"id":"42",
-			"mean":"FORMATO DE VISUALIZACIÓN DE ID NO ES CORRECTO"
+			"mean":"FORMATO DE VISUALIZACI\u00D3N DE ID NO ES CORRECTO"
 		},
 		{
 			"id":"43",
@@ -173,7 +173,7 @@
 		},
 		{
 			"id":"44",
-			"mean":"CUALQUIER ASOCIACIÓN ENCONTRADA"
+			"mean":"CUALQUIER ASOCIACI\u00D3N ENCONTRADA"
 		},
 		{
 			"id":"45",
@@ -197,19 +197,19 @@
 		},
 		{
 			"id":"50",
-			"mean":"LA EXHIBICIÓN NO EXISTE"
+			"mean":"LA EXHIBICI\u00D3N NO EXISTE"
 		},
 		{
 			"id":"51",
-			"mean":"LA PRESENTACIÓN DE DIRECCIÓN DE FORMATO ES INCORRECTA"
+			"mean":"LA PRESENTACI\u00D3N DE DIRECCI\u00D3N DE FORMATO ES INCORRECTA"
 		},
 		{
 			"id":"52",
-			"mean":"VISTA DE DIRECCIÓN NO ENCONTRADA"
+			"mean":"VISTA DE DIRECCI\u00D3N NO ENCONTRADA"
 		},
 		{
 			"id":"53",
-			"mean":"No seguro"
+			"mean":"NO SEGURO"
 		},
 		{
 			"id":"54",
@@ -237,7 +237,7 @@
 		},
 		{
 			"id":"60",
-			"mean":"NÚMERO DE CUENTA NO ENCONTRADO"
+			"mean":"N\u00DAMERO DE CUENTA NO ENCONTRADO"
 		},
 		{
 			"id":"61",
@@ -253,7 +253,7 @@
 		},
 		{
 			"id":"64",
-			"mean":"ASOCIACIÓN DE SERVICIO-MEDIDOR"
+			"mean":"ASOCIACI\u00D3N DE SERVICIO-MEDIDOR"
 		},
 		{
 			"id":"sesenta y cinco",
@@ -261,7 +261,7 @@
 		},
 		{
 			"id":"66",
-			"mean":"NÚMERO DE CUENTA NO ENCONTRADO"
+			"mean":"N\u00DAMERO DE CUENTA NO ENCONTRADO"
 		},
 		{
 			"id":"67",
@@ -269,11 +269,11 @@
 		},
 		{
 			"id":"68",
-			"mean":"NÚMERO DE CUENTA NO ENCONTRADO EN DATOS"
+			"mean":"N\u00DAMERO DE CUENTA NO ENCONTRADO EN DATOS"
 		},
 		{
 			"id":"69",
-			"mean":"NUEVA ASOCIACIÓN DE SERVICIOS DE MEDIOS DE DATOS ERRADA"
+			"mean":"NUEVA ASOCIACI\u00D3N DE SERVICIOS DE MEDIOS DE DATOS ERRADA"
 		},
 		{
 			"id":"70",
@@ -285,7 +285,7 @@
 		},
 		{
 			"id":"72",
-			"mean":"FORMATE LAS FECHAS NO VÁLIDAS"
+			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"73",
@@ -309,11 +309,11 @@
 		},
 		{
 			"id":"78",
-			"mean":"FORMATE LAS FECHAS NO VÁLIDAS"
+			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"79",
-			"mean":"FORMATE LAS FECHAS NO VÁLIDAS"
+			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"80",
@@ -329,7 +329,7 @@
 		},
 		{
 			"id":"83",
-			"mean":"FORMATE LAS FECHAS NO VÁLIDAS"
+			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"84",
@@ -357,7 +357,7 @@
 		},
 		{
 			"id":"90",
-			"mean":"ERROR EN EL TAMAÑO DEL ARCHIVO"
+			"mean":"ERROR EN EL TAMA\u00D1O DEL ARCHIVO"
 		},
 		{
 			"id":"91",
@@ -369,7 +369,7 @@
 		},
 		{
 			"id":"93",
-			"mean":"ESTADÍSTICAS VACÍAS"
+			"mean":"ESTAD\u00CDSTICAS VAC\u00CDAS"
 		},
 		{
 			"id":"",
