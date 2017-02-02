@@ -430,7 +430,7 @@ fieldset[disabled] .btn-success.active {
   outline: none;
 }
 .scroll-top {
-  position: fixed;
+  
   right: 2%;
   bottom: 2%;
   width: 50px;

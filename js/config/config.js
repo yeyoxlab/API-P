@@ -64,6 +64,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 
 	 $translateProvider.translations('en', {
 	 	//PANEL IZQUIERDO
+	 	'PANEL_HOME'  : 'HOME', 
 	 	'PANEL_LISER' : 'List of Error', 
 	 	'PANEL_LISAP' : 'List of API available',
 	 	'PANEL_LOGIN' : 'Login',
@@ -99,7 +100,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		//list of error
 		'LOE_TITTLE':'LIST OF API ERRORS',
 		'LOE_ERROR':'ERROR',
-		'LOE_MEANING':'MAINING',
+		'LOE_MEANING':'MEANING',
 		//LIST OF API AVIABLE
 		'LOAA_TITTLE':'LIST OF API AVIABLE',
 		'LOAA_METHOD':'METHOD',
@@ -215,6 +216,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	});
 	$translateProvider.translations('es', {
 		//PANEL IZQUIERDO
+		'PANEL_HOME'  : 'HOME', 
 		'PANEL_LISER' : 'Lista de Errores', 
 		'PANEL_LISAP' : 'Lista de API disponible',
 		'PANEL_LOGIN' : 'Inicio de sesión',
@@ -374,7 +376,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	
 	
 });
- prot_api.controller('CtrlPrin',['$scope', '$translate','serveData', function ($scope, $translate,serveData) {
+ prot_api.controller('CtrlPrin',['$scope', '$route','$translate','serveData', function ($scope, $route,$translate,serveData) {
     $scope.changeLanguage = function(key){
       $translate.use(key);
       
@@ -388,9 +390,11 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
       }
 
       //console.log($scope.objetoP.qty);
+      $route.reload();
+        console.log($scope.form_name) //to ensure scope is updating
     };
     $scope.objetoP = serveData;
-    //console.log($scope.objetoP);
+    
 
 
   }]);
