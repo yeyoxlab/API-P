@@ -2,12 +2,12 @@
 		{
 			"Method":"POST",
 			"URL":"Api / v1 / login",
-			"Action":"Devuelve el token para la autorización"
+			"Action":"Devuelve el token para la autorizaci\u00F3n"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / version",
-			"Action":"Devuelve la versión del sistema API"
+			"Action":"Devuelve la versi\u00F3n del sistema API"
 		},
 		{
 			"Method":"GET",
@@ -52,7 +52,7 @@
 		{
 			"Method":"POST",
 			"URL":"/ Api / v1 / meters",
-			"Action":"Añadir un nuevo medidor inteligente"
+			"Action":"A\u00F1adir un nuevo medidor inteligente"
 		},
 		{
 			"Method":"PUT",
@@ -82,7 +82,7 @@
 		{
 			"Method":"POST",
 			"URL":"/ Api / v1 / meters / state_relay",
-			"Action":"Establecer el estado de un relé de medidor inteligente"
+			"Action":"Establecer el estado de un rel\u00E9 de medidor inteligente"
 		},
 		{
 			"Method":"POST",
@@ -97,22 +97,22 @@
 		{
 			"Method":"GET",
 			"URL":"Api / v1 / meters / XXXXXX / today_profile",
-			"Action":"Lea el perfil actual del medidor inteligente por número de serie"
+			"Action":"Lea el perfil actual del medidor inteligente por n\u00FAmero de serie"
 		},
 		{
 			"Method":"GET",
 			"URL":"Api / v1 / meters / XXXXXX / alarmas",
-			"Action":"Lectura de las últimas 10 alertas por número de serie"
+			"Action":"Lectura de las \u00FAltimas 10 alertas por n\u00FAmero de serie"
 		},
 		{
 			"Method":"GET",
 			"URL":"Api / v1 / meters / operation_mode",
-			"Action":"Obtiene el modo de operación de los medidores inteligentes"
+			"Action":"Obtiene el modo de operaci\u00F3n de los medidores inteligentes"
 		},
 		{
 			"Method":"GET",
-			"URL":"Api / v1 / meters / A00001 / operación_modo",
-			"Action":"Obtiene el modo de operaciones por número de serie"
+			"URL":"Api / v1 / meters / A00001 / operaci\u00F3n_modo",
+			"Action":"Obtiene el modo de operaciones por n\u00FAmero de serie"
 		},
 		{
 			"Method":"GET",
@@ -122,12 +122,12 @@
 		{
 			"Method":"GET",
 			"URL":"Api / v1 / meters / XXXXXX / config",
-			"Action":"Obtiene las configuraciones por número de serie"
+			"Action":"Obtiene las configuraciones por n\u00FAmero de serie"
 		},
 		{
 			"Method":"POST",
 			"URL":"Api / v1 / meters / config",
-			"Action":"Configuración de los contadores inteligentes"
+			"Action":"Configuraci\u00F3n de los contadores inteligentes"
 		},
 		{
 			"Method":"POST",
@@ -152,7 +152,7 @@
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / alarmas? Num_serie =?",
-			"Action":"Lista de medidores de alarmas por número de serie"
+			"Action":"Lista de medidores de alarmas por n\u00FAmero de serie"
 		},
 		{
 			"Method":"GET",
@@ -162,12 +162,12 @@
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / alarmas? StartDate =? & EndDate =? & Limit =?",
-			"Action":"Lista de alarmas del sistema y medidor por fecha con límite"
+			"Action":"Lista de alarmas del sistema y medidor por fecha con l\u00EDmite"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / alarmas? StartDate =? & EndDate =? & Limit =? & Type =?",
-			"Action":"Lista de alarmas del sistema y medidor por fecha con límite y tipo"
+			"Action":"Lista de alarmas del sistema y medidor por fecha con l\u00EDmite y tipo"
 		},
 		{
 			"Method":"GET",
@@ -182,27 +182,27 @@
 		{
 			"Method":"PUT",
 			"URL":"/ Api / v1 / system",
-			"Action":"Modificar los parámetros del sistema"
+			"Action":"Modificar los par\u00E1metros del sistema"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / history_meter / SN_meter / startDate / endDate",
-			"Action":"Obtiene datos históricos del medidor inteligente por número de serie y fecha"
+			"Action":"Obtiene datos hist\u00F3ricos del medidor inteligente por n\u00FAmero de serie y fecha"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / history_meter / SN_meter / startDate / endDate / type",
-			"Action":"Obtiene datos históricos del medidor inteligente por número de serie, fecha y tipo"
+			"Action":"Obtiene datos hist\u00F3ricos del medidor inteligente por n\u00FAmero de serie, fecha y tipo"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / instant_record / SN_meter / startDate / endDate",
-			"Action":"Obtiene el instante histórico del medidor inteligente por ID y fecha"
+			"Action":"Obtiene el instante hist\u00F3rico del medidor inteligente por ID y fecha"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / statistics",
-			"Action":"Obtiene las estadísticas del sistema"
+			"Action":"Obtiene las estad\u00EDsticas del sistema"
 		},
 		{
 			"Method":"GET",
@@ -212,27 +212,27 @@
 		{
 			"Method":"POST",
 			"URL":"Api / v1 / displays",
-			"Action":"Añadir nuevo In Home Displays (IHD)"
+			"Action":"A\u00F1adir nuevo In Home Displays (IHD)"
 		},
 		{
 			"Method":"DELETE",
 			"URL":"Api / v1 / displays / XXXXXX",
-			"Action":"Eliminar una presentación en casa (IHD) por mac"
+			"Action":"Eliminar una presentaci\u00F3n en casa (IHD) por mac"
 		},
 		{
 			"Method":"GET",
 			"URL":"Api / v1 / displayMeters",
-			"Action":"Obtener la asociación smart meters - display"
+			"Action":"Obtener la asociaci\u00F3n smart meters - display"
 		},
 		{
 			"Method":"POST",
 			"URL":"Api / v1 / displayMeters",
-			"Action":"Añadir nuevos medidores inteligentes de asociación - mostrar"
+			"Action":"A\u00F1adir nuevos medidores inteligentes de asociaci\u00F3n - mostrar"
 		},
 		{
 			"Method":"DELETE",
 			"URL":"Api / v1 / displayMeters /?",
-			"Action":"Elimina la asociación por ID"
+			"Action":"Elimina la asociaci\u00F3n por ID"
 		},
 		{
 			"Method":"POST",
