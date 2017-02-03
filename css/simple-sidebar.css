@@ -55,7 +55,7 @@
 /* Sidebar Styles */
 
 .sidebar-nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 250px;
     margin: 0;
