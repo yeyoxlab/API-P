@@ -211,8 +211,13 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'METERSEARCH_IV' : 'OR',
 			'METERSEARCH_V' : 'SERIAL NUMBER',
 			'METERSEARCH_VI' : 'STRING',
-			//meters/search/?/less
 			
+			//meters/search/?/less
+			'LESS_S_I' : 'Serial number of the smart meter',
+			'LESS_S_II' : 'Timestamp of data',
+			'LESS_S_III' : 'Meter status',
+			'LESS_S_IV' : 'Indicates state of relay',
+			'LESS_S_V' : 'Indicates the status of mesure voltaje',
 			
 			
 			
@@ -378,14 +383,20 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LESS_VI' : 'Demanda máxima en fase',
 		
 		//meters/search/?
-		'METERSEARCH_I' : 'PARAMETERS URL',
-		'METERSEARCH_II' : 'UNIQUE ID METER',
-		'METERSEARCH_III' : 'INTEGER',
-		'METERSEARCH_IV' : 'OR',
-		'METERSEARCH_V' : 'SERIAL NUMBER',
+		'METERSEARCH_I' : 'PARAMETROS URL',
+		'METERSEARCH_II' : 'MEDIDOR DE IDENTIFICACIÓN ÚNICA',
+		'METERSEARCH_III' : 'ENTERO',
+		'METERSEARCH_IV' : 'O',
+		'METERSEARCH_V' : 'NÚMERO DE SERIE',
 		'METERSEARCH_VI' : 'STRING',
 		
 		//meters/search/?/less
+		'LESS_S_I' : 'Número de serie del medidor inteligente',
+		'LESS_S_II' : 'Fecha y hora de los datos',
+		'LESS_S_III' : 'Estado del medidor',
+		'LESS_S_IV' : 'Indica el estado del Relay',
+		'LESS_S_V' : 'Indica el estado del voltaje de medición',
+		
 		
 
 	});
