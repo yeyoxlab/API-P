@@ -1,7 +1,7 @@
 <div class="col-md-11">
 	<h1 translate="TITLE_UNO"></h1>
 		<br>
-		<p><ins>https://protcloud.com/api/v1/meters/?</ins></p>
+		<p><ins>https://protcloud.com/api/v1/meters/?/less</ins></p>
 		<br>
 	<h1 translate="METERS_UNO"></h1>
 	<br>
@@ -58,22 +58,23 @@
 			</table>
 		</div>
 		<br>
-		<h1 translate="METERS_OCHO"></h1>
+	<h1 translate="METERS_OCHO"></h1>
 		<br>
 			<pre>
-GET /api/v1/meters/GTWR02 
+GET /api/v1/meters/A00001/less 
 HTTP/1.1
 Host: 192.168.3.127
 User-Agent: curl
-Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWbE56SmpaRGMxWkRKa00
-yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3NDU3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNyp
-OvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DORXUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22
-yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwioFFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98
-luSCz9mo7ECxIikkYFifV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWb
+E56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3ND
+U3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNypOvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DOR
+XUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwio
+FFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFi
+fV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
 Cache-Control: no-cache
 Content-Type: charset=utf-8
 			</pre>
-		<br>
+			<br>
 		<h1 translate="METERS_NUEVE"></h1>
 			<br>
 			<pre>
@@ -142,60 +143,41 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
 		<br>
 		<pre>
 [{
-	"INFO_METER": {
-	"ID_METER": 1,
-	"SLOT": 1,
-    	"TYPE_METER": "1S",
-        "SERIAL_NUMBER": "X0000X",
-        "CODE_METER": "FH20",
-        "LOTE": "PR10",
-        "DATE_METER": "2015-10-13 05:25:45",
-        "MAC": "XXXXXX",
-        "TIMESTAMP": "2015-10-28 14:45:00",
-        "QoS": "PERFECT",
-        "STATUS": "ONLINE",
-        "STATUS_CFE": "ACTIVE",
-        "ADDRESS": "A001",
-        "LATITUDE": "",
-        "LONGITUDE": "",
-        "TIME_REQUEST": 2.97405
-	},
-    "STATUS_METER": {
-    	"REAL_TIME_CLOCK": true,
-        "FLASH_MEMORY": true,
-        "MEMORY_EPROM": true,
-        "MESURE_VOLTAGE": true,
-        "POSITION_METER": "UNKNOWN",
-        "STATE_RELAY": false
-    },
-    "CONSUMPTION_PHASES": {
-    	"PHASE_I": {
-            "TOTAL_KWH_RECIEVED": 0,
-            "TOTAL_KWH_BALANCE": 0.417,
-            "KVARH_I_TOTAL": 0,
-            "KVARH_II_TOTAL": 0,
-            "KVARH_III_TOTAL": 0,
-            "KVARH_IV_TOTAL": 0.004
-         }
-      },
-	"INSTANTANEOUS_PHASES": {
-	"PHASE_I": {
-    	"VOLTAGE": 123.678,
-        	"CURRENT": 0,
-            "POWER_FACTOR": 1,
-            "APARENTPOWER": 0,
-            "ACTIVE_POWER": 0,
-            "REACTIVE_POWER": 0,
-            "FRECUENCY": 60.0142
-		}
-	},
-"PEAK_DEMAND_PHASES": {
-	"PHASE_I": {
-    	"TOTAL_DEMAND": 0.036
-      	}
-	}
-},{...},{...},....
-]		
+  "IM": {
+    "SN": "A00001",
+    "TS": "2016-01-20 16:00:00",
+    "ST": "ONLINE",
+    "STR": true,
+    "MV": true
+  },
+  "CPH": {
+    "PHI": {
+      "KWHD": 17.207,
+      "KWHR": 0.057,
+      "KWHB": 17.264,
+      "KVHI": 0.585,
+      "KVHII": 0.148,
+      "KVHIII": 0,
+      "KVHIV": 0.258
+    }
+  },
+  "IPH": {
+    "PHI": {
+      "V": 124.368,
+      "A": 0,
+      "PF": 1,
+      "S": 0,
+      "P": 0,
+      "Q": 0,
+      "FR": 60.014
+    }
+  },
+  "PDPH": {
+    "PHI": {
+      "DEM": 1.324
+    }
+  }
+}]
 		</pre>
 		<br>
 		<h1 translate="METERS_II_UNO"></h1>
@@ -212,148 +194,36 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
           	</thead>
           	<tbody>
             	<tr>
-            		<th scope="row">ID_METER</th>
-            		<td><p style="text-align: justify;" translate="METERS_II_TRES"></td>
-            		<td>INTEGER</td>
-            		<td> > 0, 1, 2, 3..., n</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">SLOT</th>
-            		<td><p style="text-align: justify;" translate="METERS_II_CUATRO"></td>
-            		<td>INTEGER</td>
-            		<td> > 0, 1, 2, 3..., 24</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">TYPE_METER</th>
-            		<td><p style="text-align: justify;" translate="METERS_II_CINCO"></td>
-            		<td>STRING</td>
-            		<td>1S, 12S, 16S</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">SERIAL_NUMBER</th>
-            		<td><p style="text-align: justify;" translate="METERS_II_SEIS"></td>
+            		<th scope="row">SN</th>
+            		<td><p style="text-align: justify;" translate="LESS_I"></td>
             		<td>STRING</td>
             		<td>Variable ( length:4 )</td>
             	</tr>
             	<tr>
-              		<th scope="row">CODE_METE</th>
-            		<td><p style="text-align: justify;" translate="METERS_II_SIETE"></td>
+            		<th scope="row">TS</th>
+            		<td><p style="text-align: justify;" translate="LESS_II"></td>
             		<td>STRING</td>
-            		<td>Variable ( length:4 )</td>
+            		<td>Mysql format  ( length:19 )</td>
             	</tr>
             	<tr>
-              		<th scope="row">LOTE</th>
-            		<td><p style="text-align: justify;" translate="METERS_II_OCHO"></td>
-            		<td>STRING</td>
-            		<td>Variable ( length:4 )</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">DATE_METER</th>
-            		<td><p style="text-align: justify;" translate="METERS_II_NUEVE"></td>
-            		<td>STRING</td>
-            		<td>MySQL format (length:16)</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">MAC</th>
-            		<td><p style="text-align: justify;" translate="METERS_III"></td>
-            		<td>STRING</td>
-            		<td>Variable ( length:6 )</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">TIMESTAMP</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_UNO"></td>
-            		<td>STRING</td>
-            		<td>MySQL format ( length:19 )</td>
-            	</tr><tr>
-              		<th scope="row">QOS</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_DOS"></td>
-            		<td>STRING</td>
-            		<td>bad, normal, good, perfect</td>
-            	</tr><tr>
-              		<th scope="row">STATUS</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_TRES"></td>
+            		<th scope="row">ST</th>
+            		<td><p style="text-align: justify;" translate="LESS_III"></td>
             		<td>STRING</td>
             		<td>Online, offline </td>
-            	</tr><tr>
-              		<th scope="row">STATUS_CFE</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_CUATRO"></td>
-            		<td>STRING</td>
-            		<td>activated, deactivated</td>
-            	</tr><tr>
-              		<th scope="row">ADDRESS</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_CINCO"></td>
-            		<td>STRING</td>
-            		<td>Variable ( length:4 )</td>
-            	</tr><tr>
-              		<th scope="row">LATITUDE</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_SEIS"></td>
-            		<td>STRING</td>
-            		<td>Variable ( length:4 )</td>
-            	</tr><tr>
-              		<th scope="row">LONGITUDE</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_SIETE"></td>
-            		<td>STRING</td>
-            		<td>Variable ( length:10 )</td>
-            	</tr><tr>
-              		<th scope="row">TIME_REQUEST</th>
-            		<td><p style="text-align: justify;" translate="METERS_III_OCHO"></td>
-            		<td>DOUBLE</td>
-            		<td> > 0.0,0.1,..., n</td>
+            	</tr>
+            	<tr>
+            		<th scope="row">STR</th>
+            		<td><p style="text-align: justify;" translate="LESS_IV"></td>
+            		<td>BOOLEAN</td>
+            		<td>True, False</td>
+            	</tr>
+            	<tr>
+            		<th scope="row">MV</th>
+            		<td><p style="text-align: justify;" translate="LESS_V"></td>
+            		<td>BOOLEAN</td>
+            		<td>True, False</td>
             	</tr>
         	</tbody>
-		</table>
-		<br>
-	<h3>STATUS_METER</h3>
-		<br>
-		<p style="text-align: justify;" translate="METERS_IV">
-		<br>
-			<table class="table table-striped">
-        		<thead>
-            		<tr>
-        	    	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
-            		<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
-            		<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
-            		<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
-    	       		</tr>
-	          	</thead>
-	          	<tbody>
-            	<tr>
-            		<th scope="row">REAL_TIME_CLOCK</th>
-            		<td><p style="text-align: justify;" translate="METERS_IV_UNO"></td>
-            		<td>BOOLEAN</td>
-            		<td>True, False</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">FLASH_MEMORY</th>
-            		<td><p style="text-align: justify;" translate="METERS_IV_DOS"></td>
-            		<td>BOOLEAN</td>
-            		<td>True, False</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">MEMORY_EPROM</th>
-            		<td><p style="text-align: justify;" translate="METERS_IV_TRES"></td>
-            		<td>BOOLEAN</td>
-            		<td>True, False</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">MESURE_VOLTAGE</th>
-            		<td><p style="text-align: justify;" translate="METERS_IV_CUATRO"></td>
-            		<td>BOOLEAN</td>
-            		<td>True, False</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">POSITION_METER</th>
-            		<td><p style="text-align: justify;" translate="METERS_IV_CINCO"></td>
-            		<td>STRING</td>
-            		<td>Left, rigth, correct, inverse, unknow</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">STATE_RELAY</th>
-            		<td><p style="text-align: justify;" translate="METERS_IV_SEIS"></td>
-            		<td>BOOLEAN</td>
-            		<td>True, False</td>
-            	</tr>
-            </tbody>
 		</table>
 		<br>
 	<h1 translate="METERS_IV_SIETE"></h1>
@@ -446,43 +316,43 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
 	          	</thead>
 	          	<tbody>
             	<tr>
-            		<th scope="row">VOLTAGE</th>
+            		<th scope="row">V</th>
             		<td><p style="text-align: justify;" translate="METERS_VI_UNO"></td>
             		<td>DOUBLE</td>
             		<td>> 90.0 ~ <= 250</td>
             	</tr>
             	<tr>
-            		<th scope="row">CURRENT</th>
+            		<th scope="row">A</th>
             		<td><p style="text-align: justify;" translate="METERS_VI_DOS"></td>
             		<td>DOUBLE</td>
             		<td> > 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
-            		<th scope="row">POWER_FACTOR</th>
+            		<th scope="row">PF</th>
             		<td><p style="text-align: justify;" translate="METERS_VI_TRES"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0  ~  <= 1</td>
             	</tr>
             	<tr>
-            		<th scope="row">APARENTPOWER</th>
+            		<th scope="row">S</th>
             		<td><p style="text-align: justify;" translate="METERS_VI_CUATRO"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
-            		<th scope="row">ACTIVE_POWER</th>
+            		<th scope="row">P</th>
             		<td><p style="text-align: justify;" translate="METERS_VI_CINCO"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
-            		<th scope="row">REACTIVE_POWER</th>
+            		<th scope="row">Q</th>
             		<td><p style="text-align: justify;" translate="METERS_VI_SEIS"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
-            		<th scope="row">FRECUENCY</th>
+            		<th scope="row">FR</th>
             		<td><p style="text-align: justify;" translate="METERS_VI_SIETE"></td>
             		<td>DOUBLE</td>
             		<td>> 49 ~ < 61</td>
@@ -511,8 +381,8 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
 	        </thead>
 			<tbody>
             	<tr>
-            		<th scope="row">TOTAL_DEMAND</th>
-            		<td><p style="text-align: justify;" translate="METERS_VII"></td>
+            		<th scope="row">DEM</th>
+            		<td><p style="text-align: justify;" translate="LESS_VI"></td>
             		<td>DOUBLE</td>
             		<td>> 0 ~ n </td>
             	</tr>

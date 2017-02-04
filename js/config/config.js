@@ -11,31 +11,44 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		controller : "appController"		
 	}).when("/login", {
 		templateUrl : "templates/login.html",
-	}).when("/version", {
+	})
+	.when("/version", {
 		templateUrl : "templates/version.html",
-	}).when("/meters", {
+	})
+	.when("/meters", {
 		templateUrl : "templates/meters.html",
-	}).when("/meters_less", {
+	})
+	.when("/meters_less", {
 		templateUrl : "templates/meters_less.html",
-	}).when("/meters_search", {
+	})
+	.when("/meters_search", {
 		templateUrl : "templates/meters_search.html",
-	}).when("/meters_search_less", {
+	})
+	.when("/meters_search_less", {
 		templateUrl : "templates/meters_search_less.html",
-	}).when("/meters_", {
+	})
+	.when("/meters_", {
 		templateUrl : "templates/meters_.html",
-	}).when("/meters_b_less", {
+	})
+	.when("/meters_b", {
 		templateUrl : "templates/meters_b_less.html",
-	}).when("/meters_2", {
+	})
+	.when("/meters_2", {
 		templateUrl : "templates/meters_2.html",
-	}).when("/meters_b_1", {
+	})
+	.when("/meters_b_1", {
 		templateUrl : "templates/meters_b_1.html",
-	}).when("/meters_b_2", {
+	})
+	.when("/meters_b_2", {
 		templateUrl : "templates/meters_b_2.html",
-	}).when("/meters_state_relay", {
+	})
+	.when("/meters_state_relay", {
 		templateUrl : "templates/meters_state_relay.html",
-	}).when("/meters_reset_meter", {
+	})
+	.when("/meters_reset_meter", {
 		templateUrl : "templates/meters_reset_meter.html",
-	}).when("/alarms_startDate_endDate", {
+	})
+	.when("/alarms_startDate_endDate", {
 		templateUrl : "templates/alarms_startDate_endDate.html",
 	
 	})
@@ -219,7 +232,32 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'LESS_S_IV' : 'Indicates state of relay',
 			'LESS_S_V' : 'Indicates the status of mesure voltaje',
 			
+			//meters_
+			'meters_I' : 'CONTENT DATA',
+			'meters_II' : 'ADDRESS',
+			'meters_III' : 'MAC',
+			'meters_IV' : 'SERIAL_NUMBER',
+			'meters_V' : 'TYPE_PROTOCOL',
+			'meters_VI' : 'TYPE_ZB_PROTOCOL',
+			'meters_VII' : 'TYPE_METER',
+			'meters_VIII' : 'Json Response',
+			'meters_IX' : 'RESULT OF A SUCCESFUL TRANSACTION',
+			'meters_X' : 'UID OF NEW SMART METER',
+			'meters_XI' : 'Or an error with the description',
+			//meters_b_1
+			'meters_b_1_I' : 'CONTENT DATA',
+			'meters_b_1_II' : 'SLOT',
+			'meters_b_1_III' : 'TYPE_METER',
+			'meters_b_1_IV' : 'SERIAL_NUMBER',
+			'meters_b_1_V' : 'CODE_METER',
+			'meters_b_1_VI' : 'MAC',
+			'meters_b_1_VII' : 'ADDRESS',
+			'meters_b_1_VIII' : 'LATITUDE',
+			'meters_b_1_IX' : 'LONGITUDE',
+			'meters_b_1_X' : 'RESULT OF A SUCCESFUL TRANSACTION',
+			'meters_b_1_XI' : 'Or an error with the description',
 			
+				
 			
 	});
 	$translateProvider.translations('es', {
@@ -385,7 +423,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		//meters/search/?
 		'METERSEARCH_I' : 'PARAMETROS URL',
 		'METERSEARCH_II' : 'MEDIDOR DE IDENTIFICACIÓN ÚNICA',
-		'METERSEARCH_III' : 'ENTERO',
+		'METERSEARCH_III' : 'INTEGER',
 		'METERSEARCH_IV' : 'O',
 		'METERSEARCH_V' : 'NÚMERO DE SERIE',
 		'METERSEARCH_VI' : 'STRING',
@@ -397,7 +435,32 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LESS_S_IV' : 'Indica el estado del Relay',
 		'LESS_S_V' : 'Indica el estado del voltaje de medición',
 		
-		
+		//meters_
+		'meters_I' : 'DATOS DE CONTENIDO',
+		'meters_II' : 'DIRECCIÓN',
+		'meters_III' : 'MAC',
+		'meters_IV' : 'NÚMERO DE SERIE',
+		'meters_V' : 'TIPO DE PROTOCOLO',
+		'meters_VI' : 'TIPO ZB PROTOCOLO',
+		'meters_VII' : 'TIPO DE MEDIDOR',
+		'meters_VIII' : 'Respuesta de JSON',
+		'meters_IX' : 'Resultado de una transacción exitosa',
+		'meters_X' : 'UID de nuevo medidor inteligente',
+		'meters_XI' : 'O un error con la descripción',
+		//meters_b_1
+		'meters_b_1_I' : 'Datos del contenido',
+		'meters_b_1_II' : 'Espacio',
+		'meters_b_1_III' : 'Medidor de Tipo',
+		'meters_b_1_IV' : 'Número de Serie',
+		'meters_b_1_V' : 'Codigo de medidor',
+		'meters_b_1_VI' : 'MAC',
+		'meters_b_1_VII' : 'Dirección',
+		'meters_b_1_VIII' : 'Latitud',
+		'meters_b_1_IX' : 'Longitud',
+		'meters_b_1_X' : 'RESULTADO DE UNA TRANSACCIÓN EXITOSA',
+		'meters_b_1_X' : 'O un error con la descripción',
+		'meters_b_1_X' : '',
+		'meters_b_1_X' : '',
 
 	});
 	$translateProvider.preferredLanguage('es');
