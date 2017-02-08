@@ -1,77 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PROTCLOUD Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <!-- Important Owl stylesheet -->
+        
+         
+        <!-- Default Theme -->
+        
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="css/styleprotcloud.css">
-    <title>Protcloud</title>
+       
+    </head>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/freelancer.css" rel="stylesheet">
-</head>
+    <body ng-app="prot_api"  ng-controller="CtrlPrin">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<body ng-app="prot_api" class="bodyPD" ng-controller="CtrlPrin" >
-    <!-- Navigation -->
-    <div>
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <a  href="#"><img src="img/protcloud_mini.png" /></a>
+        <div id="top" class="navbar navbar-dark navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-size: 30px"><strong>PROTCLOUD</strong>  Developer Documentation</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="" ng-click="changeLanguage('es')">Español</a></li>
+                        <li><a href="" ng-click="changeLanguage('en')">English</a></li>
+                                           </ul>
+                </div><!--/.navbar-collapse -->
             </div>
-            <div>
-                <h1 class="titleAPI"> Protecsa Developer Documentation </h1>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href=""></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a ng-click="changeLanguage('es')">Español</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="">/</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a ng-click="changeLanguage('en')">English</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    </div>
-
-    <div>
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav" align="left">
-            <br>
-                <li class="sidebar-brand" >
-                    <a href="#" translate="PANEL_HOME">>
-                        PRINCIPAL
-                    </a>
-                </li>
-                <li>
+        <!-- info y sidebar-->
+<div class="row-offcanvas row-offcanvas-left">
+  <div id="sidebar" class="sidebar-offcanvas">
+      <div class="col-md-12">
+        <h3 style="color:#9A9A9C">HOME</h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li>
                     <a href="#error" translate="PANEL_LISER"></a>
                 </li>
                 <li>
@@ -84,7 +67,7 @@
                     <a href="#version" translate="PANEL_VERSI"></a>
                 </li>
                 <li>
-                    <a href="#meters" translate="PANEL_METER"></a>
+                    <a href="#meters">Meters</a>
                 </li>
                 <li>
                     <a href="#meters_less">Meters/Less</a>
@@ -111,50 +94,51 @@
                     <a href="#meters_b_2">Meters_?</a>
                 </li>
                 <li>
-                	<a href="#meters_state_relay">state_relay</a>
+                    <a href="#meters_state_relay">state_relay</a>
                 </li>
                 <li>
-                	<a href="#meters_reset_meter">meters/reset_meter</a>
+                    <a href="#meters_reset_meter">meters/reset_meter</a>
                 </li>
                 <li>
-                	<a href="#alarms_startDate_endDate">alarms?startDate=?&endDate</a>
+                    <a href="#alarms_startDate_endDate">alarms?startDate=?&endDate</a>
                 </li>
-<br><br><br><br><br><br>
-            </ul>
+        </ul>
+      </div>
+  </div>
+  <div id="main">
+      <div class="col-md-12">
 
-        </div>
-        <br>
-        <!-- /#sidebar-wrapper -->
-        <a class="btn btn-default" id="menu-toggle"> <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+          <p class="visible-xs" >
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas" style="background-color: black;margin-top: : 70"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          <div ng-view style="padding: 20px"></div>
+         
+      </div>
+  </div>
+</div><!--/row-offcanvas -->
+
+
+
         
-        <!-- Page Content -->
-        <div id="page-content-wrapper" >
-
-            <div class="container-fluid">
-
-            
-                <div class="row" ng-view>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
 
 
-    </div>
-    <!-- /#wrapper -->
+        <!--<footer class="content-block content-block-dark">
+            <p></p>
+        </footer> -->    
 
-</div>
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- AngularJS -->
-
-
-    <script type="text/javascript" src="js/angular.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Include js plugin -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+             $('[data-toggle=offcanvas]').click(function() {
+              $('.row-offcanvas').toggleClass('active');
+                });
+            });
+        </script>
+        <script type="text/javascript" src="js/angular.js"></script>
     <script type="text/javascript" src="js/angular-route.js"></script>
     <script type="text/javascript" src="js/angular-resource.js"></script>
     <script type="text/javascript" src="js/angular-translate.min.js"></script>
@@ -163,18 +147,7 @@
     <script type="text/javascript" src="js/config/ctrl_prot_api.js"></script>
     <script type="text/javascript" src="templates/ListACtrl.js"></script>
 
-    
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    $("#menu-toggle1").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script> 
+        <script src="js/main.js"></script>
 
-</body>
-
+    </body>
 </html>
