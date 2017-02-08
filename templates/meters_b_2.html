@@ -1,77 +1,81 @@
 <div class="col-md-11">
-	<h3>RESOURCE URL</h3>
+	<h1 translate="TITLE_UNO"></h1>
 		<br>
 		<p><ins>https://protcloud.com/api/v1/meters/?</ins></p>
 		<br>
-	<h3>RESOURCE INFORMATION</h3>
-	<br>
-	<div class="table-responsive">
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>METHOD</th>
-            	<th>DELETE</th>
-           		</tr>
-          	</thead>
-          	<tbody>
-            	<tr>
-            		<th scope="row">RESPONSE FORMATS</th>
-            		<td>Encrypted with AES-128 ECB</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">DECRYPTED DATA</th>
-            		<td>JSON</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">REQUIRES AUTHENTICATION?</th>
-              		<td>YES</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">TYPE REQUEST</th>
-              		<td>DB</td>
-            	</tr>
-        	</tbody>
-		</table>
-	</div>
-	<br>
-	<h3>RPARAMETERS URL</h3>
+	<h1 translate="METERS_UNO"></h1>
 		<br>
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>UNIQUE ID METER</th>
-            	<th>INTEGER</th>
-           		</tr>
-          	</thead>
-		</table>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+        	    	<tr>
+    	    	    	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
+	            		<th><p style="text-align: justify;">DELETED</th>
+           			</tr>
+        	  	</thead>
+    	      	<tbody>
+	            	<tr>
+            			<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            			<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
+            		</tr>
+        	    	<tr>
+    	        		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+	            		<td><p style="text-align: justify;">JSON</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row"><p style="text-align: justify;" translate="METERS_CINCO"></th>
+        	      		<td><p style="text-align: justify;" translate="METERS_SEIS"></td>
+    	        	</tr>
+	            	<tr>
+              			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              			<td><p style="text-align: justify;">DB</td>
+            		</tr>
+        		</tbody>
+			</table>
+		</div>
 		<br>
-		<h5>OR</h5>
+	<h1 translate="METERSEARCH_I"></h1>
 		<br>
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>SERIAL NUMBER</th>
-            	<th>STRING</th>
-           		</tr>
-          	</thead>
-		</table>
-	<br>
-	<h3>REQUEST</h3>
-	<br>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_II"></th>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_III"></th>
+           			</tr>
+          		</thead>
+			</table>
+		</div>
+		<p style="text-align: justify;" translate="METERSEARCH_IV">
+		<div class="table-responsive">
+			<table class="table table-striped">
+    	    	<thead>
+        	    	<tr>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_V"></th>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_VI"></th>
+           			</tr>
+        	  	</thead>
+			</table>
+		</div>
+		<br>
+	<h1 translate="METERS_OCHO"></h1>
+		<br>
 			<pre>
-DELETE /api/v1/meters/100 
+DELETE /api/v1/meters/1 
 HTTP/1.1
 Host: 192.168.3.127
 User-Agent: curl
-Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWbE56SmpaRGMxWkRKa00
-yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3NDU3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNyp
-OvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DORXUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22
-yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwioFFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98
-luSCz9mo7ECxIikkYFifV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWb
+E56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3ND
+U3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNypOvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DOR
+XUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwio
+FFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFi
+fV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
 Cache-Control: no-cache
 			</pre>
-	<br>
-		<h3>RESPONSE</h3>
+		<br>
+	<h1 translate="METERS_NUEVE"></h1>
+		<br>
 			<pre>
 HTTP/1.1 200 OK
 Date: Wed, 28 Oct 2015 15:15:10 GMT
@@ -86,9 +90,13 @@ Content-Type: application/json
 {"PAYLOAD": "KfJ70rtV7t3YrR0IpcCGinGMfNB7SG3ULeHHGoof0UQ="}
 			</pre>
 	<br>
-		<h3>EXAMPLE IN POSTMAN</h3>
+		<h1 translate="METERS_DIEZ"></h1>
+		
 		<br>
-		<p>JSON response</p>
+		<p>Falta imagen
+		<br>
+		<p style="text-align: justify;" translate="meters_VIII">
+		
 		<br>
 		<pre>{  
    "RESULT": true
@@ -98,23 +106,23 @@ Content-Type: application/json
 			<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
+            		<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">RESULT</th>
-            		<td>RESULT OF A SUCCESFUL TRANSACTION</td>
+            		<td><p style="text-align: justify;" translate="meters_b_1_X"></td>
             		<td>BOOLEAN</td>
             		<td>True</td>
             	</tr>
         	</tbody>
 		</table>
 		<br>
-		<p>Or an error with the description</p>
+		<p style="text-align: justify;" translate="meters_b_1_XI">
 		<br>
 		<pre>{  
    "RESULT": false,
@@ -126,33 +134,33 @@ Content-Type: application/json
 		<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
+            	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">RESULT</th>
-            		<td>Error in transaction</td>
+            		<td><p style="text-align: justify;" translate="METERS_DIECISIETE"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
             		<th scope="row">ERROR_CODE</th>
-            		<td>Unique error detect</td>
+            		<td><p style="text-align: justify;" translate="METERS_DIECIOCHO"></td>
             		<td>INTEGER</td>
             		<td> > 0, 1, 2, 3..., N</td>
             	</tr>
             	<tr>
-            		<th scope="row">ERROR</th>
-            		<td>Description of error</td>
-            		<td>STRING</td>
-            		<td></td>
+              		<th scope="row">ERROR</th>
+              		<td><p style="text-align: justify;" translate="METERS_DIECINUEVE"></td>
+              		<td>STRING</td>
+              		<td></td>
             	</tr>
         	</tbody>
-		</table>
+		</table>	
 </div>
 <div class="col-md-1">
 </div>

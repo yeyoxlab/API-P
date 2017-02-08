@@ -1,40 +1,40 @@
 <div class="col-md-11">
-	<h3>RESOURCE URL</h3>
+	<h1 translate="TITLE_UNO"></h1>
 		<br>
 		<p><ins>https://protcloud.com/api/v1/alarms?startDate=?&endDate</ins></p>
 		<br>
-	<h3>RESOURCE INFORMATION</h3>
+	<h1 translate="METERS_UNO"></h1>
 	<br>
-	<div class="table-responsive">
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            		<th>METHOD</th>
-            		<th>GET</th>
-           		</tr>
-          	</thead>
-          	<tbody>
-            	<tr>
-            		<th scope="row">RESPONSE FORMATS</th>
-            		<td>Encrypted with AES-128 ECB</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">DECRYPTED DATA</th>
-            		<td>JSON</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">REQUIRES AUTHENTICATION?</th>
-              		<td>YES</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">TYPE REQUEST</th>
-              		<td>GATEWAY</td>
-            	</tr>
-        	</tbody>
-		</table>
-	</div>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+        	    	<tr>
+    	    	    	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
+	            		<th><p style="text-align: justify;">GET</th>
+           			</tr>
+        	  	</thead>
+    	      	<tbody>
+	            	<tr>
+            			<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            			<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
+            		</tr>
+        	    	<tr>
+    	        		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+	            		<td><p style="text-align: justify;">JSON</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row"><p style="text-align: justify;" translate="METERS_CINCO"></th>
+        	      		<td><p style="text-align: justify;" translate="METERS_SEIS"></td>
+    	        	</tr>
+	            	<tr>
+              			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              			<td><p style="text-align: justify;">DB</td>
+            		</tr>
+        		</tbody>
+			</table>	
+		</div>
 	<br>
-	<h3>PARAMETRES URL</h3>
+	<h1 translate="METERSEARCH_I"></h1>
 	<br>
 	<div class="table-responsive">
 		<table class="table table-striped">
@@ -49,7 +49,7 @@
 		</table>
 	</div>
 		<br>
-	<h3>REQUEST</h3>
+	<h1 translate="METERS_OCHO"></h1>
 		<br>
 			<pre>
 GET /api/v1/alarms?startDate=2015-01-01&endDate=2016-01-20 
@@ -63,13 +63,10 @@ XUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tm
 FFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFi
 fV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
 Cache-Control: no-cache
-
 			</pre>
-			
-	<br>
-	<br>
-		<h3>RESPONSE</h3>
-			<br>
+		<br>
+	<h1 translate="METERS_NUEVE"></h1>
+		<br>
 			<pre>
 HTTP/1.1 200 OK
 Date: Wed, 28 Oct 2015 15:15:10 GMT
@@ -87,15 +84,12 @@ saPAQ=="}
 
 			</pre>
 		<br>
-	<h3>EXAMPLE IN POSTMAN:</h3>
+	<h1 translate="METERS_DIEZ"></h1>
 		<br>
-		
-		
-		
+		<p>Falta imagen
 		<br>
-		<h5>JSON response with an Array with an object for each alarm, there are two different type</h5>
-		<h5>of alarm, meter alarm and system alarm:</h5>
-		<h5>An alert system has the following structure:</h5>
+		<p style="text-align: justify;" translate="ASD_I">
+		<p style="text-align: justify;" translate="ASD_II">
 		<br>
 		<pre>{ 
 	"TYPE_ALARM":"DCU",
@@ -106,39 +100,38 @@ saPAQ=="}
 		<br>
 		</pre>
 			<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
-           		</tr>
-          	</thead>
-          	<tbody>
-            	<tr>
-            		<th scope="row">TYPE_ALARM</th>
-            		<td>indicates the type of alarm</td>
-            		<td>STRING</td>
-            		<td></td>
-            	</tr>
-            	<tr>
-            		<th scope="row">CODE_ALARM</th>
-            		<td>Unique code for identifying alert</td>
-            		<td>INTEGER</td>
-            		<td> > 0 </td>
-            	</tr>
-            	<tr>
-            		<th scope="row">TIMESTAMP</th>
-            		<td>Timestamp of alert with Mysql format</td>
-            		<td>STRING</td>
-            		<td></td>
-            	</tr>
-        	</tbody>
-		</table>
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
+           			</tr>
+          		</thead>
+          		<tbody>
+            		<tr>
+            			<th scope="row">TYPE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_III"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CODE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_IV"></td>
+            			<td>INTEGER</td>
+            			<td> > 0 </td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TIMESTAMP</th>
+            			<td><p style="text-align: justify;" translate="ASD_V"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+        		</tbody>
+			</table>
 		<br>
-		<h5>Note: The types of alarms are: meter or DCU</h5>
-		<br>
-			<p>An alert meter has the following structure: 
+	<p style="text-align: justify;" translate="ASD_VI">
+	<p style="text-align: justify;" translate="ASD_VII">
 		<br>
 		<pre>{
 "TYPE_ALARM":"METER",
@@ -149,341 +142,343 @@ saPAQ=="}
 }
 		
 		</pre>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
+           			</tr>
+          		</thead>
+          		<tbody>
+            		<tr>
+            			<th scope="row">TYPE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_VIII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">SERIAL_NUMNBER</th>
+            			<td><p style="text-align: justify;" translate="ASD_IX"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CODE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_X"></td>
+            			<td>INTEGER</td>
+            			<td> > 0 </td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TIMESTAMP</th>
+            			<td><p style="text-align: justify;" translate="ASD_XI"></td>
+            			<td>STRING</td>
+            			<td>MySQL format</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CONSUMPTION</th>
+            			<td><p style="text-align: justify;" translate="ASD_XII"></td>
+        	    		<td>Double</td>
+            			<td></td>
+            		</tr>
+        		</tbody>
+			</table>
+		</div>	
+		<br>
+	<p style="text-align: justify;" translate="ASD_XIII">
+		<br>
+	<p style="text-align: justify;" translate="ASD_XIV">
+		<br>
 		<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
-           		</tr>
-          	</thead>
-          	<tbody>
-            	<tr>
-            		<th scope="row">TYPE_ALARM</th>
-            		<td>indicates the type of alarm</td>
-            		<td>STRING</td>
-            		<td></td>
-            	</tr>
-            	<tr>
-            		<th scope="row">SERIAL_NUMNBER</th>
-            		<td>Serial number of meter</td>
-            		<td>STRING</td>
-            		<td></td>
-            	</tr>
-            	<tr>
-            		<th scope="row">CODE_ALARM</th>
-            		<td>Unique code for identifying alert</td>
-            		<td>INTEGER</td>
-            		<td> > 0 </td>
-            	</tr>
-            	<tr>
-            		<th scope="row">TIMESTAMP</th>
-            		<td>Timestamp of alert with Mysql format</td>
-            		<td>STRING</td>
-            		<td>MySQL format</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">CONSUMPTION</th>
-            		<td>Consumption stamping</td>
-            		<td>Double</td>
-            		<td></td>
-            	</tr>
-        	</tbody>
-		</table>	
-		<br>
-	<h5>Note: The types of alarms are: meter or DCU</h5>
-		<br>
-	<h5>List of alerts in the system</h5>
-		<br>
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            		<th>CODE ALARM</th>
-            		<th>MEANING</th>
+            		<th><p style="text-align: justify;" translate="ASD_XV"></th>
+            		<th><p style="text-align: justify;" translate="ASD_XVI"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">1</th>
-            		<td>DCU in battery mode</td>
+            		<td><p style="text-align: justify;" translate="ASD_XVII"></td>
             	</tr>
             	<tr>
             		<th scope="row">2</th>
-            		<td>DCU offline</td>
+            		<td><p style="text-align: justify;" translate="ASD_XVIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">3</th>
-            		<td>Incorrect login</td>
+            		<td><p style="text-align: justify;" translate="ASD_XIX"></td>
             	</tr>
             	<tr>
             		<th scope="row">4</th>
-            		<td>Command execution attempt without Login</td>
+            		<td><p style="text-align: justify;" translate="ASD_XX"></td>
             	</tr>
             	<tr>
             		<th scope="row">5</th>
-            		<td>Attempt to create new meter without login</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXI"></td>
             	</tr>
             	<tr>
             		<th scope="row">6</th>
-            		<td>Meter attempt to create without permission</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXII"></td>
             	</tr>
             	<tr>
             		<th scope="row">7</th>
-            		<td>Meter attempt removal without login</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">8</th>
-            		<td>Meter attempt removal without permission</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXIV"></td>
             	</tr>
             	<tr>
             		<th scope="row">9</th>
-            		<td>Attempt to upgrade without login</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXV"></td>
             	</tr>
             	<tr>
             		<th scope="row">10</th>
-            		<td>Attempt to upgrade without permission</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXVI"></td>
             	</tr>
             	<tr>
             		<th scope="row">11</th>
-            		<td>Failed upgrade</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXVII"></td>
             	</tr>
             	<tr>
             		<th scope="row">12</th>
-            		<td>Attempt to modify the configuration of the DCU wit...</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXVIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">13</th>
-            		<td>Attempt to modify the configuration of the DCU wit...</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXIX"></td>
             	</tr>
             	<tr>
             		<th scope="row">14</th>
-            		<td>Cabinet opening</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXX"></td>
             	</tr>
             	<tr>
             		<th scope="row">15</th>
-            		<td>Unknow</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXI"></td>
             	</tr>
             	<tr>
             		<th scope="row">16</th>
-            		<td>Critical comunication</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXII"></td>
             	</tr>
             </tbody>
 		</table>
 		<br>
-	<h5>List of alerts in the system</h5>
+	<p style="text-align: justify;" translate="ASD_XXXIII">
 		<br>
 		<table class="table table-striped">
         	<thead>
             	<tr>
-            		<th>CODE ALARM</th>
-            		<th>MEANING</th>
+            		<th><p style="text-align: justify;" translate="ASD_XV"></th>
+            		<th><p style="text-align: justify;" translate="ASD_XVI"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">1</th>
-            		<td>Reserved</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXIV"></td>
             	</tr>
             	<tr>
             		<th scope="row">12</th>
-            		<td>Reserved</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXV"></td>
             	</tr>
             	<tr>
             		<th scope="row">13</th>
-            		<td>Failure relay</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXVI"></td>
             	</tr>
             	<tr>
             		<th scope="row">15</th>
-            		<td>Overflowed value</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXVII"></td>
             	</tr>
             	<tr>
             		<th scope="row">23</th>
-            		<td>Failure real time clock</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXVIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">24</th>
-            		<td>Restoring real time clock</td>
+            		<td><p style="text-align: justify;" translate="ASD_XXXIX"></td>
             	</tr>
             	<tr>
             		<th scope="row">25</th>
-            		<td>Optical access port</td>
+            		<td><p style="text-align: justify;" translate="ASD_XL"></td>
             	</tr>
             	<tr>
             		<th scope="row">26</th>
-            		<td>Damaged measurement records</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLI"></td>
             	</tr>
             	<tr>
             		<th scope="row">27</th>
-            		<td>Reset events</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLII"></td>
             	</tr>
             	<tr>
             		<th scope="row">28</th>
-            		<td>External fault memory</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">29</th>
-            		<td>Internal fault memory</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLIV"></td>
             	</tr>
             	<tr>
             		<th scope="row">30</th>
-            		<td>Failure measurement</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLV"></td>
             	</tr>
             	<tr>
             		<th scope="row">31</th>
-            		<td>Reset settings</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLVI"></td>
             	</tr>
             	<tr>
             		<th scope="row">109</th>
-            		<td>Re-programming MODE</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLVII"></td>
             	</tr>
             	<tr>
             		<th scope="row">110</th>
-            		<td>Firmware update</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLVIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">111</th>
-            		<td>Re-programming of parameters</td>
+            		<td><p style="text-align: justify;" translate="ASD_XLIX"></td>
             	</tr>
             	<tr>
             		<th scope="row">112</th>
-            		<td>Resetting meter records</td>
+            		<td><p style="text-align: justify;" translate="ASD_L"></td>
             	</tr>
             	<tr>
             		<th scope="row">113</th>
-            		<td>Re-programming of date and time</td>
+            		<td><p style="text-align: justify;" translate="ASD_LI"></td>
             	</tr>
             	<tr>
             		<th scope="row">115</th>
-            		<td>Return voltage setpoint</td>
+            		<td><p style="text-align: justify;" translate="ASD_LII"></td>
             	</tr>
             	<tr>
             		<th scope="row">116</th>
-            		<td>Disconnect exhausted balance</td>
+            		<td><p style="text-align: justify;" translate="ASD_LIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">117</th>
-            		<td>Disconnection of service due command</td>
+            		<td><p style="text-align: justify;" translate="ASD_LIV"></td>
             	</tr>
             	<tr>
             		<th scope="row">118</th>
-            		<td>Power failure</td>
+            		<td><p style="text-align: justify;" translate="ASD_LV"></td>
             	</tr>
             	<tr>
             		<th scope="row">119</th>
-            		<td>Restoring power</td>
+            		<td><p style="text-align: justify;" translate="ASD_LVI"></td>
             	</tr>
             	<tr>
             		<th scope="row">120</th>
-            		<td>Demand exceeded alarm</td>
+            		<td><p style="text-align: justify;" translate="ASD_LVII"></td>
             	</tr>
             	<tr>
             		<th scope="row">121</th>
-            		<td>Retirement meter base</td>
+            		<td><p style="text-align: justify;" translate="ASD_LVIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">122</th>
-            		<td>Meter positioned correctly</td>
+            		<td><p style="text-align: justify;" translate="ASD_LIX"></td>
             	</tr>
             	<tr>
             		<th scope="row">123</th>
-            		<td>Disconnection for non-payment</td>
+            		<td><p style="text-align: justify;" translate="ASD_LX"></td>
             	</tr>
             	<tr>
             		<th scope="row">124</th>
-            		<td>Credit recharge successful</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXI"></td>
             	</tr>
             	<tr>
             		<th scope="row">125</th>
-            		<td>Alarm High Voltage</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXII"></td>
             	</tr>
             	<tr>
             		<th scope="row">126</th>
-            		<td>Alarm low voltage</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">127</th>
-            		<td>Reconnection of service user</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXIV"></td>
             	</tr>
             	<tr>
             		<th scope="row">128</th>
-            		<td>Meter with reversed position</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXV"></td>
             	</tr>
             	<tr>
             		<th scope="row">129</th>
-            		<td>Reverse energy flow</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXVI"></td>
             	</tr>
             	<tr>
             		<th scope="row">130</th>
-            		<td>Re-Connection by command</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXVII"></td>
             	</tr>
             	<tr>
             		<th scope="row">131</th>
-            		<td>Flow correct current</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXVIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">132</th>
-            		<td>Failure by buying credit</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXIX"></td>
             	</tr>
             	<tr>
             		<th scope="row">133</th>
-            		<td>Registration successful payment</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXX"></td>
             	</tr>
             	<tr>
             		<th scope="row">134</th>
-            		<td>Failure to pay registration</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXI"></td>
             	</tr>
             	<tr>
             		<th scope="row">135</th>
-            		<td>Disconnect user</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXII"></td>
             	</tr>
             	<tr>
             		<th scope="row">136</th>
-            		<td>Reconnection by buying credit</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">137</th>
-            		<td>Return of demand at nominal value</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXIV"></td>
             	</tr>
             	<tr>
             		<th scope="row">138</th>
-            		<td>Test mode activated</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXV"></td>
             	</tr>
             	<tr>
             		<th scope="row">139</th>
-            		<td>Phase bridged</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXVI"></td>
             	</tr>
             	<tr>
             		<th scope="row">140</th>
-            		<td>Bridged retirement phase</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXVII"></td>
             	</tr>
             	<tr>
             		<th scope="row">141</th>
-            		<td>Invalid password</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXVIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">142</th>
-            		<td>Reconnect remote port</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXIX"></td>
             	</tr>
             	<tr>
             		<th scope="row">143</th>
-            		<td>Reconnect optical port</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXX"></td>
             	</tr>
             	<tr>
             		<th scope="row">144</th>
-            		<td>Schedule change</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXI"></td>
             	</tr>
             	<tr>
             		<th scope="row">145</th>
-            		<td>Buffer full events</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXII"></td>
             	</tr>
             	<tr>
             		<th scope="row">146</th>
-            		<td>Remote shutdown port</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXIII"></td>
             	</tr>
             	<tr>
             		<th scope="row">147</th>
-            		<td>Reconnect optical port</td>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXIV"></td>
             	</tr>
             </tbody>
 		</table>
