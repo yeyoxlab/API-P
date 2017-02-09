@@ -1,4 +1,5 @@
- prot_api.controller('CtrlPrin',['$scope', '$route','$translate','serveData', function ($scope, $route,$translate,serveData) {
+ prot_api.controller('CtrlPrin',['$scope', '$route','$translate','serveData','$location','$anchorScroll', function (
+  $scope, $route,$translate,serveData,$location,$anchorScroll) {
     $scope.changeLanguage = function(key){
       $translate.use(key);
       
@@ -17,7 +18,15 @@
     };
     $scope.objetoP = serveData;
     
+    $scope.gotoBottom = function() {
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash('top1');
 
+      // call $anchorScroll()
+      $anchorScroll();
+      console.log("anghosa");
+    };
 
   }]);
 //más de lo mismo, pero en este caso creamos una variable llamada saludo y una función
