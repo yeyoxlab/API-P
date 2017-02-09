@@ -1,56 +1,55 @@
 <div class="col-md-11">
-	<h3>RESOURCE URL</h3>
+	<h1 translate="TITLE_UNO"></h1>
 		<p><ins>https://protcloud.com/api/v1/meters/state_relay</ins></p>
 		<br>
-	<h3>RESOURCE INFORMATION</h3>
+	<h1 translate="METERS_UNO"></h1>
 	<br>
-	<div class="table-responsive">
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>METHOD</th>
-            	<th>POST</th>
-           		</tr>
-          	</thead>
-          	<tbody>
-            	<tr>
-            		<th scope="row">RESPONSE FORMATS</th>
-            		<td>Encrypted with AES-128 ECB</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">DECRYPTED DATA</th>
-            		<td>JSON</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">REQUIRES AUTHENTICATION?</th>
-              		<td>YES</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">TYPE REQUEST</th>
-              		<td>DB</td>
-            	</tr>
-        	</tbody>
-		</table>
-	</div>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+        	    	<tr>
+    	    	    	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
+	            		<th><p style="text-align: justify;">POST</th>
+           			</tr>
+        	  	</thead>
+    	      	<tbody>
+	            	<tr>
+            			<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            			<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
+            		</tr>
+        	    	<tr>
+    	        		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+	            		<td><p style="text-align: justify;">JSON</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row"><p style="text-align: justify;" translate="METERS_CINCO"></th>
+        	      		<td><p style="text-align: justify;" translate="METERS_SEIS"></td>
+    	        	</tr>
+	            	<tr>
+              			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              			<td><p style="text-align: justify;">DB</td>
+            		</tr>
+        		</tbody>
+			</table>	
+		</div>
 	<br>
-	<h3>CONTENT DATA</h3>
+	<h1 translate="meters_b_1_I"></h1>
 	<br>
 	<div class="table-responsive">
 		<table class="table table-striped">
 			<tr>
-            	<th scope="row">SERIAL_NUMBER</th>
-            	<td>STRING ( LENGTH:6 UNIQUE ) </td>
+            	<th><p style="text-align: justify;" translate="meters_b_1_IV"></th>
+            	<td>STRING (LENGTH:6 UNIQUE)</td>
             </tr>
            	<tr>
-            	<th scope="row">STATE</th>
+            	<th><p style="text-align: justify;">STATE</th>
             	<td>BOOLEAN</td>
             </tr>
 		</table>
 	</div>
-	
 	<br>
-	<h3>REQUEST</h3>
-	
+	<h1 translate="METERS_OCHO"></h1>
+		<br>
 			<pre>
 POST /api/v1/meters/state_relay 
 HTTP/1.1
@@ -68,13 +67,10 @@ Content-Type: charset=utf-8
 Content-Disposition: form-data; name="DATA"
 [{"SERIAL_NUMBER":"ZX0003","STATE":false}] 
 ----WebKitFormBoundaryE19zNvXGzXaLvS5C
-
 			</pre>
-			
-	<br>
-	<br>
-		<h3>RESPONSE</h3>
-			<br>
+		<br>
+	<h1 translate="METERS_NUEVE"></h1>
+		<br>
 			<pre>
 HTTP/1.1 200 OK
 Date: Wed, 28 Oct 2015 15:15:10 GMT
@@ -92,17 +88,14 @@ Content-Type: application/json
 ymuenmw8A1f9gQGQAL4jnt546b0I3bKZQyLU\/U4daYs0hvmXhjIKllqgl6FOwPsjnUIzivFeEolF3YJuwnDsPg6VA
 Pb16K0G1qAQCTKUI4kjjoVWJaKsbmb0BwnyR8YchJKBUW3b440KDLRxEJZ9wQBHDiN9yK0xh4\/XkYYBZ8Z5xGxviw
 AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1JRl4hdTd..}
-			</pre>
-			
-	<br>
-	<br>
-		<h3>EXAMPLE INPOSTMAN:</h3>
+			</pre>			
 		<br>
-		
-		
+	<h1 translate="METERS_DIEZ"></h1>
 		<br>
-		<h3>JSON reponse with an Array with an object for each meter</h3>
-		<br>
+		<p>Falta imagen
+			<br>
+				<p style="text-align: justify;" translate="m_s_r_I">
+			<br>
 		<pre>[
 	{
 	    "RESULT": true,
@@ -117,39 +110,38 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
 ]
 		</pre>
 		<br>
-		</pre>
 			<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
+            		<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">RESULT</th>
-            		<td>RESULT OF A SUCCESFUL TRANSACTION</td>
+            		<td><p style="text-align: justify;" translate="m_s_r_II"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
             		<th scope="row">SERIAL_NUMBER</th>
-            		<td>UID OF NEW SMART METER</td>
+            		<td><p style="text-align: justify;" translate="m_s_r_III"></td>
             		<td>STRING</td>
             		<td>Variable ( length:6 )</td>
             	</tr>
             	<tr>
             		<th scope="row">TICKET</th>
-            		<td>TICKET OF TRANSACTION</td>
+            		<td><p style="text-align: justify;" translate="m_s_r_IV"></td>
             		<td>INTEGER</td>
             		<td> > 0 </td>
             	</tr>
         	</tbody>
 		</table>
 		<br>
-		<h3>Or an error with the description</h3>
+		<p style="text-align: justify;" translate="meters_b_1_XI">
 		<br>
 		<pre>[
 {
@@ -159,43 +151,45 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
 	"ERROR":"METER NO FOUND"
 }
 ]
-		</pre>
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
-           		</tr>
-          	</thead>
-          	<tbody>
-            	<tr>
-            		<th scope="row">RESULT</th>
-            		<td>Error in transaction</td>
-            		<td>BOOLEAN</td>
-            		<td>False</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">ERROR_CODE</th>
-            		<td>Unique error detect</td>
-            		<td>INTEGER</td>
-            		<td> > 0, 1, 2, 3..., N</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">ERROR</th>
-            		<td>Description of error</td>
-            		<td>STRING</td>
-            		<td> </td>
-            	</tr>
-            	<tr>
-            		<th scope="row">SERIAL_NUMBER</th>
-            		<td>UID of new smart meter</td>
-            		<td>STRING</td>
-            		<td>Variable ( length:6 )</td>
-            	</tr>
-        	</tbody>
-		</table>	
+	</pre>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
+           			</tr>
+          		</thead>
+          		<tbody>
+            		<tr>
+            			<th scope="row">RESULT</th>
+            			<td><p style="text-align: justify;" translate="METERS_DIECISIETE"></td>
+            			<td>BOOLEAN</td>
+            			<td>True, False</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">ERROR_CODE</th>
+            			<td><p style="text-align: justify;" translate="METERS_DIECIOCHO"></td>
+            			<td>INTEGER</td>
+            			<td> > 0, 1, 2, 3..., N</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row">ERROR</th>
+              			<td><p style="text-align: justify;" translate="METERS_DIECINUEVE"></td>
+              			<td>STRING</td>
+              			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">SERIAL_NUMBER</th>
+            			<td><p style="text-align: justify;" translate="m_s_r_V"></td>
+            			<td>STRING</td>
+            			<td>Variable ( length:6 )</td>
+            		</tr>
+        		</tbody>
+			</table>
+		</div>
 	<br>
 </div>
 <div class="col-md-1">

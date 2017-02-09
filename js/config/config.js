@@ -11,31 +11,44 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		controller : "appController"		
 	}).when("/login", {
 		templateUrl : "templates/login.html",
-	}).when("/version", {
+	})
+	.when("/version", {
 		templateUrl : "templates/version.html",
-	}).when("/meters", {
+	})
+	.when("/meters", {
 		templateUrl : "templates/meters.html",
-	}).when("/meters_less", {
+	})
+	.when("/meters_less", {
 		templateUrl : "templates/meters_less.html",
-	}).when("/meters_search", {
+	})
+	.when("/meters_search", {
 		templateUrl : "templates/meters_search.html",
-	}).when("/meters_search_less", {
+	})
+	.when("/meters_search_less", {
 		templateUrl : "templates/meters_search_less.html",
-	}).when("/meters_", {
+	})
+	.when("/meters_", {
 		templateUrl : "templates/meters_.html",
-	}).when("/meters_b_less", {
+	})
+	.when("/meters_b", {
 		templateUrl : "templates/meters_b_less.html",
-	}).when("/meters_2", {
+	})
+	.when("/meters_2", {
 		templateUrl : "templates/meters_2.html",
-	}).when("/meters_b_1", {
+	})
+	.when("/meters_b_1", {
 		templateUrl : "templates/meters_b_1.html",
-	}).when("/meters_b_2", {
+	})
+	.when("/meters_b_2", {
 		templateUrl : "templates/meters_b_2.html",
-	}).when("/meters_state_relay", {
+	})
+	.when("/meters_state_relay", {
 		templateUrl : "templates/meters_state_relay.html",
-	}).when("/meters_reset_meter", {
+	})
+	.when("/meters_reset_meter", {
 		templateUrl : "templates/meters_reset_meter.html",
-	}).when("/alarms_startDate_endDate", {
+	})
+	.when("/alarms_startDate_endDate", {
 		templateUrl : "templates/alarms_startDate_endDate.html",
 	
 	})
@@ -219,6 +232,123 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'LESS_S_IV' : 'Indicates state of relay',
 			'LESS_S_V' : 'Indicates the status of mesure voltaje',
 			
+			//meters_
+			'meters_I' : 'CONTENT DATA',
+			'meters_II' : 'ADDRESS',
+			'meters_III' : 'MAC',
+			'meters_IV' : 'SERIAL_NUMBER',
+			'meters_V' : 'TYPE_PROTOCOL',
+			'meters_VI' : 'TYPE_ZB_PROTOCOL',
+			'meters_VII' : 'TYPE_METER',
+			'meters_VIII' : 'Json Response',
+			'meters_IX' : 'RESULT OF A SUCCESFUL TRANSACTION',
+			'meters_X' : 'UID OF NEW SMART METER',
+			'meters_XI' : 'Or an error with the description',
+			//meters_b_1
+			'meters_b_1_I' : 'CONTENT DATA',
+			'meters_b_1_II' : 'SLOT',
+			'meters_b_1_III' : 'TYPE_METER',
+			'meters_b_1_IV' : 'SERIAL_NUMBER',
+			'meters_b_1_V' : 'CODE_METER',
+			'meters_b_1_VI' : 'MAC',
+			'meters_b_1_VII' : 'ADDRESS',
+			'meters_b_1_VIII' : 'LATITUDE',
+			'meters_b_1_IX' : 'LONGITUDE',
+			'meters_b_1_X' : 'RESULT OF A SUCCESFUL TRANSACTION',
+			'meters_b_1_XI' : 'Or an error with the description',
+			//meters_state_relay
+			'm_s_r_I' : 'JSON response with an Array with an object for each meter',
+			'm_s_r_II' : 'RESULT OF A SUCCESFUL TRANSACTION',
+			'm_s_r_III' : 'UID OF NEW SMART METER',
+			'm_s_r_IV' : 'TICKET OF TRANSACTION',
+			'm_s_r_V' : 'UID of new smart meter',
+			// meters/reset_meter
+			'm_r_m_I':'Note: If applicable option 2 was restoring meter settings, decimal values will by automatic zero.',
+			//alarms?startDate=?&endDate
+			'ASD_I':'JSON response with an Array with an object for each alarm, there are two different type of alarm, meter alarm and system alarm:',
+			'ASD_II':'An alert system has the following structure: ',
+			'ASD_III':'indicates the type of alarm',
+			'ASD_IV':'Unique code for identifying alert',
+			'ASD_V':'Timestamp of alert with Mysql format',
+			'ASD_VI':'Note: The types of alarms are: meter or DCU',
+			'ASD_VII':'An alert meter has the following structure:',
+			'ASD_VIII':'Indicates the type of alarm',
+			'ASD_IX':'Serial number of meter',
+			'ASD_X':'Unique code for identifying alert',
+			'ASD_XI':'Timestamp of alert with Mysql format',
+			'ASD_XII':'Consumption stamping',
+			'ASD_XIII':'Note: The types of alarms are: meter or DCU',
+			'ASD_XIV':'List of alerts in the system',
+			'ASD_XV':'CODE ALARM',
+			'ASD_XVI':'MEANING',
+			'ASD_XVII':'DCU in battery mode',
+			'ASD_XVIII':'DCU offline',
+			'ASD_XIX':'Incorrect login',
+			'ASD_XX':'Command execution attempt without Login',
+			'ASD_XXI':'Attempt to create new meter without login',
+			'ASD_XXII':'Meter attempt to create without permission',
+			'ASD_XXIII':'Meter attempt removal without login',
+			'ASD_XXIV':'Meter attempt removal without permission',
+			'ASD_XXV':'Attempt to upgrade without login',
+			'ASD_XXVI':'Attempt to upgrade without permission',
+			'ASD_XXVII':'Failed upgrade',
+			'ASD_XXVIII':'Attempt to modify the configuration of the DCU wit...',
+			'ASD_XXIX':'Attempt to modify the configuration of the DCU wit...',
+			'ASD_XXX':'Cabinet opening',
+			'ASD_XXXI':'Unknow',
+			'ASD_XXXII':'Critical comunication',
+			'ASD_XXXIII':'List of alerts in the system',
+			'ASD_XXXIV':'Reserved',
+			'ASD_XXXV':'Reserved',
+			'ASD_XXXVI':'Failure relay',
+			'ASD_XXXVII':'Overflowed value',
+			'ASD_XXXVIII':'Failure real time clock',
+			'ASD_XXXIX':'Restoring real time clock',
+			'ASD_XL':'Optical access port',
+			'ASD_XLI':'Damaged measurement records',
+			'ASD_XLII':'Reset events',
+			'ASD_XLIII':'External fault memory',
+			'ASD_XLIV':'Internal fault memory',
+			'ASD_XLV':'Failure measurement',
+			'ASD_XLVI':'Reset settings',
+			'ASD_XLVII':'Re-programming MODE',
+			'ASD_XLVIII':'Firmware update',
+			'ASD_XLIX':'Re-programming of parameters',
+			'ASD_L':'Resetting meter records',
+			'ASD_LI':'Re-programming of date and time',
+			'ASD_LII':'Return voltage setpoint',
+			'ASD_LIII':'Disconnect exhausted balance',
+			'ASD_LIV':'Disconnection of service due command',
+			'ASD_LV':'Power failure',
+			'ASD_LVI':'Restoring power',
+			'ASD_LVII':'Demand exceeded alarm',
+			'ASD_LVIII':'Retirement meter base',
+			'ASD_LIX':'Meter positioned correctly',
+			'ASD_LX':'Disconnection for non-payment',
+			'ASD_LXI':'Credit recharge successful',
+			'ASD_LXII':'Alarm High Voltage',
+			'ASD_LXIII':'Alarm low voltage',
+			'ASD_LXIV':'Reconnection of service user',
+			'ASD_LXV':'Meter with reversed position',
+			'ASD_LXVI':'Reverse energy flow',
+			'ASD_LXVII':'Re-Connection by command',
+			'ASD_LXVIII':'Flow correct current',
+			'ASD_LXIX':'Failure by buying credit',
+			'ASD_LXX':'Registration successful payment',
+			'ASD_LXXI':'Failure to pay registration',
+			'ASD_LXXII':'Disconnect user',
+			'ASD_LXXIII':'Reconnection by buying credit',
+			'ASD_LXXIV':'Return of demand at nominal value',
+			'ASD_LXXV':'Test mode activated',
+			'ASD_LXXVI':'Phase bridged',
+			'ASD_LXXVII':'Bridged retirement phase',
+			'ASD_LXXVIII':'Invalid password',
+			'ASD_LXXIX':'Reconnect remote port',
+			'ASD_LXXX':'Reconnect optical port',
+			'ASD_LXXXI':'Schedule change',
+			'ASD_LXXXII':'Buffer full events',
+			'ASD_LXXXIII':'Remote shutdown port',
+			'ASD_LXXXIV':'Reconnect optical port',
 			
 			
 	});
@@ -385,7 +515,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		//meters/search/?
 		'METERSEARCH_I' : 'PARAMETROS URL',
 		'METERSEARCH_II' : 'MEDIDOR DE IDENTIFICACIÓN ÚNICA',
-		'METERSEARCH_III' : 'ENTERO',
+		'METERSEARCH_III' : 'INTEGER',
 		'METERSEARCH_IV' : 'O',
 		'METERSEARCH_V' : 'NÚMERO DE SERIE',
 		'METERSEARCH_VI' : 'STRING',
@@ -397,6 +527,125 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LESS_S_IV' : 'Indica el estado del Relay',
 		'LESS_S_V' : 'Indica el estado del voltaje de medición',
 		
+		//meters_
+		'meters_I' : 'DATOS DE CONTENIDO',
+		'meters_II' : 'DIRECCIÓN',
+		'meters_III' : 'MAC',
+		'meters_IV' : 'NÚMERO DE SERIE',
+		'meters_V' : 'TIPO DE PROTOCOLO',
+		'meters_VI' : 'TIPO ZB PROTOCOLO',
+		'meters_VII' : 'TIPO DE MEDIDOR',
+		'meters_VIII' : 'Respuesta de JSON',
+		'meters_IX' : 'Resultado de una transacción exitosa',
+		'meters_X' : 'UID de nuevo medidor inteligente',
+		'meters_XI' : 'O un error con la descripción',
+		//meters_b_1
+		'meters_b_1_I' : 'Datos del contenido',
+		'meters_b_1_II' : 'Espacio',
+		'meters_b_1_III' : 'Medidor de Tipo',
+		'meters_b_1_IV' : 'Número de Serie',
+		'meters_b_1_V' : 'Codigo de medidor',
+		'meters_b_1_VI' : 'MAC',
+		'meters_b_1_VII' : 'Dirección',
+		'meters_b_1_VIII' : 'Latitud',
+		'meters_b_1_IX' : 'Longitud',
+		'meters_b_1_X' : 'RESULTADO DE UNA TRANSACCIÓN EXITOSA',
+		'meters_b_1_XI' : 'O un error con la descripción',
+		//meters_state_relay
+		'm_s_r_I' : 'JSON respuesta con un Array con un objeto para cada metro',
+		'm_s_r_II' : 'Resultado de una transacción exitosa',
+		'm_s_r_III' : 'UID de nuevo medidor inteligente',
+		'm_s_r_IV' : 'Boleto de Transacción',
+		'm_s_r_V' : 'UID de nuevo medidor inteligente',
+		// meters/reset_meter
+		'm_r_m_I':'Nota: Si procede, la opción 2 restauraba la configuración del medidor, los valores decimales se harían por cero automático',
+		//
+		//alarms?startDate=?&endDate
+		'ASD_I':'JSON respuesta con un Array con un objeto para cada alarma, hay dos tipos diferentes de alarma, alarma del medidor y alarma del sistema',
+		'ASD_II':'Un sistema de alerta tiene la siguiente estructura:',
+		'ASD_III':'Indica el tipo de alarma',
+		'ASD_IV':'Código único para identificar la alerta',
+		'ASD_V':'Timestamp de alerta con formato Mysql',
+		'ASD_VI':'Nota: los tipos de alarmas son: metro o DCU',
+		'ASD_VII':'Un medidor de alerta tiene la siguiente estructura',
+		'ASD_VIII':'Indica el tipo de alarma',
+		'ASD_IX':'Número de serie del medidor',
+		'ASD_X':'Código único para identificar la alerta',
+		'ASD_XI':'Timestamp de alerta con formato Mysql',
+		'ASD_XII':'Estampado de consumo',
+		'ASD_XIII':'Nota: los tipos de alarmas son: metro o DCU',
+		'ASD_XIV':'Lista de alertas en el sistema',
+		'ASD_XV':'Alarma de código',
+		'ASD_XVI':'Significado',
+		'ASD_XVII':'DCU en modo de bateria',
+		
+		'ASD_XVIII':'DCU sin conexión',
+		'ASD_XIX':'Login incorrecto',
+		'ASD_XX':'Intento de ejecución de comandos sin iniciar sesión',
+		'ASD_XXI':'Intento de crear un nuevo medidor sin iniciar conexión ',
+		'ASD_XXII':'Medidor intente crear sin permiso',
+		'ASD_XXIII':'Eliminación del intento del medidor sin iniciar sesión',
+		'ASD_XXIV':'Intento de eliminación del medidor sin permiso',
+		'ASD_XXV':'Intentar actualizar sin iniciar sesión',
+		'ASD_XXVI':'Intento de actualización sin permiso',
+		'ASD_XXVII':'Error de actualización',
+		'ASD_XXVIII':'Intenta modificar la configuracion de la DCU con...',
+		'ASD_XXIX':'Intenta modificar la configuracion de la DCU con...',
+		'ASD_XXX':'Apertura del gabinete',
+		'ASD_XXXI':'Desconocido',
+		'ASD_XXXII':'Comunicación crítica',
+		'ASD_XXXIII':'Lista de alertas en el sistema',
+		'ASD_XXXIV':'Reservado',
+		'ASD_XXXV':'Reservado',
+		'ASD_XXXVI':'Fallo de Relay',
+		'ASD_XXXVII':'Valor desbordado',
+		'ASD_XXXVIII':'Error en el tiempo real',
+		'ASD_XXXIX':'Restauración del reloj en tiempo real',
+		'ASD_XL':'Puerto de acceso optico',
+		'ASD_XLI':'Registros de medición dañados',
+		'ASD_XLII':'Restablecer eventos',
+		'ASD_XLIII':'Memoria de fallos externos',
+		'ASD_XLIV':'Memoria de fallos internos',
+		'ASD_XLV':'Medición de fallos',
+		'ASD_XLVI':'Reiniciar ajustes',
+		'ASD_XLVII':'Reprogramación de modalidad',
+		'ASD_XLVIII':'Actializacion de Firmware',
+		'ASD_XLIX':'Reprogramación de parámetros',
+		'ASD_L':'Restablecimiento de registros de medidores',
+		'ASD_LI':'Reprogramacion de fecha y hora',
+		'ASD_LII':'Consigna de voltage de retorno',
+		'ASD_LIII':'Desconectar el equilibrio agotado',
+		'ASD_LIV':'Desconexión del servicio debido comando',
+		'ASD_LV':'Fallo de alimentacion',
+		'ASD_LVI':'Restauración de la energía',
+		'ASD_LVII':'Demanda superada alarma',
+		'ASD_LVIII':'Base del medidor de jubilación',
+		'ASD_LIX':'Medidor colocado correctamente',
+		'ASD_LX':'Desconexión por falta de pago',
+		'ASD_LXI':'Recargs de credito exitosa',
+		'ASD_LXII':'Alarma de alto voltaje',
+		'ASD_LXIII':'Alarma de baja tensión',
+		'ASD_LXIV':'Reconexión del usuario del servicio',
+		'ASD_LXV':'Medidor con posición invertida',
+		'ASD_LXVI':'Flujo inverso de energía',
+		'ASD_LXVII':'Reconexión por comando',
+		'ASD_LXVIII':'Corriente correcta de flujo',
+		'ASD_LXIX':'Error al comprar codigo',
+		'ASD_LXX':'Registro de pago exitoso',
+		'ASD_LXXI':'Falta de pago del registro',
+		'ASD_LXXII':'Desconectar usuario',
+		'ASD_LXXIII':'Reconexión mediante la compra de crédito',
+		'ASD_LXXIV':'Retorno de la demanda al valor nominal',
+		'ASD_LXXV':'Modo de prueba activo',
+		'ASD_LXXVI':'Fase puenteada',
+		'ASD_LXXVII':'Etapa de retiro en puente',
+		'ASD_LXXVIII':'Contraseña invalida',
+		'ASD_LXXIX':'Reconectar el puerto remoto',
+		'ASD_LXXX':'Vuelva a conectar el puerto óptico',
+		'ASD_LXXXI':'Cambio de horario',
+		'ASD_LXXXII':'REgulador de eventos completos',
+		'ASD_LXXXIII':'Puerto de apagado remoto',
+		'ASD_LXXXIV':'Vuelva a conectar el puerto óptico',
 		
 
 	});
@@ -407,25 +656,3 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	
 	
 });
- prot_api.controller('CtrlPrin',['$scope', '$route','$translate','serveData', function ($scope, $route,$translate,serveData) {
-    $scope.changeLanguage = function(key){
-      $translate.use(key);
-      
-      $scope.objetoP.lan =key ;
-      if(key=="es"){
-
-      	$scope.objetoP.lan=key;
-      }else if(key=="en"){
-
-      	$scope.objetoP.lan=key;
-      }
-
-      //console.log($scope.objetoP.qty);
-      $route.reload();
-        console.log($scope.form_name) //to ensure scope is updating
-    };
-    $scope.objetoP = serveData;
-    
-
-
-  }]);

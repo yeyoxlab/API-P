@@ -4,99 +4,98 @@
 		<p><ins>https://protcloud.com/api/v1/meters/?</ins></p>
 		<br>
 	<h1 translate="METERS_UNO"></h1>
-	<br>
-	<div class="table-responsive">
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>METHOD</th>
-            	<th>PUT</th>
-           		</tr>
-          	</thead>
-          	<tbody>
-            	<tr>
-            		<th scope="row">RESPONSE FORMATS</th>
-            		<td>Encrypted with AES-128 ECB</td>
-            	</tr>
-            	<tr>
-            		<th scope="row">DECRYPTED DATA</th>
-            		<td>JSON</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">REQUIRES AUTHENTICATION?</th>
-              		<td>YES</td>
-            	</tr>
-            	<tr>
-              		<th scope="row">TYPE REQUEST</th>
-              		<td>DB</td>
-            	</tr>
-        	</tbody>
-		</table>
-	</div>
-	<br>
-	<h3>RPARAMETERS URL</h3>
 		<br>
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>UNIQUE ID METER</th>
-            	<th>INTEGER</th>
-           		</tr>
-          	</thead>
-		</table>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+        	    	<tr>
+    	    	    	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
+	            		<th><p style="text-align: justify;">PUT</th>
+           			</tr>
+        	  	</thead>
+    	      	<tbody>
+	            	<tr>
+            			<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            			<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
+            		</tr>
+        	    	<tr>
+    	        		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+	            		<td><p style="text-align: justify;">JSON</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row"><p style="text-align: justify;" translate="METERS_CINCO"></th>
+        	      		<td><p style="text-align: justify;" translate="METERS_SEIS"></td>
+    	        	</tr>
+	            	<tr>
+              			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              			<td><p style="text-align: justify;">DB</td>
+            		</tr>
+        		</tbody>
+			</table>
+		</div>
 		<br>
-		<h5>OR</h5>
+	<h1 translate="METERSEARCH_I"></h1>
 		<br>
-		<table class="table table-striped">
-        	<thead>
-            	<tr>
-            	<th>SERIAL NUMBER</th>
-            	<th>STRING</th>
-           		</tr>
-          	</thead>
-		</table>
-		<br>
-	<h3>CONTENT DATA</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_II"></th>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_III"></th>
+           			</tr>
+          		</thead>
+			</table>
+		</div>
+		<p style="text-align: justify;" translate="METERSEARCH_IV">
+		<div class="table-responsive">
+			<table class="table table-striped">
+    	    	<thead>
+        	    	<tr>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_V"></th>
+            			<th><p style="text-align: justify;" translate="METERSEARCH_VI"></th>
+           			</tr>
+        	  	</thead>
+			</table>
+		</div>
+	<h1 translate="meters_b_1_I"></h1>
 		<br>
 		<table class="table table-striped">
            	<tr>
-            	<th>SLOT</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_II"></th>
             	<td>INTEGER (1,2,3,...,24)</td>
        		</tr>
        		<tr>
-            	<th>TYPE_METER</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_III"></th>
             	<td>STRING (1S, 2S, 12S, 16S)</td>
        		</tr>
        		<tr>
-            	<th>SERIAL_NUMBER</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_IV"></th>
             	<td>STRING (LENGTH:6 UNIQUE)</td>
        		</tr>
        		<tr>
-            	<th>CODE_METER</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_V"></th>
             	<td>STRING (LENGTH:4)</td>
        		</tr>
        		<tr>
-            	<th>MAC</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_VI"></th>
             	<td>STRING (LENGTH:6 UNIQUE)</td>
        		</tr>
        		<tr>
-            	<th>ADDRESS</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_VII"></th>
             	<td>STRING (LENGTH:4)</td>
        		</tr>
        		<tr>
-            	<th>LATITUDE</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_VIII"></th>
             	<td>STRING (LENGTH:10)</td>
        		</tr>
        		<tr>
-            	<th>LONGITUDE</th>
+            	<th><p style="text-align: justify;" translate="meters_b_1_IX"></th>
             	<td>STRING (LENGTH:10)</td>
        		</tr>
 		</table>
 		<br>
-	
-	
-	<h3>REQUEST</h3>
-	<br>
+	<h1 translate="METERS_OCHO"></h1>
+		<br>
 			<pre>
 PUT /api/v1/meters/1 
 HTTP/1.1
@@ -111,10 +110,11 @@ Cache-Control: no-cache
 Content-Type: charset=utf-8
 Content-Type: application/x-www-form-urlencoded
 
-DATA=%7B+%22CODE_METER%22%3A+%22F12H%22%2C%09%22LATITUDE%22%3A+%2220.555052%22%2C+%22LONGITUDE%22%3A+%22-100.269316%22%7D
+DATA=%7B+%22CODE_METER%22%3A+%22F12H%22%2C%09%22LATITUDE%22%3A+%2220.555052%22%2C+%22LONGITUD
+E%22%3A+%22-100.269316%22%7D
 			</pre>
 		<br>
-	<h3>RESPONSE</h3>
+	<h1 translate="METERS_NUEVE"></h1>
 		<br>
 			<pre>
 HTTP/1.1 200 OK
@@ -130,11 +130,13 @@ Content-Type: application/json
 {"PAYLOAD": "KfJ70rtV7t3YrR0IpcCGinGMfNB7SG3ULeHHGoof0UQ="}
 			</pre>
 	<br>
-		<h3>EXAMPLE IN POSTMAN</h3>
-		<br>
+		<h1 translate="METERS_DIEZ"></h1>
 		
 		<br>
-		<p>JSON response</p>
+		<p>Falta imagen
+		<br>
+		<p style="text-align: justify;" translate="meters_VIII">
+		
 		<br>
 		<pre>{  
    "RESULT": true
@@ -144,23 +146,23 @@ Content-Type: application/json
 			<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
+            		<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">RESULT</th>
-            		<td>RESULT OF A SUCCESFUL TRANSACTION</td>
+            		<td><p style="text-align: justify;" translate="meters_b_1_X"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
         	</tbody>
 		</table>
 		<br>
-		<p>Or an error with the description</p>
+		<p style="text-align: justify;" translate="meters_b_1_XI">
 		<br>
 		<pre>{  
    "RESULT": false,
@@ -172,33 +174,33 @@ Content-Type: application/json
 		<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
+            	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">RESULT</th>
-            		<td>Error in transaction</td>
+            		<td><p style="text-align: justify;" translate="METERS_DIECISIETE"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
             		<th scope="row">ERROR_CODE</th>
-            		<td>Unique error detect</td>
+            		<td><p style="text-align: justify;" translate="METERS_DIECIOCHO"></td>
             		<td>INTEGER</td>
             		<td> > 0, 1, 2, 3..., N</td>
             	</tr>
             	<tr>
-            		<th scope="row">ERROR</th>
-            		<td>Description of error</td>
-            		<td>STRING</td>
-            		<td></td>
+              		<th scope="row">ERROR</th>
+              		<td><p style="text-align: justify;" translate="METERS_DIECINUEVE"></td>
+              		<td>STRING</td>
+              		<td></td>
             	</tr>
         	</tbody>
-		</table>
+		</table>	
 </div>
 <div class="col-md-1">
 </div>
