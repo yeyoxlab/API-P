@@ -2,6 +2,13 @@
 <div ng-controller="appController">
 <div class="table-responsive" > 
 <h1 translate="LOAA_TITTLE"></h1>
+<br>
+
+  <div class="large-12 columns" style="float: right;">
+    <label> Búsqueda: </label>
+    <input type="text" ng-model="buscador" />
+  </div>
+
   <br>
 	<table class="table table-striped" class="table table-condensed">
           <thead>
@@ -12,7 +19,7 @@
               </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="x in myData">
+            <tr ng-repeat="x in myData | filter:buscador">
               <th scope="row">{{ x.Method }}</th>
               <td><a href="" style="color: red">{{ x.URL }}</a></td>
               <td class="txtAction">{{ x.Action}}</td>
