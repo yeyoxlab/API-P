@@ -51,7 +51,26 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	.when("/alarms_startDate_endDate", {
 		templateUrl : "templates/alarms_startDate_endDate.html",
 	
+	}).when("/alarms_num_serie", {
+		templateUrl : "templates/alarms_num_serie.html",
+	
+	}).when("/alarms_SD_ED_NS", {
+		templateUrl : "templates/alarms_SD_ED_NS.html",
+	
+	}).when("/alarms_SD_ED_Limit", {
+		templateUrl : "templates/alarms_SD_ED_Limit.html",
+	
+	}).when("/alarms_SD_ED_LT_READ", {
+		templateUrl : "templates/alarms_SD_ED_LT_READ.html",
+	
+	}).when("/system", {
+		templateUrl : "templates/system.html",
+	
+	}).when("/system_less", {
+		templateUrl : "templates/system_less.html",
+	
 	})
+	
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
 	.otherwise({ reditrectTo : "/" });
@@ -297,7 +316,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'ASD_XXX':'Cabinet opening',
 			'ASD_XXXI':'Unknow',
 			'ASD_XXXII':'Critical comunication',
-			'ASD_XXXIII':'List of alerts in the system',
+			'ASD_XXXIII':'List of alerts in the meter',
 			'ASD_XXXIV':'Reserved',
 			'ASD_XXXV':'Reserved',
 			'ASD_XXXVI':'Failure relay',
@@ -349,6 +368,30 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'ASD_LXXXII':'Buffer full events',
 			'ASD_LXXXIII':'Remote shutdown port',
 			'ASD_LXXXIV':'Reconnect optical port',
+			//alarms_num_serie
+			'ANS_I':'Note: The type alarms is of meter',
+			//System
+			'system_I':'UID of data concentrator unit',
+			'system_II':'Id name of data concentrator unit',
+			'system_III':'Timestamp of data',
+			'system_IV':'Cpu usage (%)',
+			'system_V':'Ram usage (%)',
+			'system_VI':'Hdd usage (%)',
+			'system_VII':'Total ram (Gb)',
+			'system_VIII':'Total space available (Gb)',
+			'system_IX':'Model of data concentrator unit',
+			'system_X':'Type of architecture',
+			'system_XI':'System release',
+			'system_XII':'System version',
+			'system_XIII':'Number of meters available',
+			'system_XIV':'Number of meters not available',
+			'system_XV':'Time polling',
+			'system_XVI':'Time to update system',
+			'system_XVII':'During  last time polling',
+			'system_XVIII':'Name of firmware',
+			//System/less
+			'SL_I':'Availability of system',
+			'SL_II':'Status of battery',
 			
 			
 	});
@@ -552,33 +595,31 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'meters_b_1_X' : 'RESULTADO DE UNA TRANSACCIÓN EXITOSA',
 		'meters_b_1_XI' : 'O un error con la descripción',
 		//meters_state_relay
-		'm_s_r_I' : 'JSON respuesta con un Array con un objeto para cada metro',
+		'm_s_r_I' : 'JSON respuesta con un Array con un objeto para cada Medidor',
 		'm_s_r_II' : 'Resultado de una transacción exitosa',
 		'm_s_r_III' : 'UID de nuevo medidor inteligente',
 		'm_s_r_IV' : 'Boleto de Transacción',
 		'm_s_r_V' : 'UID de nuevo medidor inteligente',
 		// meters/reset_meter
 		'm_r_m_I':'Nota: Si procede, la opción 2 restauraba la configuración del medidor, los valores decimales se harían por cero automático',
-		//
 		//alarms?startDate=?&endDate
 		'ASD_I':'JSON respuesta con un Array con un objeto para cada alarma, hay dos tipos diferentes de alarma, alarma del medidor y alarma del sistema',
 		'ASD_II':'Un sistema de alerta tiene la siguiente estructura:',
 		'ASD_III':'Indica el tipo de alarma',
 		'ASD_IV':'Código único para identificar la alerta',
 		'ASD_V':'Timestamp de alerta con formato Mysql',
-		'ASD_VI':'Nota: los tipos de alarmas son: metro o DCU',
+		'ASD_VI':'Nota: los tipos de alarmas son: Medidor o DCU',
 		'ASD_VII':'Un medidor de alerta tiene la siguiente estructura',
 		'ASD_VIII':'Indica el tipo de alarma',
 		'ASD_IX':'Número de serie del medidor',
 		'ASD_X':'Código único para identificar la alerta',
 		'ASD_XI':'Timestamp de alerta con formato Mysql',
 		'ASD_XII':'Estampado de consumo',
-		'ASD_XIII':'Nota: los tipos de alarmas son: metro o DCU',
+		'ASD_XIII':'Nota: los tipos de alarmas son: Medidor o DCU',
 		'ASD_XIV':'Lista de alertas en el sistema',
 		'ASD_XV':'Alarma de código',
 		'ASD_XVI':'Significado',
 		'ASD_XVII':'DCU en modo de bateria',
-		
 		'ASD_XVIII':'DCU sin conexión',
 		'ASD_XIX':'Login incorrecto',
 		'ASD_XX':'Intento de ejecución de comandos sin iniciar sesión',
@@ -594,7 +635,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'ASD_XXX':'Apertura del gabinete',
 		'ASD_XXXI':'Desconocido',
 		'ASD_XXXII':'Comunicación crítica',
-		'ASD_XXXIII':'Lista de alertas en el sistema',
+		'ASD_XXXIII':'Lista de alertas en el Medidor',
 		'ASD_XXXIV':'Reservado',
 		'ASD_XXXV':'Reservado',
 		'ASD_XXXVI':'Fallo de Relay',
@@ -643,10 +684,33 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'ASD_LXXIX':'Reconectar el puerto remoto',
 		'ASD_LXXX':'Vuelva a conectar el puerto óptico',
 		'ASD_LXXXI':'Cambio de horario',
-		'ASD_LXXXII':'REgulador de eventos completos',
+		'ASD_LXXXII':'Regulador de eventos completos',
 		'ASD_LXXXIII':'Puerto de apagado remoto',
 		'ASD_LXXXIV':'Vuelva a conectar el puerto óptico',
-		
+		//alarms_num_serie
+		'ANS_I':'Nota: El tipo de alarmas es de medidor',
+		//System
+		'system_I':'UID del concentrador de datos',
+		'system_II':'Nombre de identificación de la unidad concentradora de datos',
+		'system_III':'Fecha y hora de los datos',
+		'system_IV':'Uso de CPU (%)',
+		'system_V':'Uso de RAM (%)',
+		'system_VI':'Uso de HDD (%)',
+		'system_VII':'Total ram (Gb)',
+		'system_VIII':'Total de espacio disponible(Gb)',
+		'system_IX':'Modelo de concentrador de datos',
+		'system_X':'Tipo de arquitectura',
+		'system_XI':'Liberación del sistema',
+		'system_XII':'Versión del sistema',
+		'system_XIII':'Número de metros disponibles',
+		'system_XIV':'Número de metros no disponibles',
+		'system_XV':'Tiempo de votación',
+		'system_XVI':'Tiempo para actualizar el sistema',
+		'system_XVII':'Durante el último sondeo',
+		'system_XVIII':'Nombre del firmware',
+		//System/less
+		'SL_I':'Disponibilidad del sistema',
+		'SL_II':'Estado de la batería',
 
 	});
 	$translateProvider.preferredLanguage('es');

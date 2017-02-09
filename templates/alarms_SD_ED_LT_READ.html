@@ -1,7 +1,7 @@
 <div class="col-md-11">
 	<h1 translate="TITLE_UNO"></h1>
 		<br>
-		<p><ins>https://protcloud.com/api/v1/alarms?startDate=?&endDate</ins></p>
+		<p><ins>https://protcloud.com/api/v1/alarms?startDate=?&endDate=?limit=?&type=READ</ins></p>
 		<br>
 	<h1 translate="METERS_UNO"></h1>
 	<br>
@@ -46,13 +46,21 @@
             	<th scope="row">ENDDATE</th>
             	<td>STRING ( LENGTH:6 UNIQUE ) </td>
             </tr>
+            <tr>
+            	<th scope="row">LIMIT</th>
+            	<td>INTEGER ( OPTIONAL ) </td>
+            </tr>
+            <tr>
+            	<th scope="row">TYPE</th>
+            	<td>STRING ( NO_READ | READ ) </td>
+            </tr>
 		</table>
 	</div>
 		<br>
 	<h1 translate="METERS_OCHO"></h1>
 		<br>
 			<pre>
-GET /api/v1/alarms?startDate=2015-01-01&endDate=2016-01-20 
+GET /api/v1/ alarms?startDate=2015-01-01&endDate=2016-01-20&limit=50&type=READ
 HTTP/1.1
 Host: 192.168.3.127
 User-Agent: curl
@@ -133,7 +141,7 @@ saPAQ=="}
 	<p style="text-align: justify;" translate="ASD_VII">
 		<br>
 		<pre>{
-"TYPE_ALARM":"METER",
+	"TYPE_ALARM":"METER",
     "SERIAL_NUMBER":"C00008",
     "CODE_ALARM":113,
     "TIMESTAMP":"2016-01-20 10:18:21",
