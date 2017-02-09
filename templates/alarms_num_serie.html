@@ -1,7 +1,7 @@
 <div class="col-md-11">
 	<h1 translate="TITLE_UNO"></h1>
 		<br>
-		<p><ins>https://protcloud.com/api/v1/alarms?startDate=?&endDate</ins></p>
+		<p><ins>https://protcloud.com/api/v1/alarms?num_serie=?</ins></p>
 		<br>
 	<h1 translate="METERS_UNO"></h1>
 	<br>
@@ -33,17 +33,14 @@
         		</tbody>
 			</table>	
 		</div>
+		
 	<br>
 	<h1 translate="METERSEARCH_I"></h1>
 	<br>
 	<div class="table-responsive">
 		<table class="table table-striped">
 			<tr>
-            	<th scope="row">STARTDATE</th>
-            	<td>STRING ( LENGTH:6 UNIQUE ) </td>
-            </tr>
-           	<tr>
-            	<th scope="row">ENDDATE</th>
+            	<th scope="row">NUM_SERIE</th>
             	<td>STRING ( LENGTH:6 UNIQUE ) </td>
             </tr>
 		</table>
@@ -52,9 +49,9 @@
 	<h1 translate="METERS_OCHO"></h1>
 		<br>
 			<pre>
-GET /api/v1/alarms?startDate=2015-01-01&endDate=2016-01-20 
+GET /api/v1/ alarms?num_serie=A00001
 HTTP/1.1
-Host: 192.168.3.127
+Host: 192.168.1.5
 User-Agent: curl
 Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWb
 E56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3ND
@@ -79,25 +76,26 @@ Access-Control-Allow-Methods: *
 Transfer-Encoding: chunked
 Content-Type: application/json
 
-{"PAYLOAD":"oRcWgYX+z9FPZ6xeuM0Ve2gT80b+y7ZQaF1KgXLpywrcRXL9uvqGoWE+OiFSLK57zoSZUy9s0yZHfhR4P
-saPAQ=="}
-
+{"PAYLOAD":"oRcWgYX+z9FPZ6xeuM0Ve2gT80b+y7ZQaF1KgXLpywrcRXL9uvqGoWE+OiFSLK57zoSZUy9s0yZHfh
+R4PsaPAQ=="}
 			</pre>
 		<br>
-	<h1 translate="METERS_DIEZ"></h1>
+	<p style="text-align: justify;" translate="METERS_DIEZ">
 		<br>
-		<p>Falta imagen
+	<p>Falta imagen
 		<br>
-		<p style="text-align: justify;" translate="ASD_I">
-		<p style="text-align: justify;" translate="ASD_II">
+	<p style="text-align: justify;" translate="PANEL_RESJS">
 		<br>
 		<pre>{ 
-	"TYPE_ALARM":"DCU",
-    "CODE_ALARM":17,
-    "TIMESTAMP":"2016-01-20 15:34:20"
+	"TYPE_ALARM":"METER",
+	"SERIAL_NUMBER":""A00001",
+	"CODE_ALARM":17,
+	"TIMESTAMP":"2016-01-20 19:16:47"
+	"CONSUMPTION": "19.72"
 },
 		</pre>
 		<br>
+			<div class="table-responsive">
 			<table class="table table-striped">
         		<thead>
             		<tr>
@@ -110,36 +108,38 @@ saPAQ=="}
           		<tbody>
             		<tr>
             			<th scope="row">TYPE_ALARM</th>
-            			<td><p style="text-align: justify;" translate="ASD_III"></td>
+            			<td><p style="text-align: justify;" translate="ASD_VIII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">SERIAL_NUMNBER</th>
+            			<td><p style="text-align: justify;" translate="ASD_IX"></td>
             			<td>STRING</td>
             			<td></td>
             		</tr>
             		<tr>
             			<th scope="row">CODE_ALARM</th>
-            			<td><p style="text-align: justify;" translate="ASD_IV"></td>
+            			<td><p style="text-align: justify;" translate="ASD_X"></td>
             			<td>INTEGER</td>
             			<td> > 0 </td>
             		</tr>
             		<tr>
             			<th scope="row">TIMESTAMP</th>
-            			<td><p style="text-align: justify;" translate="ASD_V"></td>
+            			<td><p style="text-align: justify;" translate="ASD_XI"></td>
             			<td>STRING</td>
+            			<td>MySQL format</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CONSUMPTION</th>
+            			<td><p style="text-align: justify;" translate="ASD_XII"></td>
+        	    		<td>Double</td>
             			<td></td>
             		</tr>
         		</tbody>
 			</table>
+		</div>
 		<br>
-	<p style="text-align: justify;" translate="ASD_VI">
-	<p style="text-align: justify;" translate="ASD_VII">
-		<br>
-		<pre>{
-"TYPE_ALARM":"METER",
-    "SERIAL_NUMBER":"C00008",
-    "CODE_ALARM":113,
-    "TIMESTAMP":"2016-01-20 10:18:21",
-    "CONSUMPTION":"0.689"
-}	
-		</pre>
 		<br>
 		<div class="table-responsive">
 			<table class="table table-striped">
@@ -186,7 +186,7 @@ saPAQ=="}
 			</table>
 		</div>	
 		<br>
-	<p style="text-align: justify;" translate="ASD_XIII">
+	<p style="text-align: justify;" translate="ANS_I">
 		<br>
 	<p style="text-align: justify;" translate="ASD_XIV">
 		<br>
