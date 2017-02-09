@@ -21,6 +21,12 @@ h1,h2,h3,h4,h5,h6,.navbar {
     /*font-weight:100;*/
     font-weight: 400;
 }
+.enlhover {
+    color: #5F6164;
+}
+.enlhover:hover{
+    color: #ED1B24;
+}
 
 body {
     padding-top: 70px;

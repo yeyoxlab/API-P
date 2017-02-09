@@ -80,6 +80,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 
 	 $translateProvider.translations('en', {
 	 	//PANEL IZQUIERDO
+	 	'SEARCH' : 'Search :',
 	 	'PANEL_HOME'  : 'HOME', 
 	 	'PANEL_LISER' : 'List of Error', 
 	 	'PANEL_LISAP' : 'List of API available',
@@ -397,6 +398,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	});
 	$translateProvider.translations('es', {
 		//PANEL IZQUIERDO
+		'SEARCH' : 'Buscar :',
 		'PANEL_HOME'  : 'HOME', 
 		'PANEL_LISER' : 'Lista de Errores', 
 		'PANEL_LISAP' : 'Lista de API disponible',
@@ -424,7 +426,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'PARAG_THR' : 'JWE utiliza cifrado para garantizar la confidencialidad de los contenidos del texto sin formato. JWE no añade una comprobación de integridad del contenido si no es proporcionada por el algoritmo de encriptación subyacente. Si dicha verificación es necesaria, un algoritmo que lo proporciona como AES-GCM [NIST‑800‑38D] puede usarlo, alternativamente, puede proporcionar a través de la composición mediante la encriptación de una representación del contenido firmado (Jones Michael B., 2011).',
 		'PARAG_FOU' : 'Gracias a las ventajas de JWE, PROTCLOUD utiliza autenticación basada en JWE, que permite la interoperabilidad y escalabilidad a las nuevas necesidades tecnológicas.',
 		'PARAG_FIV' : 'Para obtener una JWT, es necesario iniciar sesión en PROTCLOUD con un ID de aplicación y una contraseña.',
-		'PARAG_SIX' : 'Esto puede obtenerse mediante el registro en el siguiente enlace https://protcloud.com/app/v1/Register',
+		'PARAG_SIX' : 'Esto puede obtenerse mediante el registro en el siguiente enlace',
 		'PARAG_SEV' : 'Después del registro de la aplicación, obtenemos la siguiente información:',
 		'PARAG_EIG' : 'name_app: "name_of_app"',
 		'PARAG_NIN' : 'secret_key: "new_secret"',
