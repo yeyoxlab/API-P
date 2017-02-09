@@ -21,7 +21,7 @@
           <tbody>
             <tr ng-repeat="x in myData | filter:buscador">
               <th scope="row">{{ x.Method }}</th>
-              <td><a href="" style="color: red">{{ x.URL }}</a></td>
+              <td><a href='{{x.Refer}}' style="color: red">{{ x.URL }}</a></td>
               <td class="txtAction">{{ x.Action}}</td>
             </tr>
             

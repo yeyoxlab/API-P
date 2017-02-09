@@ -2,102 +2,122 @@
 		{
 			"Method":"POST",
 			"URL":"Api / v1 / login",
-			"Action":"Devuelve el token para la autorizaci\u00F3n"
+			"Action":"Devuelve el token para la autorizaci\u00F3n",
+			"Refer":"#login"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / version",
-			"Action":"Devuelve la versi\u00F3n del sistema API"
+			"Action":"Devuelve la versi\u00F3n del sistema API",
+			"Refer":"#version"			
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters",
-			"Action":"Devuelve todos los datos de Smart Meters"
+			"Action":"Devuelve todos los datos de Smart Meters",
+			"Refer":"#meters"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters / less",
-			"Action":"Devuelve todos los datos de Smart Meters comprimido"
+			"Action":"Devuelve todos los datos de Smart Meters comprimido",
+			"Refer":"#meters_less"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters / search /?",
-			"Action":"Buscar un medidor inteligente por serie"
+			"Action":"Buscar un medidor inteligente por serie",
+			"Refer":"#meters_search"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters / search /? / Menos",
-			"Action":"Buscar un medidor inteligente por serie"
+			"Action":"Buscar un medidor inteligente por serie",
+			"Refer":"#meters_search_less"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters /?",
-			"Action":"Obtiene datos del medidor inteligente por UID"
+			"Action":"Obtiene datos del medidor inteligente por UID",
+			"Refer":"#meters_"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters /?",
-			"Action":"Obtiene datos del medidor inteligente por serie"
+			"Action":"Obtiene datos del medidor inteligente por serie",
+			"Refer":"#meters_"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters /? / Less",
-			"Action":"Obtiene datos del medidor inteligente por UID comprimido"
+			"Action":"Obtiene datos del medidor inteligente por UID comprimido",
+			"Refer":"#meters_2"
 		},
 		{
 			"Method":"GET",
 			"URL":"/ Api / v1 / meters /? / Less",
-			"Action":"Obtiene datos del medidor inteligente comprimidos en serie"
+			"Action":"Obtiene datos del medidor inteligente comprimidos en serie",
+			"Refer":"#meters_b_1"
 		},
 		{
 			"Method":"POST",
 			"URL":"/ Api / v1 / meters",
-			"Action":"A\u00F1adir un nuevo medidor inteligente"
+			"Action":"A\u00F1adir un nuevo medidor inteligente",
+			"Refer":"#meters_b_2"
 		},
 		{
 			"Method":"PUT",
 			"URL":"/ Api / v1 / meters / 2",
-			"Action":"Actualizar un medidor inteligente por UID"
+			"Action":"Actualizar un medidor inteligente por UID",
+			"Refer":"#meters_state_relay"
 		},
 		{
 			"Method":"PUT",
 			"URL":"/ Api / v1 / meters / 20001",
-			"Action":"Actualizar un medidor inteligente por serie"
+			"Action":"Actualizar un medidor inteligente por serie",
+			"Refer":"#meters_reset_meter"
 		},
 		{
 			"Method":"DELETE",
 			"URL":"/ Api / v1 / meters / 2",
-			"Action":"Eliminar un medidor inteligente por UID"
+			"Action":"Eliminar un medidor inteligente por UID",
+			"Refer":"#alarms_startDate_endDate"
 		},
 		{
 			"Method":"DELETE",
 			"URL":"/ api / v1 / meters / XXXXXX",
-			"Action":"Eliminar un medidor inteligente por serie"
+			"Action":"Eliminar un medidor inteligente por serie",
+			"Refer":"#alarms_num_serie"
 		},
 		{
 			"Method":"POST",
 			"URL":"Api / v1 / meters / sync",
-			"Action":"Ping al medidor inteligente"
+			"Action":"Ping al medidor inteligente",
+			"Refer":"#alarms_SD_ED_NS"
 		},
 		{
 			"Method":"POST",
 			"URL":"/ Api / v1 / meters / state_relay",
-			"Action":"Establecer el estado de un rel\u00E9 de medidor inteligente"
+			"Action":"Establecer el estado de un rel\u00E9 de medidor inteligente",
+			"Refer":"#alarms_SD_ED_Limit"
 		},
 		{
 			"Method":"POST",
 			"URL":"/ Api / v1 / meters / reset_meter",
-			"Action":"Restablecer el medidor inteligente"
+			"Action":"Restablecer el medidor inteligente",
+			"Refer":"#alarms_SD_ED_LT_READ"
 		},
 		{
 			"Method":"GET",
 			"URL":"Api / v1 / meters / today_profile",
-			"Action":"Leer el perfil actual de los medidores inteligentes"
+			"Action":"Leer el perfil actual de los medidores inteligentes",
+			"Refer":"#system"
 		},
 		{
 			"Method":"GET",
 			"URL":"Api / v1 / meters / XXXXXX / today_profile",
-			"Action":"Lea el perfil actual del medidor inteligente por n\u00FAmero de serie"
+			"Action":"Lea el perfil actual del medidor inteligente por n\u00FAmero de serie",
+			"Refer":"#system_less"
 		},
 		{
 			"Method":"GET",
