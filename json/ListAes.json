@@ -131,7 +131,7 @@
 		},
 		{
 			"Method":"GET",
-			"URL":"Api/v1/meters/A00001/operaci\u00F3n_modo",
+			"URL":"Api/v1/meters/A00001/operation_mode",
 			"Action":"Obtiene el modo de operaciones por n\u00FAmero de serie"
 		},
 		{
