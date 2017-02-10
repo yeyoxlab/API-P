@@ -11,65 +11,56 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		controller : "appController"		
 	}).when("/login", {
 		templateUrl : "templates/login.html",
-	})
-	.when("/version", {
+	}).when("/version", {
 		templateUrl : "templates/version.html",
-	})
-	.when("/meters", {
+	}).when("/meters", {
 		templateUrl : "templates/meters.html",
-	})
-	.when("/meters_less", {
+	}).when("/meters_less", {
 		templateUrl : "templates/meters_less.html",
-	})
-	.when("/meters_search", {
+	}).when("/meters_search", {
 		templateUrl : "templates/meters_search.html",
-	})
-	.when("/meters_search_less", {
+	}).when("/meters_search_less", {
 		templateUrl : "templates/meters_search_less.html",
-	})
-	.when("/meters_", {
+	}).when("/meters_", {
 		templateUrl : "templates/meters_.html",
-	})
-	.when("/meters_b", {
+	}).when("/meters_b", {
 		templateUrl : "templates/meters_b_less.html",
-	})
-	.when("/meters_2", {
+	}).when("/meters_2", {
 		templateUrl : "templates/meters_2.html",
-	})
-	.when("/meters_b_1", {
+	}).when("/meters_b_1", {
 		templateUrl : "templates/meters_b_1.html",
-	})
-	.when("/meters_b_2", {
+	}).when("/meters_b_2", {
 		templateUrl : "templates/meters_b_2.html",
-	})
-	.when("/meters_state_relay", {
+	}).when("/meters_state_relay", {
 		templateUrl : "templates/meters_state_relay.html",
-	})
-	.when("/meters_reset_meter", {
+	}).when("/meters_reset_meter", {
 		templateUrl : "templates/meters_reset_meter.html",
-	})
-	.when("/alarms_startDate_endDate", {
+	}).when("/alarms_startDate_endDate", {
 		templateUrl : "templates/alarms_startDate_endDate.html",
-	
 	}).when("/alarms_num_serie", {
 		templateUrl : "templates/alarms_num_serie.html",
-	
 	}).when("/alarms_SD_ED_NS", {
 		templateUrl : "templates/alarms_SD_ED_NS.html",
-	
 	}).when("/alarms_SD_ED_Limit", {
 		templateUrl : "templates/alarms_SD_ED_Limit.html",
-	
 	}).when("/alarms_SD_ED_LT_READ", {
 		templateUrl : "templates/alarms_SD_ED_LT_READ.html",
-	
 	}).when("/system", {
 		templateUrl : "templates/system.html",
-	
 	}).when("/system_less", {
 		templateUrl : "templates/system_less.html",
-	
+	}).when("/system_I", {
+		templateUrl : "templates/system_I.html",
+	}).when("/HM_IM_SD_ED", {
+		templateUrl : "templates/HM_IM_SD_ED.html",
+	}).when("/HM_IM_SD_ED_TYPE", {
+		templateUrl : "templates/HM_IM_SD_ED_TYPE.html",
+	}).when("/IR_MI_SD_ED", {
+		templateUrl : "templates/IR_MI_SD_ED.html",
+	}).when("/statistics", {
+		templateUrl : "templates/statistics.html",
 	})
+	
 	
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
@@ -393,8 +384,89 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			//System/less
 			'SL_I':'Availability of system',
 			'SL_II':'Status of battery',
+			//system_I
+			'system_I_I':'Object to send:',
+			'system_I_II':'Note: SSL_ACTIVE_MQTT, in this version is not available.',
+			'system_I_III':'Unique API of concentrator (optional)',
+			'system_I_IV':'Frequency request to meters [5,10,15,30,60,1440] in minutes (optional)',
+			'system_I_V':'Frequency request of the system info (optional)',
+			'system_I_VI':'Parameter to enable or disable the microswitch (optional)',
+			'system_I_VII':'Update date',
+			'system_I_VIII':'IP ver. 4 of concentrator (optional)',
+			'system_I_IX':'Netmask ver.4 of concentrator (optional)',
+			'system_I_X':'Gateway ver.4 of concentrator (optional)',
+			'system_I_XI':'IP of MQTT server (optional)',
+			'system_I_XII':'Enable SSL mode (optional)',
+			'system_I_XIII':'IP OF MQTT server (optional)',
+			'system_I_XIV':'Enable SSL mode (optional)',
+			'system_I_XV':'User of MQTT (optional)',
+			'system_I_XVI':'Password of MQTT',
+			'system_I_XVII':'Topic where alarms will be sent (optional)',
+			'system_I_XVIII':'Latitude of concentrator (optional)',
+			'system_I_XIX':'Longitude of concentrator (optional)',
+			'system_I_XX':'Result of a successful transaction',
+			'system_I_XXI':'Or',
+			'system_I_XXII':'Result of a transaction failed',
+			'system_I_XXIII':'Error code for detect the problem',
+			'system_I_XXIV':'Note: CODE_ERROR (PENDING LIST)',
+			//history_meter/id_meter/starDate/endDate
+			'HM_IM_SD_ED_I':'Note: The record of load profile is displayed per day and every 15 minutes ',
+			'HM_IM_SD_ED_II':'LOAD_PROFILE',
+			'HM_IM_SD_ED_III':'Array with daily load profiles',
+			'HM_IM_SD_ED_IV':'DATE',
+			'HM_IM_SD_ED_V':'Day of profile',
+			'HM_IM_SD_ED_VI':'TIME',
+			'HM_IM_SD_ED_VII':'Hour',
+			'HM_IM_SD_ED_VIII':'TYPE',
+			'HM_IM_SD_ED_IX':'CHANNEL',
+			'HM_IM_SD_ED_X':'Channel of communication',
+			'HM_IM_SD_ED_XI':'VALUES',
+			'HM_IM_SD_ED_XII':'ALERTS',
+			'HM_IM_SD_ED_XIII':'List of events occurred in the selected dates',
+			'HM_IM_SD_ED_XIV':'Note: The communication channel receives the following parameters:',
+			'HM_IM_SD_ED_XV':'Energy delivered (kWh)',
+			'HM_IM_SD_ED_XVI':'Energy received (kWh)',
+			'HM_IM_SD_ED_XVII':'Quadrante I (kVAR)',
+			'HM_IM_SD_ED_XVIII':'Quadrante II (kVAR)',
+			'HM_IM_SD_ED_XIX':'Quadrante III (kVAR)',
+			'HM_IM_SD_ED_XX':'Quadrante IV (kVAR)',
+			'HM_IM_SD_ED_XXI':'Demand delivered (kW)',
+			'HM_IM_SD_ED_XXII':'Demand received (kW)',
+			//history_meter/id_meter/starDate/endDate/tipe
+			'HM_IM_SD_ED_T_I':'Note:  If the channel type is not specified in the URL of the request channel data I show default.',
+			'HM_IM_SD_ED_T_II':'Note: If the result is negative (“value”:-1) means no profile.',
+			///instant_record/meder_id/starDate/endDate
+			'IR_MI_SD_ED_I':'Note: Instant saved every 15 minutes',
+			'IR_MI_SD_ED_II':'Timestamp of instant',
+			'IR_MI_SD_ED_III':'Current',
+			'IR_MI_SD_ED_IV':'Voltage',
+			'IR_MI_SD_ED_V':'Active power',
+			'IR_MI_SD_ED_VI':'Active power',
+			'IR_MI_SD_ED_VII':'Aparent power',
+			'IR_MI_SD_ED_VIII':'Ractive power',
+			'IR_MI_SD_ED_IX':'Frequency power',
+			'IR_MI_SD_ED_X':'Total KWH delivered',
+			'IR_MI_SD_ED_XI':'Total kwh received',
+			'IR_MI_SD_ED_XII':'Total consumption',
+			'IR_MI_SD_ED_XIII':'KVAR I TOTAL',
+			'IR_MI_SD_ED_XIV':'KVAR II TOTAL',
+			'IR_MI_SD_ED_XV':'Previous demand delivered ',
+			'IR_MI_SD_ED_XVI':'Previous demand received',
+			//statistics
+			'statistics_I':'Packet delivered',
+			'statistics_II':'Packet received',
+			'statistics_III':'Lost packet ',
+			'statistics_IV':'Meter online',
+			'statistics_V':'Meter offline',
+			'statistics_VI':'Time polling',
+			'statistics_VII':'Timestamp of alert with MySQL format',
+			'statistics_VIII':'Quality of Service',
+			'statistics_IX':'Packet lost per meter',
 			
 			
+			
+			
+
 	});
 	$translateProvider.translations('es', {
 		//PANEL IZQUIERDO
@@ -713,6 +785,85 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		//System/less
 		'SL_I':'Disponibilidad del sistema',
 		'SL_II':'Estado de la batería',
+		//system_I
+		'system_I_I':'Onjeto a enviar:',
+		'system_I_II':'Nota: SSL_ACTIVE_MQTT, en esta versión no está disponible.',
+		'system_I_III':'API única de concentrador (opcional)',
+		'system_I_IV':'Solicitud de frecuencia a medidores [5,10,15,30,60,1440] en minutos (opcional)',
+		'system_I_V':'Solicitud de frecuencia de la informacion del sistema (opcional)',
+		'system_I_VI':'Parámetro para activar o desactivar el microinterruptor (opcional)',
+		'system_I_VII':'Fecha de actualizacion',
+		'system_I_VIII':'IP ver. 4 del concentrador (opcional)',
+		'system_I_IX':'Netmask ver.4 del concentrador  (opcional)',
+		'system_I_X':'Gateway ver.4 del concentrador  (opcional)',
+		'system_I_XI':'IP de MQTT servidor (opcional)',
+		'system_I_XII':'Habilitar el modo SSL (opcional)',
+		'system_I_XIII':'IP del MQTT servidor (opcional)',
+		'system_I_XIV':'Habilitar el modo SSL (opcional)',
+		'system_I_XV':'Usuario de MQTT (opcional)',
+		'system_I_XVI':'Contraseña de MQTT',
+		'system_I_XVII':'Tema en el que se enviarán las alarmas(opcional)',
+		'system_I_XVIII':'Latitud del concentrador (opcional)',
+		'system_I_XIX':'Longitud del concentrador (opcional)',
+		'system_I_XX':'Resultado de una transacción exitosa',
+		'system_I_XXI':'O',
+		'system_I_XXII':'Resultado de una transacción fallida',
+		'system_I_XXIII':'Código de error para detectar el problema',
+		'system_I_XXIV':'Nota: CODE_ERROR (LISTA PENDIENTE)',
+		//history_meter/id_meter/starDate/endDate
+		'HM_IM_SD_ED_I':'Nota: El registro del perfil de carga se muestra por día y cada 15 minutos',
+		'HM_IM_SD_ED_II':'CARGAR PERFIL',
+		'HM_IM_SD_ED_III':'Array con perfiles de carga diarios',
+		'HM_IM_SD_ED_IV':'Fecha',
+		'HM_IM_SD_ED_V':'Día del perfil',
+		'HM_IM_SD_ED_VI':'Hora',
+		'HM_IM_SD_ED_VII':'Hora',
+		'HM_IM_SD_ED_VIII':'Tipo',
+		'HM_IM_SD_ED_IX':'Canal',
+		'HM_IM_SD_ED_X':'Canal de comunicación',
+		'HM_IM_SD_ED_XI':'Valores',
+		'HM_IM_SD_ED_XII':'Alertas',
+		'HM_IM_SD_ED_XIII':'Lista de eventos ocurridos en las fechas seleccionadas',
+		'HM_IM_SD_ED_XIV':'Nota: El canal de comunicación recibe los siguientes parámetros:',
+		'HM_IM_SD_ED_XV':'Energía entregada (kWh)',
+		'HM_IM_SD_ED_XVI':'Energia recivida (kWh)',
+		'HM_IM_SD_ED_XVII':'Cuadrante I (kVAR)',
+		'HM_IM_SD_ED_XVIII':'Cuadrante II (kVAR)',
+		'HM_IM_SD_ED_XIX':'Cuadrante III (kVAR)',
+		'HM_IM_SD_ED_XX':'Cuadrante IV (kVAR)',
+		'HM_IM_SD_ED_XXI':'Demanda Entregada(kW)',
+		'HM_IM_SD_ED_XXII':'Demanda Recivida (kW)',
+		//history_meter/id_meter/starDate/endDate/tipe
+		'HM_IM_SD_ED_T_I':'Nota: Si el tipo de canal no se especifica en la URL de los datos del canal de solicitud, se muestra el valor predeterminado.',
+		'HM_IM_SD_ED_T_II':'Nota: Si el resultado es negativo ("value": - 1) significa que no hay perfil.',
+		///instant_record/meder_id/starDate/endDate
+		'IR_MI_SD_ED_I':'Nota: Guarda instantánea cada 15 minutos',
+		'IR_MI_SD_ED_II':'Hora del instante',
+		'IR_MI_SD_ED_III':'Corriente',
+		'IR_MI_SD_ED_IV':'Voltaje',
+		'IR_MI_SD_ED_V':'Poder activo',
+		'IR_MI_SD_ED_VI':'Poder activo',
+		'IR_MI_SD_ED_VII':'Poder aparente',
+		'IR_MI_SD_ED_VIII':'Poder reactivo',
+		'IR_MI_SD_ED_IX':'Frecuencia de poder',
+		'IR_MI_SD_ED_X':'Total KWH entregado',
+		'IR_MI_SD_ED_XI':'Total kWH recibido',
+		'IR_MI_SD_ED_XII':'Consumo total',
+		'IR_MI_SD_ED_XIII':'KVAR I TOTAL',
+		'IR_MI_SD_ED_XIV':'KVAR II TOTAL',
+		'IR_MI_SD_ED_XV':'Demanda anterior entregada',
+		'IR_MI_SD_ED_XVI':'Demanda anterior recibida',
+		//statistics
+		'statistics_I':'Paquete entregado',
+		'statistics_II':'Paquete recibido',
+		'statistics_III':'Paquete perdido',
+		'statistics_IV':'Medidor en linea',
+		'statistics_V':'Medidor en linea',
+		'statistics_VI':'Tiempo de votación',
+		'statistics_VII':'Timestamp de alerta con formato MySQL',
+		'statistics_VIII':'Calidad de servicio',
+		'statistics_IX':'Pérdida de paquetes por medidor',
+		
 
 	});
 	$translateProvider.preferredLanguage('es');
