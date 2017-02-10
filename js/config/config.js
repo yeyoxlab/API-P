@@ -59,6 +59,8 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/IR_MI_SD_ED.html",
 	}).when("/statistics", {
 		templateUrl : "templates/statistics.html",
+	}).when("/m_reading", {
+		templateUrl : "templates/m_reading.html",
 	})
 	
 	
@@ -462,9 +464,18 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'statistics_VII':'Timestamp of alert with MySQL format',
 			'statistics_VIII':'Quality of Service',
 			'statistics_IX':'Packet lost per meter',
-			
-			
-			
+			//meters/reading
+			'M_READING_I':'Total kWh delivered to the customer',
+			'M_READING_II':'Total CFE KWh delivered by the customer.',
+			'M_READING_III':'The total balance of kWh delivered and received',
+			'M_READING_IV':'Total KVArh of the first quadrant',
+			'M_READING_V':'Total KVArh of the second quadrant',
+			'M_READING_VI':'Total KVArh of the third quadrant',
+			'M_READING_VII':'Total KVArh of the fourth quadrant',
+			'M_READING_VIII':'Timestamp of data',
+			'M_READING_IX':'Indicates state of relay',
+			'M_READING_X':'Serial number of the smart meter',
+			'M_READING_XI':'Ticket ',
 			
 
 	});
@@ -863,6 +874,19 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'statistics_VII':'Timestamp de alerta con formato MySQL',
 		'statistics_VIII':'Calidad de servicio',
 		'statistics_IX':'Pérdida de paquetes por medidor',
+		//meters/reading
+		'M_READING_I':'Total KWH entregado al cliente',
+		'M_READING_II':'Total CFE KWh entregado por el cliente',
+		'M_READING_III':'Total de saldo KWH entregado y recibido',
+		'M_READING_IV':'Total KVArh del primer cuadrante',
+		'M_READING_V':'Total KVArh del segundo cuadrante',
+		'M_READING_VI':'Total KVArh del tercer cuadrante',
+		'M_READING_VII':'Total KVArh del cuarto cuadrante',
+		'M_READING_VIII':'Fecha y hora de los datos',
+		'M_READING_IX':'Indica el estado del RELAY',
+		'M_READING_X':'Número de seria del medidor inteligente',
+		'M_READING_XI':'Ticket',
+		
 		
 
 	});
