@@ -61,6 +61,28 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/statistics.html",
 	}).when("/m_reading", {
 		templateUrl : "templates/m_reading.html",
+	}).when("/m_sync", {
+		templateUrl : "templates/m_sync.html",
+	}).when("/displays", {
+		templateUrl : "templates/displays.html",
+	}).when("/displays_I", {
+		templateUrl : "templates/displays_I.html",
+	}).when("/displaysMeters", {
+		templateUrl : "templates/displaysMeters.html",
+	}).when("/displaysMeters_I", {
+		templateUrl : "templates/displaysMeters_I.html",
+	}).when("/displays_B", {
+		templateUrl : "templates/displays_B.html",
+	}).when("/U_firmware", {
+		templateUrl : "templates/U_firmware.html",
+	}).when("/M_Config", {
+		templateUrl : "templates/M_Config.html",
+	}).when("/M_A00003_C", {
+		templateUrl : "templates/M_A00003_C.html",
+	}).when("/m_config_I", {
+		templateUrl : "templates/m_config_I.html",
+	}).when("/M_TP", {
+		templateUrl : "templates/M_TP.html",
 	})
 	
 	
@@ -476,8 +498,66 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'M_READING_IX':'Indicates state of relay',
 			'M_READING_X':'Serial number of the smart meter',
 			'M_READING_XI':'Ticket ',
+			//meter/sync
+			'm_sync_I':'State of meter',
+			'm_sync_II':'Serial number of the smart meter',
+			'm_sync_IIV':'Ticket',
+			'm_sync_IV':'Note: The options of the state meter are: online, offline or false',
+			//Displays
+			'displays':'ADDRESS',
+			//Displays
+			'displays_I':'RESULT OF A SUCCESFUL TRANSACTION',
+			//displaysMeters
+			'DMeters_I':'UNIQUE NUMBER OF ASSOCIATION SMART METER -DISPLAY',
+			'DMeters_II':'ADDRESS OF DISPLAY',
+			'DMeters_III':'MAC OF DISPLAY',
+			'DMeters_IV':'SERIAL NUMBER OF SMART METERS ASSOCIATED TO DISPLAY',
+			//displaysMeters_I
+			'DMetersI_I':'NOTE: The array of meters must specify the unique serial number (length: 6) each',
+			//displays_B
 			
-
+			//meters/configuracion
+			'M_C_I':'Address of smart meter',
+			'M_C_II':'Alarm system',
+			'M_C_III':'Transmission speed',
+			'M_C_IV':'Type of channel (delivered energy)',
+			'M_C_V':'Type of channel(energy received)',
+			'M_C_VI':'Type of channel (demand delivered)',
+			'M_C_VII':'Date build',
+			'M_C_VIII':'Day cut pay',
+			'M_C_IX':'Day of pay',
+			'M_C_X':'Decimal deploy',
+			'M_C_XI':'During test mode',
+			'M_C_XII':'Energy fee',
+			'M_C_XIII':'Version of hardware',
+			'M_C_XIV':'Status of event port',
+			'M_C_XV':'Status of key',
+			'M_C_XVI':'Status of tarif',
+			'M_C_XVII':'Key of meter',
+			'M_C_XVIII':'Quadrant',
+			'M_C_XIX':'Maximum voltage',
+			'M_C_XX':'Minimum voltage',
+			'M_C_XXI':'Minimum outage for disc',
+			'M_C_XXII':'Minimum out for alarm',
+			'M_C_XXIII':'Model of collector',
+			'M_C_XXIV':'Operation mode',
+			'M_C_XXV':'Pulse KH',
+			'M_C_XXVI':'Serial number of smart meter',
+			'M_C_XXVII':'Version of software',
+			'M_C_XXVIII':'Template of configurations',
+			'M_C_XXIX':'Time zone ',
+			'M_C_XXX':'Time delay LCD',
+			'M_C_XXXI':'Time zone',
+			'M_C_XXXII':'Vendor',
+			//meters_config_I
+			'm_config_I':'NOTE: The settings file is a template (.json) exported directly from Soft Terminal program, selecting the option configuration templates operation in the parameter programming menu.',
+			'm_config_II':'JSON response with an Array with an object for each meter:',
+			'm_config_III':'UID OF NEW SMART METER',
+			'm_config_IV':'TICKET OF TRANSACTION',
+			
+			
+			
+			
 	});
 	$translateProvider.translations('es', {
 		//PANEL IZQUIERDO
@@ -886,6 +966,62 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'M_READING_IX':'Indica el estado del RELAY',
 		'M_READING_X':'Número de seria del medidor inteligente',
 		'M_READING_XI':'Ticket',
+		//meter/sync
+		'm_sync_I':'Estado del medidor',
+		'm_sync_II':'Número de serie del medidor inteligente',
+		'm_sync_IIV':'Ticket',
+		'm_sync_IV':'Nota: Las acciones del estado del medidor son: Fuera de línea o falso',
+		//Displays
+		'displays':'DIRECCIÓN',
+		//Displays
+		'displays_I':'RESULTADO DE UNA TRANSACCIÓN EXITOSA',
+		//displaysMeters
+		'DMeters_I':'NÚMERO ÚNICO DE ASOCIACIÓN MEDORES INTELIGENTES DISPLAY',
+		'DMeters_II':'DIRECCION DEL DISPLAY',
+		'DMeters_III':'MAC DEL DISPLAY',
+		'DMeters_IV':'NÚMERO DE SERIE DE MEDIDORES INTELIGENTES ASOCIADOS AL DISPLAY',
+		//displaysMeters_I
+		'DMetersI_I':'NOTA: La matriz de medidores debe especificar el número de serie único (longitud: 6) cada uno',
+		//displays_B
+		
+		//meters/configuracion
+		'M_C_I':'Dirección del medidor inteligente',
+		'M_C_II':'Sistema de alarmas',
+		'M_C_III':'Velocidad de transmisión',
+		'M_C_IV':'Tipo de canal (energía suministrada)',
+		'M_C_V':'Tipo de canal (energia recibida)',
+		'M_C_VI':'Tipo de canal (demanda entregada)',
+		'M_C_VII':'Fecha de construcción',
+		'M_C_VIII':'Día del pago reducido',
+		'M_C_IX':'Día de pago ',
+		'M_C_X':'Trasnformar en decimales',
+		'M_C_XI':'Durante el modo de prueba',
+		'M_C_XII':'Tarifa de energía',
+		'M_C_XIII':'Version del hardware',
+		'M_C_XIV':'Estado del puerto de eventos',
+		'M_C_XV':'Estado de la clave',
+		'M_C_XVI':'Situación de la tarifa',
+		'M_C_XVII':'Clave del medidor',
+		'M_C_XVIII':'Quadrant',
+		'M_C_XIX':'Tensión máxima',
+		'M_C_XX':'Voltage mínimo',
+		'M_C_XXI':'Interrupción mínima del disco',
+		'M_C_XXII':'Salida minima para alarma',
+		'M_C_XXIII':'Modelo del colector',
+		'M_C_XXIV':'Modo de operación',
+		'M_C_XXV':'Pulsos KH',
+		'M_C_XXVI':'Número de serie del medidor inteligente',
+		'M_C_XXVII':'Version del software',
+		'M_C_XXVIII':'Plantilla de configuraciones',
+		'M_C_XXIX':'Zona horaria',
+		'M_C_XXX':'Tiempo de espera de LCD',
+		'M_C_XXXI':'Zona horaria',
+		'M_C_XXXII':'Vendedor',
+		//meters_config_I
+		'm_config_I':'NOTA: El archivo de configuración es una plantilla (.json) exportada directamente desde el programa Soft Terminal, seleccionando la opción de configuración de plantillas de configuración en el menú de programación de parámetros.',
+		'm_config_II':'Respuesta de JSON con Array con un objeto para cada medidor:',
+		'm_config_III':'UID DE NUEVO MEDIDOR INTELIGENTE',
+		'm_config_IV':'TICKET DE TRANSACCION',
 		
 		
 
