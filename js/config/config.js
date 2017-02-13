@@ -83,6 +83,8 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/m_config_I.html",
 	}).when("/M_TP", {
 		templateUrl : "templates/M_TP.html",
+	}).when("/unsolicited_requests", {
+		templateUrl : "templates/unsolicited_requests.html"
 	})
 	
 	
@@ -554,10 +556,22 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'm_config_II':'JSON response with an Array with an object for each meter:',
 			'm_config_III':'UID OF NEW SMART METER',
 			'm_config_IV':'TICKET OF TRANSACTION',
-			
-			
-			
-			
+			//unsolicited_request.html *INGLÉS*
+			'TITILE_UNSOLICITED' : 'Unsolicited requests',
+			'PARAPHUNSOL_ONE' : 'This behavior is used to send alerts or exceptional circumstances as a mechanism which uses the MQTT protocol with QoS2 quality\u002C which is the safest way. Likewise\u002C every message is encrypted with AES 128 and with a JSON format.',
+			'PARAPHUNSOL_TWO' : 'Before any transaction with MQTT\u002C you must set the IP address of MQTT server\u002C user\u002C password and topic. (See more details)',
+			'PARAPHUNSOL_TRE' : 'The payload structure sent is the following:',
+			'SUBTITLEUNS_TWO' : 'MQTT ALERTS',
+			'ONEFIELD_UNSOLI' : 'Timestamp of instant',
+			'TWOFIELD_UNSOLI' : 'Consumption of meter',
+			'TREFIELD_UNSOLI' : 'IUD code to identify the alarm',
+			'FOUFIELD_UNSOLI' : 'Serial meter',
+			'SUBTITLEUNS_TRE' : 'END PROFILES MESSAGE',
+			'PARAPHUNSOL_FOU' : 'After each message API will wait for a confirmation for each sent message. The confirmation should be encrypted and a JSON format.',
+			'PARAPHUNSOL_FIV' : 'The payload structure received is the following:',
+			'FIVFIELD_UNSOLI' : 'All profiles are already',
+			'SIXFIELD_UNSOLI' : 'Message successfully received',
+			'SEVFIELD_UNSOLI' : 'Error message reception'
 	});
 	$translateProvider.translations('es', {
 		//PANEL IZQUIERDO
@@ -1022,7 +1036,22 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'm_config_II':'Respuesta de JSON con Array con un objeto para cada medidor:',
 		'm_config_III':'UID DE NUEVO MEDIDOR INTELIGENTE',
 		'm_config_IV':'TICKET DE TRANSACCION',
-		
+		//unsolicited_request.html *ESPAÑOL*
+		'TITILE_UNSOLICITED' : 'Solicitudes no requeridas',
+		'PARAPHUNSOL_ONE' : 'Este comportamiento se utiliza para enviar alertas o circunstancias excepcionales como un mecanismo que utiliza el protocolo MQTT con calidad QoS2\u002C	 que es la forma más segura. Del mismo modo\U201A cada mensaje se cifra con AES 128 y con un formato JSON.',
+		'PARAPHUNSOL_TWO' : 'Antes de cualquier transacción con MQTT\u002C debe establecer la dirección IP del servidor MQTT\u002C el usuario\u002C la contraseña y el tema. (Ver más detalles)',
+		'PARAPHUNSOL_TRE' : 'The payload structure sent is the following:',
+		'SUBTITLEUNS_TWO' : 'Alertas MQTT',
+		'ONEFIELD_UNSOLI' : 'Marca de tiempo del instante',
+		'TWOFIELD_UNSOLI' : 'Consumo del medidor',
+		'TREFIELD_UNSOLI' : 'Código IUD para identificar la alarma',
+		'FOUFIELD_UNSOLI' : 'Serial del medidor',
+		'SUBTITLEUNS_TRE' : 'MENSAJE DE PERFILES FINAL',
+		'PARAPHUNSOL_FOU' : 'Después de cada mensaje\u002C la API esperará una confirmación para cada mensaje enviado. La confirmación debe ser cifrada y en formato JSON.',
+		'PARAPHUNSOL_FIV' : 'La estructura de carga útil recibida es la siguiente:',
+		'FIVFIELD_UNSOLI' : 'Todos los perfiles ya están listos',
+		'SIXFIELD_UNSOLI' : 'Mensaje recibido correctamente', 
+		'SEVFIELD_UNSOLI' : 'Error al recibir mensaje'
 		
 
 	});
