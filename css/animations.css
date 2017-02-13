@@ -401,8 +401,8 @@ fadeIn
 	animation-name: fadeIn;
 	-webkit-animation-name: fadeIn;	
 
-	animation-duration: 0.5s;	
-	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.9s;	
+	-webkit-animation-duration: 0.9s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;		

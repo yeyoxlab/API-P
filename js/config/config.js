@@ -83,6 +83,12 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/m_config_I.html",
 	}).when("/M_TP", {
 		templateUrl : "templates/M_TP.html",
+	}).when("/commands", {
+		templateUrl : "templates/commands_.html",
+	}).when("/meters_fw", {
+		templateUrl : "templates/meters_fw.html",
+	}).when("/meters_SN_OP", {
+		templateUrl : "templates/meters_sn_op.html",
 	})
 	
 	
@@ -261,7 +267,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'METERSEARCH_VI' : 'STRING',
 			
 			//meters/search/?/less
-			'LESS_S_I' : 'Serial number of the smart meter',
+			'LESS_S_I' : 'Serial number of smart meter',
 			'LESS_S_II' : 'Timestamp of data',
 			'LESS_S_III' : 'Meter status',
 			'LESS_S_IV' : 'Indicates state of relay',
@@ -554,6 +560,15 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'm_config_II':'JSON response with an Array with an object for each meter:',
 			'm_config_III':'UID OF NEW SMART METER',
 			'm_config_IV':'TICKET OF TRANSACTION',
+
+			//COMMANDS_
+			'TYP_COM_C':'Command type',
+			'op_mod_ty_c':'Operation mode type',
+			'reg_mode_c':'Smart meter flow',
+			//METERS_SN_OPERATIONMODE
+			'msnop':'Operation mode',
+			'msnrm':'Register mode'
+
 			
 			
 			
@@ -1022,7 +1037,16 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'm_config_II':'Respuesta de JSON con Array con un objeto para cada medidor:',
 		'm_config_III':'UID DE NUEVO MEDIDOR INTELIGENTE',
 		'm_config_IV':'TICKET DE TRANSACCION',
-		
+
+
+			//COMMANDS_
+			'TYP_COM_C':'Tipo de comando',
+			'op_mod_ty_c':'Tipo de modo de operacion',
+			'reg_mode_c':'Flujo del medidor inteligente',
+		//METERS_SN_OPERATIONMODE
+			'msnop':'Modo de operación',
+			'msnrm':'Modo de registro'
+
 		
 
 	});

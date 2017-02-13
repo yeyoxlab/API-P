@@ -14,7 +14,7 @@
 
       //console.log($scope.objetoP.qty);
       $route.reload();
-        console.log($scope.form_name) //to ensure scope is updating
+        //console.log($scope.form_name) //to ensure scope is updating
     };
     $scope.objetoP = serveData;
     
@@ -25,7 +25,7 @@
 
       // call $anchorScroll()
       $anchorScroll();
-      console.log("anghosa");
+     
     };
 
   }]);

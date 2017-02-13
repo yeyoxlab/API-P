@@ -1,15 +1,3 @@
-/*
-Theme Name:    Photographer
-Theme URI:     http://ThemeWagon.com/photographer
-Author:        ThemeWagon
-Author URI:    http://ThemeWagon.com/
-Description:   Photographer is a single page html template based on bootstrap 3
-Version:       1.0.0
-License:       GNU General Public License v2 or later
-License URI:   http://www.gnu.org/licenses/gpl-2.0.html
-*/
-
-
 
 
 /* ========================================================================== 
@@ -168,10 +156,15 @@ Navigation
     text-decoration:none;
 }
 
-.nav>li>a:hover,.nav>li>a:focus {
+.nav>li>a:hover:before,.nav>li>a:focus,nav>li>a:active:before {
     background-color:#ec343c;
     color: white;
 }
+.nav>li:active{
+  background-color:#ec343c;
+    color: white;  
+}
+
 
 
 /* ========================================================================== 

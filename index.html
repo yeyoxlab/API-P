@@ -173,6 +173,19 @@
                 <li>
                     <a href="#M_TP">meters/today_profile</a>
                 </li>
+                <!-- mis-->
+                <li>
+                    <a href="#meters_SN_OP">meters/SN/operation_mode</a>
+                </li>
+                <li>
+                    <a href="#meters_fw">meters/fw</a>
+                </li>
+                
+                
+                <li>
+                    <a href="#commands">commands/17</a>
+                </li>
+                
                 
         </ul>
       </div>
@@ -180,12 +193,13 @@
   
 
  <div id="main">
+ <div id="top1" class="col-md-12" style="height: 10px;width: 99%"></div>
       <div class="col-md-12" id="scrollArea">
 
           <p class="visible-xs" >
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas" style="background-color: black;"><i class="glyphicon glyphicon-chevron-left"></i></button>
           </p>
-          <div ng-view class="showw fadeIn" id="top1"></div>
+          <div ng-view class="showw fadeIn" ></div>
          
       </div>
   </div>   
@@ -199,7 +213,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
         <script src="js/bootstrap.min.js"></script>
-        <!-- Include js plugin -->
+       
         <script type="text/javascript">
             $(document).ready(function() {
              $('[data-toggle=offcanvas]').click(function() {
@@ -208,7 +222,7 @@
              
             });
         </script>
-        <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
     <script type="text/javascript" src="js/angular-route.js"></script>
     <script type="text/javascript" src="js/angular-resource.js"></script>
     <script type="text/javascript" src="js/angular-translate.min.js"></script>
@@ -217,8 +231,7 @@
     <script type="text/javascript" src="js/config/ctrl_prot_api.js"></script>
     <script type="text/javascript" src="templates/ListACtrl.js"></script>
     <script type="text/javascript" src="js/config/ctrlConfig.js"></script>
-
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
     </body>
 </html>
