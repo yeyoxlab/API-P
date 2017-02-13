@@ -247,7 +247,7 @@
 		{
 			"Method":"POST",
 			"URL":"Api/v1/displayMeters",
-			"Action":"A\u00F1adir nuevos medidores inteligentes de asociaci\u00F3n - mostrar"
+			"Action":"A\u00F1adir nuevos medidores inteligentes de asociaci\u00F3n - display"
 		},
 		{
 			"Method":"DELETE",

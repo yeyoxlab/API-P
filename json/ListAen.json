@@ -224,19 +224,19 @@
 		},
 		{
 			"Method":"GET",
-			"URL":"/api/v1/history_meter/SN_meter /startDate/endDate ",
+			"URL":"/api/v1/history_meter/SN_meter/startDate/endDate ",
 			"Action":"Obtains historical data of smart meter by serial number and date",
 			"Refer":"#"
 		},
 		{
 			"Method":"GET",
-			"URL":"/api/v1/history_meter/SN_meter /startDate/endDate/type ",
+			"URL":"/api/v1/history_meter/SN_meter/startDate/endDate/type ",
 			"Action":"Obtains historical data of smart meter by serial number, date and type",
 			"Refer":"#"
 		},
 		{
 			"Method":"GET",
-			"URL":"/api/v1/instant_record/SN_meter /startDate/endDate ",
+			"URL":"/api/v1/instant_record/SN_meter/startDate/endDate ",
 			"Action":"Gets the historical instant of smart meter by ID and date",
 			"Refer":"#"
 		},
@@ -267,25 +267,19 @@
 		{
 			"Method":"GET",
 			"URL":"api/v1/displayMeters",
-			"Action":"Get the association smart meters – display",
+			"Action":"Get the association smart meters/ display",
 			"Refer":"#"
 		},
 		{
 			"Method":"POST",
 			"URL":"api/v1/displayMeters",
-			"Action":"Add new association smart meters – display",
+			"Action":"Add new association smart meters/ display",
 			"Refer":"#"
 		},
 		{
 			"Method":"DELETE ",
 			"URL":"api/v1/displayMeters/?",
 			"Action":"Removes the association by ID",
-			"Refer":"#"
-		},
-		{
-			"Method":"",
-			"URL":"",
-			"Action":"",
 			"Refer":"#"
 		},
 		{

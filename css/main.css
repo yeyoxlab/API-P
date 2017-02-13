@@ -156,7 +156,7 @@ Navigation
     text-decoration:none;
 }
 
-.nav>li>a:hover:before,.nav>li>a:focus,nav>li>a:active:before {
+.nav>li>a:hover,.nav>li>a:focus,nav>li>a:active:before {
     background-color:#ec343c;
     color: white;
 }

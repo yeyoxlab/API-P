@@ -1093,7 +1093,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		
 
 	});
-	$translateProvider.preferredLanguage('es');
+	$translateProvider.preferredLanguage('en');
 	$translateProvider.useSanitizeValueStrategy('escape');
 	$locationProvider.hashPrefix('');
 
