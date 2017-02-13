@@ -1,0 +1,166 @@
+<div class="col-md-11">
+	<h1 translate="LOGIN_REURL"></h1>
+		<br>
+		<p><ins>https://protcloud.com/api/v1/meters/operation_mode</ins></p>
+		<br>
+	<h1 translate="LOGIN_RESIN"></h1>
+		<br>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+        	    	<tr>
+    	    	    	<th><p style="text-align: justify;" translate="LOGIN_METHO"></th>
+	            		<th><p style="text-align: justify;">POST</th>
+           			</tr>
+        	  	</thead>
+    	      	<tbody>
+	            	<tr>
+            			<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            			<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
+            		</tr>
+        	    	<tr>
+    	        		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+	            		<td><p style="text-align: justify;">JSON</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row"><p style="text-align: justify"; translate="LOGIN_REQAU"></th>
+        	      		<td><p style="text-align: justify;">YES</td>
+    	        	</tr>
+	            	<tr>
+              			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              			<td><p style="text-align: justify;">GATEWAY</td>
+            		</tr>
+        		</tbody>
+			</table>
+		</div>
+		<br>
+
+	<h1 translate="LOGIN_CODAT"></h1>
+		<br>
+        <div class="table-responsive">
+      <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th><p style="text-align: justify;">SERIAL_NUMBER</th>
+                  <th><p style="text-align: justify;">STRING (LENGHT:6) </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><p style="text-align: justify;"> MODE </th>
+                  <td><p style="text-align: justify;"> INTEGER </td>
+                </tr>
+                <tr>
+                  <th scope="row"><p style="text-align: justify;"> FLOW </th>
+                  <td><p style="text-align: justify;"> INTEGER </td>
+                </tr>
+            </tbody>
+      </table>
+    </div>
+		<p translate="NOTE_OPERMODE"></p>
+
+    <ul style="list-style-type:none">
+      <li translate="LIST_OPERMODE"></li>
+        <ol>
+          <li>Normal</li>
+          <li>Test</li>
+        </ol>
+      <li translate="LISTWO_OPERMO"></li>
+        <ol>
+          <li translate="UNIDIRECTIONAL"></li>
+        </ol>
+    </ul>
+    <br>
+
+  <h1 translate="METERS_OCHO"></h1>
+
+  <pre>
+    POST /api/v1/meters/operation_mode
+    HTTP/1.1
+    Host: 192.168.4.127
+    User-Agent: curl
+    Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWbE56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3NDU3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNypOvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DORXUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwioFFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFifV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
+    Cache-Control: no-cache
+    Content-Type: charset=utf-8
+    ----WebKitFormBoundaryE19zNvXGzXaLvS5C
+    Content-Disposition: form-data; name="DATA"
+    [{“SERIAL_NUMBER”:”766GPW”,”MODE”:1,”FLOW”:1}]
+  </pre>
+  <br>
+  <h1 translate="METERS_NUEVE"></h1>
+  <pre>
+    HTTP/1.1 200 OK
+    Date: Wed, 28 Oct 2015 15:15:10 GMT
+    Server: Apache
+    Vary: Authorization,Accept-Encoding
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Pragma: no-cache
+    Access-Control-Allow-Orgin: *
+    Access-Control-Allow-Methods: *
+    Transfer-Encoding: chunked
+    Content-Type: application/json
+
+    {"PAYLOAD":"SvgFAkRpOZqdkeIrbo7w1NzzQ7x4hnfejH355d4947rJ2LLUGWKeReAyfd\/RT+Yz0NclniJzw0CtG8+NQfLgyF+f2g25vMlhxVwLKNPi6wf9EcZLO+WwgBj\/vfOOX3vtEs5pB6YYZPCRkvqJQl5\/KQiKQ3tqlVTm48WKZymuenmw8A1f9gQGQAL4jnt546b0I3bKZQyLU\/U4daYs0hvmXhjIKllqgl6FOwPsjnUIzivFeEolF3YJuwnDsPg6VAPb16K0G1qAQCTKUI4kjjoVWJaKsbmb0BwnyR8YchJKBUW3b440KDLRxEJZ9wQBHDiN9yK0xh4\/XkYYBZ8Z5xGxviwAZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1JRl4hdTd..}
+  </pre>
+  <br>
+  <h2 translate="METERS_DIEZ"></h2>
+  <img src="img/operation_mode.jpg">
+  <br>
+  <br>
+  <p translate="m_s_r_I"></p>
+  <br>
+  <pre>
+    [
+      {
+          "RESULT”: true,
+          "SERIAL_NUMBER":"A00001",
+          "TICKET":17
+      },
+      {
+          "RESULT”: true,
+          "SERIAL_NUMBER":"A00003",
+          "TICKET":18
+      }
+
+    ]
+  </pre>
+
+  <div class="table-responsive">
+      <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th><p style="text-align: justify;" translate="LOGIN_FIELD"></th>
+                  <th><p style="text-align: justify;" translate="PANEL_MEANI"></th>
+                  <th><p style="text-align: justify;" translate="PANEL_TYPER"></th>
+                  <th><p style="text-align: justify;" translate="PANEL_VALUE"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><p style="text-align: justify;" translate="RESULT_OPEMOD"></th>
+                  <td><p style="text-align: justify;" translate="RESUCC_OPEMOD"></td>
+                  <td><p style="text-align: justify;">BOOLEAN</td>
+                  <td><p style="text-align: justify;">True, False</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p style="text-align: justify;">SERIAL_NUMBER</th>
+                  <td><p style="text-align: justify;" translate="RESSMA_OPEMOD"></td>
+                  <td><p style="text-align: justify;"> STRING</td>
+                  <td><p style="text-align: justify;"> Variable (lenght:6)</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p style="text-align: justify;">TICKET</th>
+                  <td><p style="text-align: justify;" translate="m_config_IV"></td>
+                  <td><p style="text-align: justify;">INTEGER</td>
+                  <td><p style="text-align: justify;"> >0 </td>
+                </tr>
+            </tbody>
+      </table>
+    </div>
+
+
+
+
+</div>
+<div class="col-md-1">
+</div>

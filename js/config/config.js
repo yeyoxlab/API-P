@@ -84,7 +84,11 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	}).when("/M_TP", {
 		templateUrl : "templates/M_TP.html",
 	}).when("/unsolicited_requests", {
-		templateUrl : "templates/unsolicited_requests.html"
+		templateUrl : "templates/unsolicited_requests.html",
+	}).when("/operation_mode",{
+		templateUrl : "templates/operation_mode.html",
+	}).when("/operation_mode_get",{
+		templateUrl : "templates/operation_mode_get.html"
 	})
 	
 	
@@ -277,7 +281,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'meters_V' : 'TYPE_PROTOCOL',
 			'meters_VI' : 'TYPE_ZB_PROTOCOL',
 			'meters_VII' : 'TYPE_METER',
-			'meters_VIII' : 'Json Response',
+			'meters_VIII' : 'JSON Response',
 			'meters_IX' : 'RESULT OF A SUCCESFUL TRANSACTION',
 			'meters_X' : 'UID OF NEW SMART METER',
 			'meters_XI' : 'Or an error with the description',
@@ -571,7 +575,18 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'PARAPHUNSOL_FIV' : 'The payload structure received is the following:',
 			'FIVFIELD_UNSOLI' : 'All profiles are already',
 			'SIXFIELD_UNSOLI' : 'Message successfully received',
-			'SEVFIELD_UNSOLI' : 'Error message reception'
+			'SEVFIELD_UNSOLI' : 'Error message reception',
+			//OPERATION_MODE
+			'NOTE_OPERMODE' : 'NOTE: The data modescontent can receive array of meters. The types of modes of operation and flow are specified in the following list:',
+			'LIST_OPERMODE' : 'Operating :',
+			'LISTWO_OPERMO' : 'Flow:',
+			'UNIDIRECTIONAL' : 'Unidirectional',
+			'RESULT_OPEMOD' : 'RESULT',
+			'RESUCC_OPEMOD' : 'RESULT OF A SUCCESFUL TRANSACTION',
+			'RESSMA_OPEMOD' : 'UID OF NEW SMART METER',
+			'MODREG_OPEMOD' : 'Modo de registro'
+
+
 	});
 	$translateProvider.translations('es', {
 		//PANEL IZQUIERDO
@@ -1051,7 +1066,16 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'PARAPHUNSOL_FIV' : 'La estructura de carga útil recibida es la siguiente:',
 		'FIVFIELD_UNSOLI' : 'Todos los perfiles ya están listos',
 		'SIXFIELD_UNSOLI' : 'Mensaje recibido correctamente', 
-		'SEVFIELD_UNSOLI' : 'Error al recibir mensaje'
+		'SEVFIELD_UNSOLI' : 'Error al recibir mensaje',
+		//OPERATION_MODE
+		'NOTE_OPERMODE' : 'NOTA: El contenido de datos puede recibir una matriz de medidores. Los tipos de modos de operación y flujo se especifican en la siguiente lista:',
+		'LIST_OPERMODE' : 'Modos de funcionamiento:',
+		'LISTWO_OPERMO' : 'Flujo: ',
+		'UNIDIRECTIONAL' : 'Unidireccional',
+		'RESULT_OPEMOD' : 'RESULTADO',
+		'RESUCC_OPEMOD' : 'RESULTADO DE UNA TRANSACCIÓN EXITOSA',
+		'RESSMA_OPEMOD' : 'UID DEL NUEVO MEDIDOR INTELIGENTE',
+		'MODREG_OPEMOD' : 'Modo de registro'
 		
 
 	});
