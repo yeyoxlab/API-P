@@ -573,7 +573,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'reg_mode_c':'Smart meter flow',
 			//METERS_SN_OPERATIONMODE
 			'msnop':'Operation mode',
-			'msnrm':'Register mode'
+			'msnrm':'Register mode',
 
 			
 			
@@ -1070,7 +1070,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'reg_mode_c':'Flujo del medidor inteligente',
 		//METERS_SN_OPERATIONMODE
 			'msnop':'Modo de operación',
-			'msnrm':'Modo de registro'
+			'msnrm':'Modo de registro',
 
 
 		//unsolicited_request.html *ESPAÑOL*
