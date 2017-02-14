@@ -1,7 +1,7 @@
 <div class="col-md-11">
 	<h1 translate="TITLE_UNO"></h1>
 		<br>
-		<p><ins>https://protcloud.com/api/v1/meters/?</ins></p>
+		<p><ins>https://protcloud.com/api/v1/displayMeters/1</ins></p>
 		<br>
 	<h1 translate="METERS_UNO"></h1>
 		<br>
@@ -10,7 +10,7 @@
         		<thead>
         	    	<tr>
     	    	    	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
-	            		<th><p style="text-align: justify;">PUT</th>
+	            		<th><p style="text-align: justify;">DELETED</th>
            			</tr>
         	  	</thead>
     	      	<tbody>
@@ -40,78 +40,27 @@
 			<table class="table table-striped">
         		<thead>
             		<tr>
-            			<th><p style="text-align: justify;" translate="METERSEARCH_II"></th>
-            			<th><p style="text-align: justify;" translate="METERSEARCH_III"></th>
+            			<th>UID ASSOCIATION</th>
+            			<th>INTEGER</th>
            			</tr>
           		</thead>
 			</table>
 		</div>
-		<p style="text-align: justify;" translate="METERSEARCH_IV">
-		<div class="table-responsive">
-			<table class="table table-striped">
-    	    	<thead>
-        	    	<tr>
-            			<th><p style="text-align: justify;" translate="METERSEARCH_V"></th>
-            			<th><p style="text-align: justify;" translate="METERSEARCH_VI"></th>
-           			</tr>
-        	  	</thead>
-			</table>
-		</div>
-	<h1 translate="meters_b_1_I"></h1>
-		<br>
-		<table class="table table-striped">
-           	<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_II"></th>
-            	<td>INTEGER (1,2,3,...,24)</td>
-       		</tr>
-       		<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_III"></th>
-            	<td>STRING (1S, 2S, 12S, 16S)</td>
-       		</tr>
-       		<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_IV"></th>
-            	<td>STRING (LENGTH:6 UNIQUE)</td>
-       		</tr>
-       		<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_V"></th>
-            	<td>STRING (LENGTH:4)</td>
-       		</tr>
-       		<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_VI"></th>
-            	<td>STRING (LENGTH:6 UNIQUE)</td>
-       		</tr>
-       		<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_VII"></th>
-            	<td>STRING (LENGTH:4)</td>
-       		</tr>
-       		<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_VIII"></th>
-            	<td>STRING (LENGTH:10)</td>
-       		</tr>
-       		<tr>
-            	<th><p style="text-align: justify;" translate="meters_b_1_IX"></th>
-            	<td>STRING (LENGTH:10)</td>
-       		</tr>
-		</table>
 		<br>
 	<h1 translate="METERS_OCHO"></h1>
 		<br>
 			<pre>
-PUT /api/v1/meters/1 
+DELETE /api/v1/displayMeters/1
 HTTP/1.1
-Host: 192.168.3.127
+Host: 192.168.4.127
 User-Agent: curl
-Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWbE56SmpaRGMxWkRKa00
-yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3NDU3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNyp
-OvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DORXUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22
-yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwioFFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98
-luSCz9mo7ECxIikkYFifV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWb
+E56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3ND
+U3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNypOvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DOR
+XUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwio
+FFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFi
+fV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
 Cache-Control: no-cache
-Content-Type: charset=utf-8
-Content-Type: application/x-www-form-urlencoded
-
-DATA=%7B+%22CODE_METER%22%3A+%22F12H%22%2C%09%22LATITUDE%22%3A+%2220.555052%22%2C+%22LONGITUD
-E%22%3A+%22-100.269316%22%7D
 			</pre>
 		<br>
 	<h1 translate="METERS_NUEVE"></h1>
@@ -127,10 +76,19 @@ Access-Control-Allow-Orgin: *
 Access-Control-Allow-Methods: *
 Transfer-Encoding: chunked
 Content-Type: application/json
-{"PAYLOAD": "KfJ70rtV7t3YrR0IpcCGinGMfNB7SG3ULeHHGoof0UQ="}
+
+{"PAYLOAD":"SvgFAkRpOZqdkeIrbo7w1NzzQ7x4hnfejH355d4947rJ2LLUGWKeReAyfd\/RT+Yz0NclniJzw0CtG
+8+NQfLgyF+f2g25vMlhxVwLKNPi6wf9EcZLO+WwgBj\/vfOOX3vtEs5pB6YYZPCRkvqJQl5\/KQiKQ3tqlVTm48WKZ
+ymuenmw8A1f9gQGQAL4jnt546b0I3bKZQyLU\/U4daYs0hvmXhjIKllqgl6FOwPsjnUIzivFeEolF3YJuwnDsPg6VA
+Pb16K0G1qAQCTKUI4kjjoVWJaKsbmb0BwnyR8YchJKBUW3b440KDLRxEJZ9wQBHDiN9yK0xh4\/XkYYBZ8Z5xGxviw
+AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1JRl4hdTd..}
+			
 			</pre>
 	<br>
+		<h1 translate="METERS_DIEZ"></h1>
 		
+		<br>
+		<p>Falta imagen
 		<br>
 		<p style="text-align: justify;" translate="meters_VIII">
 		
@@ -154,7 +112,7 @@ Content-Type: application/json
             		<th scope="row">RESULT</th>
             		<td><p style="text-align: justify;" translate="meters_b_1_X"></td>
             		<td>BOOLEAN</td>
-            		<td>True, False</td>
+            		<td>True</td>
             	</tr>
         	</tbody>
 		</table>
@@ -163,8 +121,8 @@ Content-Type: application/json
 		<br>
 		<pre>{  
    "RESULT": false,
-   "ERROR_CODE":25,
-   "ERROR":" ID METER WRONG"
+   "ERROR_CODE":52,
+   "ERROR":" ERROR REMOVING ASSOCIATION"
 }
 		</pre>
 		<br>

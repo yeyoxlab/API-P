@@ -13,6 +13,8 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		controller : "appController"		
 	}).when("/login", {
 		templateUrl : "templates/login.html",
+	}).when("/login_1", {
+		templateUrl : "templates/login_1.html",
 	}).when("/version", {
 		templateUrl : "templates/version.html",
 
@@ -26,7 +28,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/meters_search_less.html",
 	}).when("/meters_", {
 		templateUrl : "templates/meters_.html",
-	}).when("/meters_b", {
+	}).when("/meters_b_less", {
 		templateUrl : "templates/meters_b_less.html",
 	}).when("/meters_2", {
 		templateUrl : "templates/meters_2.html",
@@ -86,7 +88,13 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/m_config_I.html",
 	}).when("/M_TP", {
 		templateUrl : "templates/M_TP.html",
-
+	}).when("/M_B00005_TP", {
+		templateUrl : "templates/M_B00005_TP.html",
+	}).when("/M_766GPW_A", {
+		templateUrl : "templates/M_766GPW_A.html",
+	}).when("/DM_1", {
+		templateUrl : "templates/DM_1.html",
+	
 	}).when("/commands", {
 		templateUrl : "templates/commands_.html",
 	}).when("/meters_fw", {
@@ -117,7 +125,8 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	 	'PANEL_HOME'  : 'HOME', 
 	 	'PANEL_LISER' : 'List of Error', 
 	 	'PANEL_LISAP' : 'List of API available',
-	 	'PANEL_LOGIN' : 'Login',
+	 	'PANEL_LOGIN' : 'Login to the API',
+	 	'PANEL_LOGIN_I' : 'Login',
 	 	'PANEL_VERSI' : 'Version',
 	 	'PANEL_METER' : 'Meters',
 	 	'PANEL_PMETE' : 'Parameters',
@@ -184,6 +193,29 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LOGIN_CODAT' : 'CONTENT DATA',
 		'LOGIN_ENCRY' : 'ENCRYPTED (OPTIONAL)',
 		'LOGIN_ALGOR' : 'ALGORITHM (OPTIONAL)',
+		//login_1
+		'login_1_I':'Authorization header has been wrapped:',
+		'login_1_II':'Note: Once you have a successful login, the API will generate a JWE which will have an expiry time of 1 hour.',
+		'login_1_III':'It’s important not to forget the expiration time, since a time expired token, the API will return an error.',
+		'login_1_IV':'ADDING THE JWE TO THE REQUEST HEADER',
+		'login_1_V':'After obtaining the token, we add the "Authorization" header with the JWE:',
+		'login_1_VI':'STANDARD FORMAT',
+		'login_1_VII':'Protcloud API uses JSON (JavaScript Object Notation) format as standard in each transaction.',
+		'login_1_VIII':'JSONs structure is intuitive, making it easy to read and map directly to domain objects in whatever programming language is being used',
+		'login_1_IX':'Reasons to use JSON are:',
+		'login_1_X':'Less verbose- XML uses more words than necessary',
+		'login_1_XI':'JSON is faster-Parsing XML software is slow and cumbersome. Many of these DOM manipulation libraries can lead to your applications using large amounts of memory due to the verbosity and cost of parsing large XML files.',
+		'login_1_XII':'To see more details about it. http://www.json.org/',
+		'login_1_XIII':'An example of JSON result:',
+		'login_1_XIV':'https://protcloud.com/API/V1/meters?sn=000025',
+		'login_1_XV':'Encrypted data',
+		'login_1_XVI':'The result of each transaction is encrypted for added security AES 128 agree with the specification "FIPS 197 Compliant"',
+		'login_1_XVII':'Here is a list of the available algorithms:',
+		'login_1_XVIII':'It is important to note that the selection can affect the performance of the API.',
+		'login_1_XIX':'Steps for decrypting',
+		'login_1_XX':'Obtain the hash of the secret_key with the method sha-256 to get a key with 256 bits',
+		'login_1_XXI':'Decrypt with AES 256',
+		
 		//Apartado Version
 		'VERSI_TITLE' : 'Version to the API',
 			
@@ -622,7 +654,8 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'PANEL_HOME'  : 'HOME', 
 		'PANEL_LISER' : 'Lista de Errores', 
 		'PANEL_LISAP' : 'Lista de API disponible',
-		'PANEL_LOGIN' : 'Inicio de sesión',
+		'PANEL_LOGIN' : 'Acceso a la API',
+		'PANEL_LOGIN_I' : 'Inicio de sesión',
 		'PANEL_VERSI' : 'Versión',
 		'PANEL_METER' : 'Medidores',
 		'PANEL_PMETE' : 'Parámetros',
@@ -667,7 +700,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'TITLE_LOGIN' : 'Iniciar Sesi\u00F3n',
 
 		//Apartado Login 	
-		'LOGIN_TITLE' : 'Acceso al API',
+		'LOGIN_TITLE' : 'Acceso a la API',
 		'LOGIN_SAUTH' : 'Acerca de la autenticación',
 		'LOGIN_SUBTO' : 'Los token son contraseñas',
 		'LOGIN_PARAG' : 'Tenga en cuenta que la clave de consumidor y el secreto, las credenciales de token del portador y el token del portador en sí permiten el acceso para realizar solicitudes en nombre de una aplicación. Estos valores deben ser considerados tan sensibles como las contraseñas y no deben ser compartidos o distribuidos a las partes no confiables.',

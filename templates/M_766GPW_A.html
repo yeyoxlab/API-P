@@ -1,7 +1,7 @@
 <div class="col-md-11">
 	<h1 translate="TITLE_UNO"></h1>
 		<br>
-		<p><ins>https://protcloud.com/api/v1/alarms?startDate=?&endDate</ins></p>
+		<p><ins>https://protcloud.com/api/v1/meters/766GPW/alarms</ins></p>
 		<br>
 	<h1 translate="METERS_UNO"></h1>
 	<br>
@@ -28,31 +28,16 @@
     	        	</tr>
 	            	<tr>
               			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
-              			<td><p style="text-align: justify;">DB</td>
+              			<td><p style="text-align: justify;">GATEWAY</td>
             		</tr>
         		</tbody>
 			</table>	
 		</div>
-	<br>
-	<h1 translate="METERSEARCH_I"></h1>
-	<br>
-	<div class="table-responsive">
-		<table class="table table-striped">
-			<tr>
-            	<th scope="row">STARTDATE</th>
-            	<td>STRING ( LENGTH:6 UNIQUE ) </td>
-            </tr>
-           	<tr>
-            	<th scope="row">ENDDATE</th>
-            	<td>STRING ( LENGTH:6 UNIQUE ) </td>
-            </tr>
-		</table>
-	</div>
 		<br>
 	<h1 translate="METERS_OCHO"></h1>
 		<br>
 			<pre>
-GET /api/v1/alarms?startDate=2015-01-01&endDate=2016-01-20 
+GET /api/v1/meters/A00007/alarms
 HTTP/1.1
 Host: 192.168.3.127
 User-Agent: curl
@@ -79,64 +64,33 @@ Access-Control-Allow-Methods: *
 Transfer-Encoding: chunked
 Content-Type: application/json
 
-{"PAYLOAD":"oRcWgYX+z9FPZ6xeuM0Ve2gT80b+y7ZQaF1KgXLpywrcRXL9uvqGoWE+OiFSLK57zoSZUy9s0yZHfhR4P
-saPAQ=="}
-
+{"PAYLOAD":"SvgFAkRpOZqdkeIrbo7w1NzzQ7x4hnfejH355d4947rJ2LLUGWKeReAyfd\/RT+Yz0NclniJzw0CtG
+8+NQfLgyF+f2g25vMlhxVwLKNPi6wf9EcZLO+WwgBj\/vfOOX3vtEs5pB6YYZPCRkvqJQl5\/KQiKQ3tqlVTm48WKZ
+ymuenmw8A1f9gQGQAL4jnt546b0I3bKZQyLU\/U4daYs0hvmXhjIKllqgl6FOwPsjnUIzivFeEolF3YJuwnDsPg6VA
+Pb16K0G1qAQCTKUI4kjjoVWJaKsbmb0BwnyR8YchJKBUW3b440KDLRxEJZ9wQBHDiN9yK0xh4\/XkYYBZ8Z5xGxviw
+AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1JRl4hdTd..}
 			</pre>
 		<br>
+	<h1 translate="METERS_DIEZ"></h1>
 		<br>
-		<p style="text-align: justify;" translate="ASD_I">
-		<p style="text-align: justify;" translate="ASD_II">
+		<p>Falta imagen
 		<br>
-		<pre>{ 
-	"TYPE_ALARM":"DCU",
-    "CODE_ALARM":17,
-    "TIMESTAMP":"2016-01-20 15:34:20"
-},
-		</pre>
-		<br>
-			<table class="table table-striped">
-        		<thead>
-            		<tr>
-            			<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
-            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
-            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
-            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
-           			</tr>
-          		</thead>
-          		<tbody>
-            		<tr>
-            			<th scope="row">TYPE_ALARM</th>
-            			<td><p style="text-align: justify;" translate="ASD_III"></td>
-            			<td>STRING</td>
-            			<td></td>
-            		</tr>
-            		<tr>
-            			<th scope="row">CODE_ALARM</th>
-            			<td><p style="text-align: justify;" translate="ASD_IV"></td>
-            			<td>INTEGER</td>
-            			<td> > 0 </td>
-            		</tr>
-            		<tr>
-            			<th scope="row">TIMESTAMP</th>
-            			<td><p style="text-align: justify;" translate="ASD_V"></td>
-            			<td>STRING</td>
-            			<td></td>
-            		</tr>
-        		</tbody>
-			</table>
-		<br>
-	<p style="text-align: justify;" translate="ASD_VI">
-	<p style="text-align: justify;" translate="ASD_VII">
+	<p style="text-align: justify;" translate="PANEL_RESJS">
 		<br>
 		<pre>{
-"TYPE_ALARM":"METER",
-    "SERIAL_NUMBER":"C00008",
-    "CODE_ALARM":113,
-    "TIMESTAMP":"2016-01-20 10:18:21",
-    "CONSUMPTION":"0.689"
-}	
-		</pre>
+	"RESULT":{
+	"ALERTS": [
+	"TYPE_ALARM":"METER",
+	"CODE_ALARM":17,
+	"TIMESTAMP":"2016-03-31 11:47:37",
+	"CONSUMPTION": "19.72"
+    ] 
+  },      
+	"SERIAL_NUMBER":"A00001",
+	"TICKET":"9,
+}
+	</pre>
+	<br>
 		<br>
 		<div class="table-responsive">
 			<table class="table table-striped">
@@ -179,11 +133,23 @@ saPAQ=="}
         	    		<td>Double</td>
             			<td></td>
             		</tr>
+            		<tr>
+            			<th scope="row">SERIAL_NUMNBER</th>
+            			<td><p style="text-align: justify;" translate="M_766GPW_A"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TICKET</th>
+            			<td>Ticket</td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
         		</tbody>
 			</table>
 		</div>	
 		<br>
-	<p style="text-align: justify;" translate="ASD_XIII">
+	<p style="text-align: justify;" translate="ANS_I">
 		<br>
 	<p style="text-align: justify;" translate="ASD_XIV">
 		<br>
