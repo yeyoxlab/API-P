@@ -47,6 +47,10 @@ a:hover {
     text-decoration: none;
 
 }
+a:active{
+     background: #ec343c;
+    border-radius: 6px;
+}
 .btn-o {
     border:1px solid  #CECECF;
     /*border-radius*/
