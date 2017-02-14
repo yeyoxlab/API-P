@@ -1,0 +1,172 @@
+<div class="col-md-11">
+	<h1 translate="LOGIN_REURL"></h1>
+		<br>
+		<p>https:// protcloud.com/api/v1/login</p>
+		<br>
+	<h1 translate="LOGIN_RESIN"></h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
+		  <tbody>
+		    <tr>
+		      <th scope="row" translate="LOGIN_METHO"></th>
+		      <td>POST</td>
+		    </tr>
+		    <tr>
+		      <th scope="row" translate="LOGIN_REFOR"></th>
+		      <td>Encrypted with AES-128 ECB</td>
+		    </tr>
+		    <tr>
+		      <th scope="row" translate="LOGIN_DEDAT"></th>
+		      <td>JSON</td>
+		    </tr>
+		    <tr>
+		      <th scope="row" translate="LOGIN_REQAU"></th>
+		      <td>NO</td>
+		    </tr>
+		    <tr>
+		      <th scope="row" translate="LOGIN_TYPRE"></th>
+		      <td>DB</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+	<br>	
+	<H1 translate="LOGIN_CODAT"></H1>	
+	<div class="table-responsive">
+		<table class="table table-striped">
+		  <tbody>
+		    <tr>
+		      <th scope="row">NAME_APP</th>
+		      <td>STRING </td>
+		    </tr>
+		    <tr>
+		      <th scope="row">SECRET_KEY</th>
+		      <td>STRING</td>
+		    </tr>
+		    <tr>
+		      <th scope="row" translate="LOGIN_ENCRY"></th>
+		      <td>BOOLEAN (TRUE, FALSE)</td>
+		    </tr>
+		    <tr>
+		      <th scope="row" translate="LOGIN_ALGOR"></th>
+		      <td>STRING</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+	<br>
+	<h1 translate="METERS_OCHO"></h1>
+		<p style="text-align: justify;" translate="login_1_I">
+		<br>
+			<pre>
+POST /api/v1/login HTTP/1.1
+Host: 10.3.1.65
+Cache-Control: no-cache
+
+----WebKitFormBoundaryE19zNvXGzXaLvS5C
+Content-Disposition: form-data; name="name_app"
+
+My_app 
+----WebKitFormBoundaryE19zNvXGzXaLvS5C
+Content-Disposition: form-data; name="secret_key"
+
+25e72cd75d2d3e0c1061819682c97abce19a3e84
+----WebKitFormBoundaryE19zNvXGzXaLvS5C
+			</pre>
+		<br>
+	<h1 translate="METERS_NUEVE"></h1>
+		<br>
+		<pre>
+HTTP/1.1 200 OK
+Date: Wed, 28 Oct 2015 11:55:42 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Length: 545
+Content-Type: application/json
+{"RESULT":true,"TOKEN":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDM2MjMyIiwid
+WlkIjoiTWpWbE56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQ
+iOiIxNDQ2MDMyNjMyIn0.0OjSBXglbTaegrftddvjmBAdm07lKTBkMTkZZWQ4elLl6dF6VHNDVEkCc_BlMPPZIOTd0
+jq8W0uzhSGW0WCQoR7ZTObphDFWn7v-FoLn438XGjLlIG3t5zYjNKjIvrV6qVyDYmWyVfWUwJLQiG-WpT3M5jrsMZ_
+C9wPOE8x9nwa6nwheteWKT1mUFUozQ-jaKpV2o9AM9fjUWzA4-T538RfkvZlwYEf81cdv3vyPp5AqDAtApq1e34KKS
+KubzYMPJ2rumDmxEbWREdWaZhQqnc5ByBV_apAoCiSwQKEQQm2aNymvxdoQD8NfnIY8hmzx-f-coDY3E9H3GD-pP5F
+5bg"}
+		</pre>
+		<br>
+		
+		<br>
+			<p style="text-align: justify;" translate="login_1_II">
+			
+			<p style="text-align: justify;" translate="login_1_III">
+			<pre>{
+	"RESULT": false,
+	"ERROR_CODE": 4,
+	"ERROR": "SIGNATURE ERROR"
+}
+			</pre>
+		<h1 translate="login_1_IV"></h1>
+			<br>
+			<p style="text-align: justify;" translate="login_1_V">
+			<pre>
+GET /api/v1/meters HTTP/1.1
+Host: 192.168.3.127
+User-Agent: curl
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWb
+E56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3ND
+U3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNypOvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DOR
+XUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwio
+FFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFi
+fV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
+Cache-Control: no-cache
+Content-Type: charset=utf-8
+			</pre>
+			<br>
+			
+			<br>
+		<h1 translate="login_1_VI"></h1>
+			<p style="text-align: justify;" translate="login_1_VII">
+			<p style="text-align: justify;" translate="login_1_VIII">
+			<p style="text-align: justify;" translate="login_1_IX">
+				<ol>
+					<li style="text-align: justify;" translate="login_1_X"></li>
+					<li style="text-align: justify;" translate="login_1_XI"></li>
+				</ol>
+			<p style="text-align: justify;" translate="login_1_XII">
+			<p style="text-align: justify;" translate="login_1_XIII">
+			<p style="text-align: justify;" translate="login_1_XIV">
+			<pre>[  
+   {  
+	"id_meter":656,
+	"version_hw":"2.0",
+	"version_sw":"2.0",
+	"MeterName":"000025",
+	"timestamp":"2015-04-23 06:42:04",
+	"date_meter":"2000-01-00 05:53:32"
+   }
+]
+			</pre>
+			<br>
+		<h1 translate="login_1_XV"></h1>
+			<p style="text-align: justify;" translate="login_1_XVI">
+				<p style="text-align: justify;" translate="login_1_XVII">
+					<br>
+						<ul>
+							<li>aes-128-ecb</li>
+							<li>aes-128-cbc</li>
+							<li>aes-128-cfb</li>
+							<li>aes-128</li>
+							<li>aes-256</li>
+							<li>aes-256-native</li>
+						</ul>
+					<br>
+				<p style="text-align: justify;" translate="login_1_XVIII">
+				<p>Falta imagen
+			<p style="text-align: justify;" translate="login_1_XIX">
+				<ol>
+					<li value="1 style="text-align: justify;" translate="login_1_XX"></li>
+				</ol>
+			<p style="text-align: justify;" translate="login_1_XXI">
+			
+</div>
+<div class="col-md-1"></div>
