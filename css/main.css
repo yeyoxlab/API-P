@@ -14,6 +14,7 @@ h1,h2,h3,h4,h5,h6,.navbar {
 }
 .enlhover:hover{
     color: #ED1B24;
+      border-radius: 6px;
 }
 
 body {
@@ -44,6 +45,7 @@ a {
 a:hover {
     color:#434549;
     text-decoration: none;
+
 }
 .btn-o {
     border:1px solid  #CECECF;
@@ -112,14 +114,18 @@ img {
 
 .hexagon:hover {
     background:#ec343c;
+    border-radius: 6px;
+
 }
 
 .hexagon:hover:before {
     border-bottom-color:#ec343c;
+      border-radius: 6px;
 }
 
 .hexagon:hover:after {
     border-top-color: #ec343c;
+      border-radius: 6px;
 }
 
 
@@ -144,6 +150,7 @@ Navigation
 .navbar-nav>li>a {
     padding-top:25px;
     padding-bottom:25px;
+      border-radius: 6px;
 }
 
 .navbar-brand strong {
@@ -156,13 +163,19 @@ Navigation
     text-decoration:none;
 }
 
-.nav>li>a:hover,.nav>li>a:focus,nav>li>a:active:before {
+.nav>li>a:hover,.nav>li>a:focus,nav>li>a:active {
     background-color:#ec343c;
     color: white;
+      border-radius: 6px;
 }
-.nav>li:active{
+.nav>li>:active>a{
   background-color:#ec343c;
     color: white;  
+      border-radius: 6px;
+}
+ul>li:active{
+    background:#ec343c;
+      border-radius: 6px;
 }
 
 
@@ -363,6 +376,7 @@ footer.content-block {
 
 .content-block-dark {
     background:#222222;
+    bac
 }
 
 footer {
@@ -464,6 +478,11 @@ body {
     position: absolute;
     top: 0;
   }
+}
+.active{
+    background: #ec343c;
+    border-radius: 6px;
+    
 }
 
 

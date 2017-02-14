@@ -14,13 +14,18 @@
 
       //console.log($scope.objetoP.qty);
       $route.reload();
-        //console.log($scope.form_name) //to ensure scope is updating
+        //console.log($scope.form_name) 
     };
+  
+    $scope.activeLanguaje = 'en';
+
     $scope.objetoP = serveData;
     
+    $scope.activeMenu = $scope.objetoP.us;
+    console.log($scope.activeMenu);
+    $scope.objetoP.us="error";
     $scope.gotoBottom = function() {
-      // set the location.hash to the id of
-      // the element you wish to scroll to.
+    
       $location.hash('top1');
 
       // call $anchorScroll()
@@ -29,5 +34,4 @@
     };
 
   }]);
-//más de lo mismo, pero en este caso creamos una variable llamada saludo y una función
-//que gracias al objeto location y al método url nos redirigirá al login al hacer uso de ella
+

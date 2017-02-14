@@ -6,6 +6,7 @@ prot_api.service('serveData', [function ()
 {
 	return {
 	//Datos almacenados para funcionamiento
-		lan:"en"
+		lan:"en",
+		us:"Home"
 	};
 }])

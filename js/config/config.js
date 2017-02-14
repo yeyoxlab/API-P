@@ -5,7 +5,9 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		
 	}).when("/error", {
 		templateUrl : "templates/listE.html",
-		controller : "errorController"
+		activeMenu:"error",
+		controller : "errorController",
+		
 	}).when("/lista", {
 		templateUrl : "templates/listA.html",
 		controller : "appController"		
@@ -13,6 +15,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/login.html",
 	}).when("/version", {
 		templateUrl : "templates/version.html",
+
 	}).when("/meters", {
 		templateUrl : "templates/meters.html",
 	}).when("/meters_less", {
@@ -599,7 +602,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'PARAPHUNSOL_FIV' : 'The payload structure received is the following:',
 			'FIVFIELD_UNSOLI' : 'All profiles are already',
 			'SIXFIELD_UNSOLI' : 'Message successfully received',
-			'SEVFIELD_UNSOLI' : 'Error message reception'
+			'SEVFIELD_UNSOLI' : 'Error message reception',
 			//OPERATION_MODE
 			'NOTE_OPERMODE' : 'NOTE: The data modescontent can receive array of meters. The types of modes of operation and flow are specified in the following list:',
 			'LIST_OPERMODE' : 'Operating :',
