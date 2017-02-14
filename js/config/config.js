@@ -123,8 +123,8 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	 	//PANEL IZQUIERDO
 	 	'SEARCH' : 'Search :',
 	 	'PANEL_HOME'  : 'HOME', 
-	 	'PANEL_LISER' : 'List of Error', 
-	 	'PANEL_LISAP' : 'List of API available',
+	 	'PANEL_LISER' : 'Error List', 
+	 	'PANEL_LISAP' : 'Available API List',
 	 	'PANEL_LOGIN' : 'Login to the API',
 	 	'PANEL_LOGIN_I' : 'Login',
 	 	'PANEL_VERSI' : 'Version',
