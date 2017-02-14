@@ -66,6 +66,9 @@
                 <li>
                     <a  ng-class="{active : activeMenu === 'login'}" ng-click="activeMenu = 'login'" href="#login">{{'PANEL_LOGIN'|translate}}</a>
                 </li>
+                <li>
+                    <a ng-class="{active : activeMenu === 'login_1'}" ng-click="activeMenu = 'login_1'" href="#login_1" >{{'PANEL_LOGIN_I'|translate}}</a>
+                </li>
                <li>
                     <a  ng-class="{active : activeMenu === 'version'}" ng-click="activeMenu = 'version'" href="#version" >{{'PANEL_VERSI'|translate}}</a>
                 </li>
@@ -85,8 +88,7 @@
                     <a ng-class="{active : activeMenu === 'meters_'}" ng-click="activeMenu = 'meters_'" href="#meters_">Meters/UID</a>
                 </li>
                 <li>
-<!--CHECAR LINK Y FUNCIÓN-->
-                    <a href="#meters_">Meters/NUMSERIE/less</a>
+                    <a ng-class="{active : activeMenu === 'meters_b_less'}" ng-click="activeMenu = 'meters_b_less'" href="#meters_b_less">Meters/NUMSERIE/less</a>
                 </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'meters_2'}" ng-click="activeMenu = 'meters_2'" href="#meters_2">Meters</a>
@@ -175,21 +177,31 @@
                 <li>
                     <a ng-class="{active : activeMenu === 'M_TP'}" ng-click="activeMenu = 'M_TP'" href="#M_TP">meters/today_profile</a>
                 </li>
-
-                <!-- mis-->
+                <li>
+                    <a ng-class="{active : activeMenu === 'M_B00005_TP'}" ng-click="activeMenu = 'M_B00005_TP'" href="#M_B00005_TP">meters/B00005/today_profile</a>
+                </li>
+                <li>
+                    <a ng-class="{active : activeMenu === 'M_766GPW_A'}" ng-click="activeMenu = 'M_766GPW_A'" href="#M_766GPW_A">meters/766GPW/alarms</a>
+                </li>
+                <li>
+                    <a ng-class="{active : activeMenu === 'DM_1'}" ng-click="activeMenu = 'DM_1'" href="#DM_1">DisplayMeters/1</a>
+                </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'meters_SN_OP'}" ng-click="activeMenu = 'alarms_num_serie'" href="#meters_SN_OP">meters/SN/operation_mode</a>
                 </li>
                 <li>
+
                     <a ng-class="{active : activeMenu === 'meters_fw'}" ng-click="activeMenu = 'meters_fw'" href="#meters_fw">meters/fw</a>
                 </li>
                 
                 
+
+                    <a ng-class="{active : activeMenu === 'meters_fw'}" ng-click="activeMenu = 'meters_fw'" href="#meters_fw">meters/fw</a>
+                </li>                
+
                 <li>
                     <a ng-class="{active : activeMenu === 'commands'}" ng-click="activeMenu = 'commands'"   href="#commands">commands/17</a>
                 </li>
-                
-
                 <li>
                     <a ng-class="{active : activeMenu === 'operation_mode_get'}" ng-click="activeMenu = 'operation_mode_get'" href="#operation_mode_get">meters/operation_mode</a>
                 </li>
@@ -199,7 +211,6 @@
                 <li>
                     <a ng-class="{active : activeMenu === 'unsolicited_requests'}" ng-click="activeMenu = 'unsolicited_requests'"  href="#unsolicited_requests">Unsolicited Requests</a>
                 </li>
-                
         </ul>
       </div>
   </div>
