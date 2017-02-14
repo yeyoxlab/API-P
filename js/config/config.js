@@ -129,9 +129,9 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	 	'PANEL_LOGIN_I' : 'Login',
 	 	'PANEL_VERSI' : 'Version',
 	 	'PANEL_METER' : 'Meters',
-	 	'PANEL_PMETE' : 'Parameters',
+	 	'PANEL_PMETE' : 'PARAMETERS',
 	 	'PANEL_NONEN' : 'NONE',
-	 	'PANEL_RESJS' : 'JSON Response',
+	 	'PANEL_RESJS' : 'JSON RESPONSE',
 	 	'PANEL_MEANI' : 'MEANING',
 	 	'PANEL_TYPER' : 'TYPE',
 	 	'PANEL_VALUE' : 'VALUES',
@@ -143,9 +143,9 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	 	'PANEL_MODUL' : 'Type of modules',
 	 	'PANEL_VERSS' : 'Version of type modules',
 	 	// Apartado Principal
-	 	'TITLE_ONE' : 'REST APIs',
+	 	'TITLE_ONE' : 'REST APIS',
 		'PARAG_ONE' : 'The REST APIs provide programmatic access to read and write Protcloud data. Add new smart meter, delete a smart meter, update a smart meter information, read and write system information, and more. The REST API identifies Protcloud applications and users using JWE; responses are available in JSON.',
-		'TITLE_TWO' : 'Authentication JWE',
+		'TITLE_TWO' : 'AUTHENTICATION JWE',
 		'PARAG_TWO' : 'JWE represents encrypted content using JSON data structures and base64url encoding. The representation consists of three parts: the JWE Header, the JWE Encrypted Key, and the JWE Ciphertext. The three parts are base64url-encoded for transmission, and typically represented as the concatenation of the encoded strings in that order, with the three strings being separated by period (.) characters.',
 		'PARAG_THR' : 'JWE utilizes encryption to ensure the confidentiality of the contents of the Plaintext. JWE does not add a content integrity check if not provided by the underlying encryption algorithm. If such a check is needed, an algorithm providing it such as AES-GCM [NIST 800 38D] can be used, or alternatively, it can be provided through composition by encrypting a representation of the signed content (Jones Michael B., 2011).',
 		'PARAG_FOU' : 'Thanks to the advantages of JWE, PROTCLOUD used JWE-based authentication, which allows interoperability and scalability to new technological needs.',
@@ -157,11 +157,11 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'PARAG_TEN' : 'It will be used to obtain a JWE through a login.',
 
 		//list of error
-		'LOE_TITTLE':'LIST OF API ERRORS',
+		'LOE_TITTLE':'ERRORS API LIST',
 		'LOE_ERROR':'ERROR',
 		'LOE_MEANING':'MEANING',
 		//LIST OF API AVIABLE
-		'LOAA_TITTLE':'LIST OF API AVIABLE',
+		'LOAA_TITTLE':'AVAILABLE API LIST',
 		'LOAA_METHOD':'METHOD',
 		'LOAA_ACTION':'ACTION',
 
@@ -169,22 +169,22 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		//TITLE_LOGIN : 'Login or Create an Account'
 
 		//Apartado Login
-		'LOGIN_TITLE' : 'Login to the API',
-		'LOGIN_SAUTH' : 'About application-only auth',
+		'LOGIN_TITLE' : 'LOGIN TO THE API',
+		'LOGIN_SAUTH' : 'ABOUT APPLICATION-ONLY AUTH',
 		'LOGIN_SUBTO' : 'Tokens are passwords',
 		'LOGIN_PARAG' : 'Keep in mind that the consumer key & secret, bearer token credentials, and the bearer token itself grant access to make requests on behalf of an application. These values should be considered as sensitive as passwords and must not be shared or distributed to untrusted parties.',
 		'LOGIN_RESSL' : 'SSL absolutely required',
 		'LOGIN_USESS' : 'This manner of authentication is only secure if SSL is used. Therefore, all requests (both to obtain and use the tokens) must use HTTPS endpoints, which is also a requirement of using API v1. Please follow the best practices detailed in Connecting to Protcloud API using SSL - peers should always be verified.',
-		'LOGIN_TAPPL' : 'Issuing application-only requests',
+		'LOGIN_TAPPL' : 'ISSUING APPLICATION-ONLY REQUESTS',
 		'LOGIN_SOLAP' : 'First of all, it necessary to encode the secret key with SHA-128 then use it as credentials to obtain a bearer token.',
 		'LOGIN_FIELD' : 'FIELD',
 		'LOGIN_VALUE' : 'VALUE',
-		'LOGIN_OBTOK' : 'Obtain a bearer tokens',
+		'LOGIN_OBTOK' : 'OBTAIN A BEARER TOKENS',
 		'LOGIN_CASHA' : 'Once you calculated the SHA-1 of the secret key, you will use it in a new request.',
 		'LOGIN_HTTPP' : 'The request must be a HTTP POST request.',
 		'LOGIN_NAMEA' : 'The request must be include name_app and secret key',
-		'LOGIN_REURL' : 'Resource URL',
-		'LOGIN_RESIN' : 'Resource information',
+		'LOGIN_REURL' : 'RESOURCE URL',
+		'LOGIN_RESIN' : 'RESOURCE INFORMATION',
 		'LOGIN_METHO' : 'METHOD',
 		'LOGIN_REFOR' : 'RESPONSE FORMATS',
 		'LOGIN_DEDAT' : 'DECRYPTED DATA',
@@ -208,7 +208,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'login_1_XII':'To see more details about it. http://www.json.org/',
 		'login_1_XIII':'An example of JSON result:',
 		'login_1_XIV':'https://protcloud.com/API/V1/meters?sn=000025',
-		'login_1_XV':'Encrypted data',
+		'login_1_XV':'ENCRYPTED DATA',
 		'login_1_XVI':'The result of each transaction is encrypted for added security AES 128 agree with the specification "FIPS 197 Compliant"',
 		'login_1_XVII':'Here is a list of the available algorithms:',
 		'login_1_XVIII':'It is important to note that the selection can affect the performance of the API.',
@@ -217,7 +217,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'login_1_XXI':'Decrypt with AES 256',
 		
 		//Apartado Version
-		'VERSI_TITLE' : 'Version to the API',
+		'VERSI_TITLE' : 'VERSION TO THE API',
 			
 		//Meters
 			'TITLE_UNO' : 'RESOURCE URL' ,
@@ -658,9 +658,9 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'PANEL_LOGIN_I' : 'Inicio de sesión',
 		'PANEL_VERSI' : 'Versión',
 		'PANEL_METER' : 'Medidores',
-		'PANEL_PMETE' : 'Parámetros',
+		'PANEL_PMETE' : 'PAR\u00C1METROS',
 		'PANEL_NONEN' : 'NINGUNO',
-		'PANEL_RESJS' : 'Respuesta JSON',
+		'PANEL_RESJS' : 'RESPUESTA JSON',
 		'PANEL_MEANI' : 'SIGNIFICADO',
 		'PANEL_TYPER' : 'TIPO',
 		'PANEL_VALUE' : 'VALORES',
@@ -700,22 +700,22 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'TITLE_LOGIN' : 'Iniciar Sesi\u00F3n',
 
 		//Apartado Login 	
-		'LOGIN_TITLE' : 'Acceso a la API',
-		'LOGIN_SAUTH' : 'Acerca de la autenticación',
+		'LOGIN_TITLE' : 'ACCESO AL API',
+		'LOGIN_SAUTH' : 'ACERCA DE LA AUTENTICACI\u00D3N',
 		'LOGIN_SUBTO' : 'Los token son contraseñas',
 		'LOGIN_PARAG' : 'Tenga en cuenta que la clave de consumidor y el secreto, las credenciales de token del portador y el token del portador en sí permiten el acceso para realizar solicitudes en nombre de una aplicación. Estos valores deben ser considerados tan sensibles como las contraseñas y no deben ser compartidos o distribuidos a las partes no confiables.',
 		'LOGIN_RESSL' : 'SSL absolutamente requerido',
 		'LOGIN_USESS' : 'Esta forma de autenticación sólo es segura si se utiliza SSL. Por lo tanto, todas las solicitudes (tanto para obtener como utilizar los tokens) deben utilizar terminales de HTTPS, lo que también es un requisito al utilizar API v1. Siga las prácticas recomendadas detalladas en Conexión a  la API de Protcloud usando SSL usando SSL - los pares deben ser verificados siempre.',
-		'LOGIN_TAPPL' : 'Emitir las solicitudes de aplicación',
+		'LOGIN_TAPPL' : 'EMITIR LAS SOLICITUDES DE APLICACI\u00D3N',
 		'LOGIN_SOLAP' : 'En primer lugar, es necesario codificar la clave secreta con SHA-128 y luego usarla como credenciales para obtener un token de portador.',
 		'LOGIN_FIELD' : 'CAMPO',
 		'LOGIN_VALUE' : 'VALOR',
-		'LOGIN_OBTOK' : 'Obtener un token de portador',
+		'LOGIN_OBTOK' : 'OBTENER UN TOKEN',
 		'LOGIN_CASHA' : 'Una vez calculado el SHA-1 de la clave secreta, la utilizará en una nueva solicitud.',
 		'LOGIN_HTTPP' : 'La solicitud debe ser HTTP POST.',
 		'LOGIN_NAMEA' : 'La solicitud debe incluir name_app y clave secreta',
-		'LOGIN_REURL' : 'Recurso URL',
-		'LOGIN_RESIN' : 'Información de recursos',
+		'LOGIN_REURL' : 'RECURSOS URL',
+		'LOGIN_RESIN' : 'INFORMACI\u00D3N DE RECURSOS',
 		'LOGIN_METHO' : 'MÉTODO',
 		'LOGIN_REFOR' : 'FORMATOS DE RESPUESTA', 
 		'LOGIN_DEDAT' : 'DATOS DESCIFRADOS',
@@ -725,7 +725,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LOGIN_ENCRY' : 'ENCRIPTACIÓN (OPCIONAL)',
 		'LOGIN_ALGOR' : 'ALGORITMO (OPCIONAL)',
 		//Apartado Versión
-		'VERSI_TITLE' : 'Versión de la API',
+		'VERSI_TITLE' : 'VERSI\u00D3N DEL API',
 		
 		//Meters
 		'TITLE_UNO' : 'RECURSO de URL' ,
@@ -811,7 +811,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LESS_VI' : 'Demanda máxima en fase',
 		
 		//meters/search/?
-		'METERSEARCH_I' : 'PARAMETROS URL',
+		'METERSEARCH_I' : 'PAR\u00C1METROS URL',
 		'METERSEARCH_II' : 'MEDIDOR DE IDENTIFICACIÓN ÚNICA',
 		'METERSEARCH_III' : 'INTEGER',
 		'METERSEARCH_IV' : 'O',
