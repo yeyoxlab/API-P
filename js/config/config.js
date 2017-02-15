@@ -325,7 +325,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'meters_V' : 'TYPE_PROTOCOL',
 			'meters_VI' : 'TYPE_ZB_PROTOCOL',
 			'meters_VII' : 'TYPE_METER',
-			'meters_VIII' : 'JSON Response',
+			'meters_VIII' : 'JSON RESPONSE',
 			'meters_IX' : 'RESULT OF A SUCCESFUL TRANSACTION',
 			'meters_X' : 'UID OF NEW SMART METER',
 			'meters_XI' : 'Or an error with the description',
@@ -620,7 +620,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			
 
 			//unsolicited_request.html *INGLÉS*
-			'TITILE_UNSOLICITED' : 'Unsolicited requests',
+			'TITILE_UNSOLICITED' : 'UNSOLICITED REQUESTS',
 			'PARAPHUNSOL_ONE' : 'This behavior is used to send alerts or exceptional circumstances as a mechanism which uses the MQTT protocol with QoS2 quality\u002C which is the safest way. Likewise\u002C every message is encrypted with AES 128 and with a JSON format.',
 			'PARAPHUNSOL_TWO' : 'Before any transaction with MQTT\u002C you must set the IP address of MQTT server\u002C user\u002C password and topic. (See more details)',
 			'PARAPHUNSOL_TRE' : 'The payload structure sent is the following:',
@@ -833,7 +833,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'meters_V' : 'TIPO DE PROTOCOLO',
 		'meters_VI' : 'TIPO ZB PROTOCOLO',
 		'meters_VII' : 'TIPO DE MEDIDOR',
-		'meters_VIII' : 'Respuesta de JSON',
+		'meters_VIII' : 'RESPUESTA JSON',
 		'meters_IX' : 'Resultado de una transacción exitosa',
 		'meters_X' : 'UID de nuevo medidor inteligente',
 		'meters_XI' : 'O un error con la descripción',
@@ -1125,7 +1125,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 
 
 		//unsolicited_request.html *ESPAÑOL*
-		'TITILE_UNSOLICITED' : 'Solicitudes no requeridas',
+		'TITILE_UNSOLICITED' : 'SOLICITUDES NO REQUERIDAS',
 		'PARAPHUNSOL_ONE' : 'Este comportamiento se utiliza para enviar alertas o circunstancias excepcionales como un mecanismo que utiliza el protocolo MQTT con calidad QoS2\u002C	 que es la forma más segura. Del mismo modo\U201A cada mensaje se cifra con AES 128 y con un formato JSON.',
 		'PARAPHUNSOL_TWO' : 'Antes de cualquier transacción con MQTT\u002C debe establecer la dirección IP del servidor MQTT\u002C el usuario\u002C la contraseña y el tema. (Ver más detalles)',
 		'PARAPHUNSOL_TRE' : 'The payload structure sent is the following:',
