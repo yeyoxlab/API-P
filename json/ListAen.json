@@ -2,9 +2,9 @@
 	
 		{
 			"Method":"POST",
-			"URL":"api/v1/login",
+			"URL":"api/v1/login_1",
 			"Action":"Returns token for the authorization",
-			"Refer":"#login"
+			"Refer":"#login_1"
 		},
 		{
 			"Method":"GET",

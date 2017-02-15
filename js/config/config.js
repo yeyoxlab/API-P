@@ -264,7 +264,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'METERS_IV_UNO' : 'Indicates the status of the RTC (real time clock)',
 			'METERS_IV_DOS' : 'Indicates the status of the flash memory ',
 			'METERS_IV_TRES' : 'Indicates the status of the memory eeprom',
-			'METERS_IV_CUATRO' : 'Indicates the status of mesure voltaje',
+			'METERS_IV_CUATRO' : 'Indicates the status of measure voltaje',
 			'METERS_IV_CINCO' : 'Indicates position of Smart meter',
 			'METERS_IV_SEIS' : 'Indicates state of relay',
 			'METERS_IV_SIETE' : 'CONSUMPTION_PHASES',
@@ -299,7 +299,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'LESS_II' : 'Timestamp of data',
 			'LESS_III' : 'Meter status',
 			'LESS_IV' : 'Indicates state of relay',
-			'LESS_V' : 'Indicates the status of mesure voltaje',
+			'LESS_V' : 'Indicates the status of measure voltaje',
 			'LESS_VI' : 'Maxim demand in phase',
 			
 			//meters/search/?
@@ -315,7 +315,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 			'LESS_S_II' : 'Timestamp of data',
 			'LESS_S_III' : 'Meter status',
 			'LESS_S_IV' : 'Indicates state of relay',
-			'LESS_S_V' : 'Indicates the status of mesure voltaje',
+			'LESS_S_V' : 'Indicates the status of measure voltaje',
 			
 			//meters_
 			'meters_I' : 'CONTENT DATA',

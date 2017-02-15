@@ -106,19 +106,19 @@
                     <a ng-class="{active : activeMenu === 'meters_reset_meter'}" ng-click="activeMenu = 'meters_reset_meter'" href="#meters_reset_meter">meters/reset_meter</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'alarms_startDate_endDate'}" ng-click="activeMenu = 'alarms_startDate_endDate'" href="#alarms_startDate_endDate">alarms?startDate=?&endDate</a>
+                    <a ng-class="{active : activeMenu === 'alarms_startDate_endDate'}" ng-click="activeMenu = 'alarms_startDate_endDate'" href="#alarms_startDate_endDate">alarms?startDate=yyyy-mm-dd&endDate</a>
                 </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'alarms_num_serie'}" ng-click="activeMenu = 'alarms_num_serie'" href="#alarms_num_serie">alarms?num_serie=?</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'alarms_SD_ED_NS'}" ng-click="activeMenu = 'alarms_SD_ED_NS'" href="#alarms_SD_ED_NS">alarms?startDate=?&endDate=?num_serie=?</a>
+                    <a ng-class="{active : activeMenu === 'alarms_SD_ED_NS'}" ng-click="activeMenu = 'alarms_SD_ED_NS'" href="#alarms_SD_ED_NS">alarms?startDate=yyyy-mm-dd&endDate=yyyy-mm-ddnum_serie<br>=yyyy-mm-dd</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'alarms_SD_ED_Limit'}" ng-click="activeMenu = 'alarms_SD_ED_Limit'" href="#alarms_SD_ED_Limit">alarms?startDate=?&endDate=?limit=?</a>
+                    <a ng-class="{active : activeMenu === 'alarms_SD_ED_Limit'}" ng-click="activeMenu = 'alarms_SD_ED_Limit'" href="#alarms_SD_ED_Limit">alarms?startDate=yyyy-mm-dd&endDate=yyyy-mm-ddlimit=?</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'alarms_SD_ED_LT_READ'}" ng-click="activeMenu = 'alarms_SD_ED_LT_READ'" href="#alarms_SD_ED_LT_READ">alarms?startDate=?&endDate=?limit=?&type=READ</a>
+                    <a ng-class="{active : activeMenu === 'alarms_SD_ED_LT_READ'}" ng-click="activeMenu = 'alarms_SD_ED_LT_READ'" href="#alarms_SD_ED_LT_READ">alarms?startDate=yyyy-mm-dd&endDate=yyyy-mm-ddlimit=?&type=READ</a>
                 </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'system'}" ng-click="activeMenu = 'system'" href="#system">System</a>
@@ -136,7 +136,7 @@
                     <a ng-class="{active : activeMenu === 'HM_IM_SD_ED_TYPE'}" ng-click="activeMenu = 'HM_IM_SD_ED_TYPE'" href="#HM_IM_SD_ED_TYPE">history_meter/id_meter/<br>starDate/endDate/type</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'IR_MI_SD_ED'}" ng-click="activeMenu = 'IR_MI_SD_ED'" href="#IR_MI_SD_ED">instant_record/meder_id/<br>starDate/endDate</a>
+                    <a ng-class="{active : activeMenu === 'IR_MI_SD_ED'}" ng-click="activeMenu = 'IR_MI_SD_ED'" href="#IR_MI_SD_ED">instant_record/meder_id/<br>startDate/endDate</a>
                 </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'statistics'}" ng-click="activeMenu = 'statistics'" href="#statistics">statistics</a>
@@ -169,7 +169,7 @@
                     <a ng-class="{active : activeMenu === 'M_Config'}" ng-click="activeMenu = 'M_Config'" href="#M_Config">Meters/config</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'M_A00003_C'}" ng-click="activeMenu = 'M_A00003_C'" href="#M_A00003_C">Meters/A00003/config</a>
+                    <a ng-class="{active : activeMenu === 'M_A00003_C'}" ng-click="activeMenu = 'M_A00003_C'" href="#M_A00003_C">Meters/numserie/config</a>
                 </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'm_config_I'}" ng-click="activeMenu = 'm_config_I'" href="#m_config_I">meters/config</a>
@@ -178,10 +178,10 @@
                     <a ng-class="{active : activeMenu === 'M_TP'}" ng-click="activeMenu = 'M_TP'" href="#M_TP">meters/today_profile</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'M_B00005_TP'}" ng-click="activeMenu = 'M_B00005_TP'" href="#M_B00005_TP">meters/B00005/today_profile</a>
+                    <a ng-class="{active : activeMenu === 'M_B00005_TP'}" ng-click="activeMenu = 'M_B00005_TP'" href="#M_B00005_TP">meters/numserie/<br>today_profile</a>
                 </li>
                 <li>
-                    <a ng-class="{active : activeMenu === 'M_766GPW_A'}" ng-click="activeMenu = 'M_766GPW_A'" href="#M_766GPW_A">meters/766GPW/alarms</a>
+                    <a ng-class="{active : activeMenu === 'M_766GPW_A'}" ng-click="activeMenu = 'M_766GPW_A'" href="#M_766GPW_A">meters/numserie/alarms</a>
                 </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'DM_1'}" ng-click="activeMenu = 'DM_1'" href="#DM_1">DisplayMeters/1</a>
@@ -199,7 +199,7 @@
                     <a ng-class="{active : activeMenu === 'meters_fw'}" ng-click="activeMenu = 'meters_fw'" href="#meters_fw">meters/fw</a>
                 </li>               
                 <li>
-                    <a ng-class="{active : activeMenu === 'commands'}" ng-click="activeMenu = 'commands'"   href="#commands">commands/17</a>
+                    <a ng-class="{active : activeMenu === 'commands'}" ng-click="activeMenu = 'commands'"   href="#commands">commands/numserie</a>
                 </li>
                 <li>
                     <a ng-class="{active : activeMenu === 'unsolicited_requests'}" ng-click="activeMenu = 'unsolicited_requests'"  href="#unsolicited_requests">Unsolicited Requests</a>
