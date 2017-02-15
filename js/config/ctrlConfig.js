@@ -25,7 +25,8 @@
     $scope.activeLanguaje = 'en';
 
     $scope.objetoP = serveData;
-  //  console.log(location);
+  console.log(location);
+  $scope.paramDir=location;
     
     //$scope.activeMenu = $scope.objetoP.us;
     //console.log($scope.activeMenu);

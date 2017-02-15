@@ -488,7 +488,13 @@ body {
     border-radius: 6px;
     
 }
-
+.consoleFx{
+    background:black;
+    color: #4CFF00;
+    width: 95%;
+    height: 300px;
+    border-radius: 7px
+}
 
 ::-webkit-scrollbar {
   width: 8px;
