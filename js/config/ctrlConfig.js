@@ -1,5 +1,5 @@
- prot_api.controller('CtrlPrin',['$scope', '$route','$translate','serveData','$location','$anchorScroll', function (
-  $scope, $route,$translate,serveData,$location,$anchorScroll) {
+ prot_api.controller('CtrlPrin',['$scope', '$route','$translate','serveData','$location','$anchorScroll','$http', function (
+  $scope, $route,$translate,serveData,$location,$anchorScroll,$http) {
     $scope.changeLanguage = function(key){
       $translate.use(key);
       
@@ -16,13 +16,19 @@
       $route.reload();
         //console.log($scope.form_name) 
     };
-  
+    $http.get('https://protcloud.com/apps/v1/version', 
+    {})
+    .then(function(response) {
+            
+            //console.log(response);
+    });
     $scope.activeLanguaje = 'en';
 
     $scope.objetoP = serveData;
+  //  console.log(location);
     
-    $scope.activeMenu = $scope.objetoP.us;
-    console.log($scope.activeMenu);
+    //$scope.activeMenu = $scope.objetoP.us;
+    //console.log($scope.activeMenu);
     $scope.objetoP.us="error";
     $scope.gotoBottom = function() {
     

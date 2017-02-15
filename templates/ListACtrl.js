@@ -15,7 +15,7 @@ prot_api.controller("errorController", function ($scope, $http) {
         $scope.myData= response.data;
        $scope.activeMenu="error";
        // $scope.activeMenu="Home";
-         console.log($scope.activeMenu);
+         //console.log($scope.activeMenu);
     });
 	 
 });
