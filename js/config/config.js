@@ -724,6 +724,30 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LOGIN_CODAT' : 'DATOS DE CONTENIDO',
 		'LOGIN_ENCRY' : 'ENCRIPTACIÓN (OPCIONAL)',
 		'LOGIN_ALGOR' : 'ALGORITMO (OPCIONAL)',
+		
+		//login_1
+		'login_1_I':'El encabezado de autorización se ha envuelto:',
+		'login_1_II':'Nota: Una vez que tenga un inicio de sesión exitoso, la API generará un JWE que tendrá un tiempo de expiración de 1 hora.',
+		'login_1_III':'Es importante no olvidar el tiempo de caducidad, ya que una vez expirado token, la API devolverá un error.',
+		'login_1_IV':'AÑADIR EL JWE A LA SOLICITUD HEADER',
+		'login_1_V':'Después de obtener el token, agregamos el encabezado "Autorización" con el JWE:',
+		'login_1_VI':'FORMATO ESTANDAR',
+		'login_1_VII':'Protcloud API utiliza el formato JSON (Object Object Notation) como estándar en cada transacción.',
+		'login_1_VIII':'La estructura de JSONs es intuitiva, por lo que es fácil de leer y asignar directamente a los objetos de dominio en cualquier lenguaje de programación que se está utilizando',
+		'login_1_IX':'Razones para usar JSON son:',
+		'login_1_X':'Menos verbal: XML utiliza más palabras de las necesarias',
+		'login_1_XI':'JSON es más rápido: el software XML de análisis es lento y engorroso. Muchas de estas bibliotecas de manipulación de DOM pueden conducir a sus aplicaciones utilizando grandes cantidades de memoria debido a la verbosidad y el costo de analizar grandes archivos XML.',
+		'login_1_XII':'Para ver más detalles al respecto. http://www.json.org/',
+		'login_1_XIII':'Un ejemplo de resultado JSON:',
+		'login_1_XIV':'https://protcloud.com/API/V1/meters?sn=000025',
+		'login_1_XV':'Datos Cifrados',
+		'login_1_XVI':'El resultado de cada transacción se cifra para mayor seguridad AES 128 está de acuerdo con la especificación "FIPS 197 Compliant"',
+		'login_1_XVII':'Aquí hay una lista de los algoritmos disponibles:',
+		'login_1_XVIII':'Es importante tener en cuenta que la selección puede afectar el rendimiento de la API.',
+		'login_1_XIX':'Pasos para descifrar',
+		'login_1_XX':'Obtener el hash de la clave secreta con el método sha-256 para obtener una clave con 256 bits',
+		'login_1_XXI':'Descifrar con AES 256',
+		
 		//Apartado Versión
 		'VERSI_TITLE' : 'VERSI\u00D3N DEL API',
 		
