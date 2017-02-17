@@ -1,15 +1,25 @@
-prot_api.controller("appController", function ($scope, $http, dataResource) {
-	$http.get('json/ListA.json').success(function (dataA) {
-	 	$scope.datosA = dataA;
-	});
-    
-    $scope.datosAResource = dataResource.get();
-})
+//lista de api
+prot_api.controller("appController", function ($scope, $http) {
+	 $http.get("json/ListA"+$scope.objetoP.lan+".json").then(function(response) {
+        $scope.myData = response.data;
+       // console.log($scope.objetoP.lan);
+        
+    });
+	
+	 
+});
+
+//lista de errores
+prot_api.controller("errorController", function ($scope, $http) {
+	 $http.get("json/ListE"+$scope.objetoP.lan+".json").then(function(response) {
+        $scope.myData= response.data;
+       $scope.activeMenu="error";
+       // $scope.activeMenu="Home";
+         //console.log($scope.activeMenu);
+    });
+	 
+});
  
 
-prot_api.factory("dataResource", function ($resource) {
-    return $resource("json/ListA.json",
-        {}, 
-        { get: { method: "GET", isArray: true }
-    })
-})
+
+

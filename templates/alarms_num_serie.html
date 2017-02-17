@@ -1,0 +1,486 @@
+<div class="col-md-11">
+	<h2 translate="TITLE_UNO"></h2>
+		<br>
+		<p><ins>https://protcloud.com/api/v1/alarms?num_serie=?</ins></p>
+		<br>
+	<h2 translate="METERS_UNO"></h2>
+	<br>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+        	    	<tr>
+    	    	    	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
+	            		<th><p style="text-align: justify;">GET</th>
+           			</tr>
+        	  	</thead>
+    	      	<tbody>
+	            	<tr>
+            			<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            			<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
+            		</tr>
+        	    	<tr>
+    	        		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+	            		<td><p style="text-align: justify;">JSON</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row"><p style="text-align: justify;" translate="METERS_CINCO"></th>
+        	      		<td><p style="text-align: justify;" translate="METERS_SEIS"></td>
+    	        	</tr>
+	            	<tr>
+              			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              			<td><p style="text-align: justify;">DB</td>
+            		</tr>
+        		</tbody>
+			</table>	
+		</div>
+		
+	<br>
+	<h2 translate="METERSEARCH_I"></h2>
+	<br>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tr>
+            	<th scope="row">NUM_SERIE</th>
+            	<td>STRING ( LENGTH:6 UNIQUE ) </td>
+            </tr>
+		</table>
+	</div>
+		<br>
+	<h2 translate="METERS_OCHO"></h2>
+		<br>
+			<pre>
+GET /api/v1/ alarms?num_serie=A00001
+HTTP/1.1
+Host: 192.168.1.5
+User-Agent: curl
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWb
+E56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3ND
+U3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNypOvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DOR
+XUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwio
+FFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFi
+fV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
+Cache-Control: no-cache
+			</pre>
+		<br>
+	<h2 translate="METERS_NUEVE"></h2>
+		<br>
+			<pre>
+HTTP/1.1 200 OK
+Date: Wed, 28 Oct 2015 15:15:10 GMT
+Server: Apache
+Vary: Authorization,Accept-Encoding
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Access-Control-Allow-Orgin: *
+Access-Control-Allow-Methods: *
+Transfer-Encoding: chunked
+Content-Type: application/json
+
+{"PAYLOAD":"oRcWgYX+z9FPZ6xeuM0Ve2gT80b+y7ZQaF1KgXLpywrcRXL9uvqGoWE+OiFSLK57zoSZUy9s0yZHfh
+R4PsaPAQ=="}
+			</pre>
+		<br>
+	<p style="text-align: justify;" translate="METERS_DIEZ">
+		<br>
+	<p>Falta imagen
+		<br>
+	<p style="text-align: justify;" translate="PANEL_RESJS">
+		<br>
+		<pre>{ 
+	"TYPE_ALARM":"METER",
+	"SERIAL_NUMBER":""A00001",
+	"CODE_ALARM":17,
+	"TIMESTAMP":"2016-01-20 19:16:47"
+	"CONSUMPTION": "19.72"
+},
+		</pre>
+		<br>
+			<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
+           			</tr>
+          		</thead>
+          		<tbody>
+            		<tr>
+            			<th scope="row">TYPE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_VIII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">SERIAL_NUMNBER</th>
+            			<td><p style="text-align: justify;" translate="ASD_IX"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CODE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_X"></td>
+            			<td>INTEGER</td>
+            			<td> > 0 </td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TIMESTAMP</th>
+            			<td><p style="text-align: justify;" translate="ASD_XI"></td>
+            			<td>STRING</td>
+            			<td>MySQL format</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CONSUMPTION</th>
+            			<td><p style="text-align: justify;" translate="ASD_XII"></td>
+        	    		<td>Double</td>
+            			<td></td>
+            		</tr>
+        		</tbody>
+			</table>
+		</div>
+		<br>
+		<br>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
+           			</tr>
+          		</thead>
+          		<tbody>
+            		<tr>
+            			<th scope="row">TYPE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_VIII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">SERIAL_NUMNBER</th>
+            			<td><p style="text-align: justify;" translate="ASD_IX"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CODE_ALARM</th>
+            			<td><p style="text-align: justify;" translate="ASD_X"></td>
+            			<td>INTEGER</td>
+            			<td> > 0 </td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TIMESTAMP</th>
+            			<td><p style="text-align: justify;" translate="ASD_XI"></td>
+            			<td>STRING</td>
+            			<td>MySQL format</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CONSUMPTION</th>
+            			<td><p style="text-align: justify;" translate="ASD_XII"></td>
+        	    		<td>Double</td>
+            			<td></td>
+            		</tr>
+        		</tbody>
+			</table>
+		</div>	
+		<br>
+	<p style="text-align: justify;" translate="ANS_I">
+		<br>
+	<p style="text-align: justify;" translate="ASD_XIV">
+		<br>
+		<table class="table table-striped">
+        	<thead>
+            	<tr>
+            		<th><p style="text-align: justify;" translate="ASD_XV"></th>
+            		<th><p style="text-align: justify;" translate="ASD_XVI"></th>
+           		</tr>
+          	</thead>
+          	<tbody>
+            	<tr>
+            		<th scope="row">1</th>
+            		<td><p style="text-align: justify;" translate="ASD_XVII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">2</th>
+            		<td><p style="text-align: justify;" translate="ASD_XVIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">3</th>
+            		<td><p style="text-align: justify;" translate="ASD_XIX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">4</th>
+            		<td><p style="text-align: justify;" translate="ASD_XX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">5</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">6</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">7</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">8</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXIV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">9</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">10</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXVI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">11</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXVII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">12</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXVIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">13</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXIX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">14</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">15</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">16</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXII"></td>
+            	</tr>
+            </tbody>
+		</table>
+		<br>
+	<p style="text-align: justify;" translate="ASD_XXXIII">
+		<br>
+		<table class="table table-striped">
+        	<thead>
+            	<tr>
+            		<th><p style="text-align: justify;" translate="ASD_XV"></th>
+            		<th><p style="text-align: justify;" translate="ASD_XVI"></th>
+           		</tr>
+          	</thead>
+          	<tbody>
+            	<tr>
+            		<th scope="row">1</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXIV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">12</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">13</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXVI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">15</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXVII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">23</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXVIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">24</th>
+            		<td><p style="text-align: justify;" translate="ASD_XXXIX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">25</th>
+            		<td><p style="text-align: justify;" translate="ASD_XL"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">26</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">27</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">28</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">29</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLIV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">30</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">31</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLVI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">109</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLVII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">110</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLVIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">111</th>
+            		<td><p style="text-align: justify;" translate="ASD_XLIX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">112</th>
+            		<td><p style="text-align: justify;" translate="ASD_L"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">113</th>
+            		<td><p style="text-align: justify;" translate="ASD_LI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">115</th>
+            		<td><p style="text-align: justify;" translate="ASD_LII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">116</th>
+            		<td><p style="text-align: justify;" translate="ASD_LIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">117</th>
+            		<td><p style="text-align: justify;" translate="ASD_LIV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">118</th>
+            		<td><p style="text-align: justify;" translate="ASD_LV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">119</th>
+            		<td><p style="text-align: justify;" translate="ASD_LVI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">120</th>
+            		<td><p style="text-align: justify;" translate="ASD_LVII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">121</th>
+            		<td><p style="text-align: justify;" translate="ASD_LVIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">122</th>
+            		<td><p style="text-align: justify;" translate="ASD_LIX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">123</th>
+            		<td><p style="text-align: justify;" translate="ASD_LX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">124</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">125</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">126</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">127</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXIV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">128</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">129</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXVI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">130</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXVII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">131</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXVIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">132</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXIX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">133</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">134</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">135</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">136</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">137</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXIV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">138</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXV"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">139</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXVI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">140</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXVII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">141</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXVIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">142</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXIX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">143</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXX"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">144</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXI"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">145</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">146</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXIII"></td>
+            	</tr>
+            	<tr>
+            		<th scope="row">147</th>
+            		<td><p style="text-align: justify;" translate="ASD_LXXXIV"></td>
+            	</tr>
+            </tbody>
+		</table>
+</div>
+<div class="col-md-1">
+</div>

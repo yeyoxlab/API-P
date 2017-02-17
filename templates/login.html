@@ -1,22 +1,25 @@
 <div class="col-md-11">
-	<h1>Login to the API</h1>
+	<h1 translate="LOGIN_TITLE"></h1>
 	<br>
-	<img src="img/1.png" class="img-responsive img-thumbnail center-block" alt="" >
+	<img src="img/1.png" title="Login Process" class="img-responsive img-thumbnail center-block" alt="" >
 	<br>
-	<h2>About application-only auth</h2>
-	<h3>Tokens are passwords</h3>
-	<p class="text-justify">Keep in mind that the consumer key & secret, bearer token credentials, and the bearer token itself grant access to make requests on behalf of an application. These values should be considered as sensitive as passwords and must not be shared or distributed to untrusted parties.</p>
-	<h3>SSL absolutely required</h3>
-	<p class="text-justify">This manner of authentication is only secure if SSL is used. Therefore, all requests (both to obtain and use the tokens) must use HTTPS endpoints, which is also a requirement of using API v1. Please follow the best practices detailed in Connecting to Protcloud API using SSL - peers should always be verified.</p>
-	<h2>Issuing application-only requests</h2>
-	<p class="text-justify">First of all, it necessary to encode the secret key with SHA-128 then use it as credentials to obtain a bearer token.</p>
 	<br>
+	<h2 translate="LOGIN_SAUTH"></h2>
+	<h3 translate="LOGIN_SUBTO"></h3>
+	<p class="text-justify" translate="LOGIN_PARAG"></p>
+	<br>
+	<h3 translate="LOGIN_RESSL"></h3>
+	<p class="text-justify" translate="LOGIN_USESS"> </p> 
+	<br>
+	<h2 translate="LOGIN_TAPPL"></h2>
+	<p class="text-justify" translate="LOGIN_SOLAP"></p>
+
 	<div class="table-responsive">
 		<table class="table table-striped">
 		  <thead>
 		    <tr>
-		      <th>FIELD</th>
-		      <th>VALUE</th>
+		      <th translate="LOGIN_FIELD"></th>
+		      <th translate="LOGIN_VALUE"></th>
 		    </tr>
 		  </thead>
 		  <tbody>
@@ -35,66 +38,13 @@
 		  </tbody>
 		</table>
 	</div>
-	
-	<h3>Obtain a bearer token</h2>
-	<p>Once you calculated the SHA-1 of the secret key, you will use it in a new request.</p>
-	<ul>
-		<li>The request must be a HTTP POST request.</li>
-		<li>The request must be include name_app and secret key</li>
-	</ul>
-	<h2>RESOURCE URL</h1>
-	<p>https:// protcloud.com/api/v1/login</p>
-	<h2>RESOURCE INFORMATION</h2>
 	<br>
-	<H2>CONTENT DATA</H2>
-	<div class="table-responsive">
-		<table class="table table-striped">
-		  <tbody>
-		    <tr>
-		      <th scope="row">METHOD</th>
-		      <td>POST</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">RESPONSE FORMATS</th>
-		      <td>Encrypted with AES-128 ECB</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">DECRYPTED DATA</th>
-		      <td>JSON</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">REQUIRES AUTHENTICATION?</th>
-		      <td>NO</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">TYPE REQUEST</th>
-		      <td>DB</td>
-		    </tr>
-		  </tbody>
-		</table>
-	</div>
-
-	<div class="table-responsive">
-		<table class="table table-striped">
-		  <tbody>
-		    <tr>
-		      <th scope="row">NAME_APP</th>
-		      <td>STRING </td>
-		    </tr>
-		    <tr>
-		      <th scope="row">SECRET_KEY</th>
-		      <td>STRING</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">ENCRYPTED(OPTIONAL)</th>
-		      <td>BOOLEAN (TRUE, FALSE)</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">ALGORITHM(OPTIONAL)</th>
-		      <td>STRING</td>
-		    </tr>
-		  </tbody>
-		</table>
-	</div>
+	<h2 translate="LOGIN_OBTOK"></h2>
+	<p translate="LOGIN_CASHA"></p>
+	<ul>
+		<li translate="LOGIN_HTTPP"></li>
+		<li translate="LOGIN_NAMEA"></li>
+	</ul>
+	<br>
 </div>
 <div class="col-md-1"></div>

@@ -1,40 +1,41 @@
 <div class="col-md-11">
-	<h3>RESOURCE URL</h3>
+	<h2 translate="TITLE_UNO"></h2>
+		<br>
 		<p><ins>https://protcloud.com/api/v1/meters</ins></p>
 		<br>
-	<h3>RESOURCE INFORMATION</h3>
+	<h2 translate="METERS_UNO"></h2>
 	<br>
 	<div class="table-responsive">
 		<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>METHOD</th>
-            	<th>GET</th>
+            	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
+            	<th><p style="text-align: justify;">GET</th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
-            		<th scope="row">RESPONSE FORMATS</th>
-            		<td>Encrypted with AES-128 ECB</td>
+            		<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            		<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
             	</tr>
             	<tr>
-            		<th scope="row">DECRYPTED DATA</th>
-            		<td>JSON</td>
+            		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+            		<td><p style="text-align: justify;">JSON</td>
             	</tr>
             	<tr>
-              		<th scope="row">REQUIRES AUTHENTICATION?</th>
-              		<td>YES</td>
+              		<th scope="row"><p style="text-align: justify;" translate="METERS_CINCO"></th>
+              		<td><p style="text-align: justify;" translate="METERS_SEIS"></td>
             	</tr>
             	<tr>
-              		<th scope="row">TYPE REQUEST</th>
-              		<td>DB</td>
+              		<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              		<td><p style="text-align: justify;">DB</td>
             	</tr>
         	</tbody>
 		</table>
 	</div>
 	<br>
-	<h3>REQUEST</h3>
-	<p class="">
+	<h2 translate="METERS_OCHO"></h2>
+		<br>
 			<pre>
 GET /api/v1/meters HTTP/1.1
 Host: 192.168.3.127
@@ -47,12 +48,9 @@ luSCz9mo7ECxIikkYFifV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqS
 Cache-Control: no-cache
 Content-Type: charset=utf-8
 			</pre>
-			</p>
 	<br>
-	<br>
-		<h3>RESPONSE</h3>
-		<p class="">
-			<pre>
+	<h2 translate="METERS_NUEVE"></h2>
+		<pre>
 HTTP/1.1 200 OK
 Date: Wed, 28 Oct 2015 15:15:10 GMT
 Server: Apache
@@ -69,49 +67,50 @@ Content-Type: application/json
 ymuenmw8A1f9gQGQAL4jnt546b0I3bKZQyLU\/U4daYs0hvmXhjIKllqgl6FOwPsjnUIzivFeEolF3YJuwnDsPg6VA
 Pb16K0G1qAQCTKUI4kjjoVWJaKsbmb0BwnyR8YchJKBUW3b440KDLRxEJZ9wQBHDiN9yK0xh4\/XkYYBZ8Z5xGxviw
 AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1JRl4hdTd..}
-			</pre>
-			</p>
-	<br>
-	<br>
-		<h3>EXAMPLE IN POSTMAN</h3>
-		<p>There are multiple results from an array with all smart meters to a false result with the error description. </p>
+		</pre>
 		
+		<br>
+		<p style="text-align: justify;" translate="METERS_ONCE">
+		<p style="text-align: justify;" translate="METERS_DOCE">
+		<br>
 		<pre>{  
-   "RESULT”: false,
+   "RESULT": false,
    "ERROR_CODE":3,
    "ERROR":"ANY SMART METER FOUND"
 }
 		</pre>
-			<table class="table table-striped">
+		<br>
+		<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
+            	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">RESULT</th>
-            		<td>Error in transaction</td>
+            		<td><p style="text-align: justify;" translate="METERS_DIECISIETE"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
             		<th scope="row">ERROR_CODE</th>
-            		<td>Unique error detect</td>
+            		<td><p style="text-align: justify;" translate="METERS_DIECIOCHO"></td>
             		<td>INTEGER</td>
             		<td> > 0, 1, 2, 3..., N</td>
             	</tr>
             	<tr>
               		<th scope="row">ERROR</th>
-              		<td>Description of error</td>
+              		<td><p style="text-align: justify;" translate="METERS_DIECINUEVE"></td>
               		<td>STRING</td>
               		<td></td>
             	</tr>
         	</tbody>
 		</table>
+	<p style="text-align: justify;" translate="METERS_II">
 		<pre>
 [{
 	"INFO_METER": {
@@ -171,157 +170,158 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
 ]		
 		</pre>
 		<br>
-		<h3>INFO_METER</h3>
+		<h2 translate="METERS_II_UNO"></h2>
 			<br>
-			<p>NFO_METER is applicable for all types of smart meters</p>
+			<p style="text-align: justify;" translate="METERS_II_DOS">
 			<table class="table table-striped">
         	<thead>
             	<tr>
-            	<th>FIELD</th>
-            	<th>MEANING</th>
-            	<th>TYPE</th>
-            	<th>VALUES</th>
+            	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            	<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
            		</tr>
           	</thead>
           	<tbody>
             	<tr>
             		<th scope="row">ID_METER</th>
-            		<td>Unique ID</td>
+            		<td><p style="text-align: justify;" translate="METERS_II_TRES"></td>
             		<td>INTEGER</td>
             		<td> > 0, 1, 2, 3..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">SLOT</th>
-            		<td>Meter position in the cabinet</td>
+            		<td><p style="text-align: justify;" translate="METERS_II_CUATRO"></td>
             		<td>INTEGER</td>
             		<td> > 0, 1, 2, 3..., 24</td>
             	</tr>
             	<tr>
               		<th scope="row">TYPE_METER</th>
-            		<td>Meter position in the cabinet type of smart meter</td>
+            		<td><p style="text-align: justify;" translate="METERS_II_CINCO"></td>
             		<td>STRING</td>
             		<td>1S, 12S, 16S</td>
             	</tr>
             	<tr>
               		<th scope="row">SERIAL_NUMBER</th>
-            		<td>Serial number of the smart meter</td>
+            		<td><p style="text-align: justify;" translate="METERS_II_SEIS"></td>
             		<td>STRING</td>
             		<td>Variable ( length:4 )</td>
             	</tr>
             	<tr>
               		<th scope="row">CODE_METE</th>
-            		<td>Meter code given by cfe</td>
+            		<td><p style="text-align: justify;" translate="METERS_II_SIETE"></td>
             		<td>STRING</td>
             		<td>Variable ( length:4 )</td>
             	</tr>
             	<tr>
               		<th scope="row">LOTE</th>
-            		<td>Lot number manufacturer</td>
+            		<td><p style="text-align: justify;" translate="METERS_II_OCHO"></td>
             		<td>STRING</td>
             		<td>Variable ( length:4 )</td>
             	</tr>
             	<tr>
               		<th scope="row">DATE_METER</th>
-            		<td>Date of smart meter</td>
+            		<td><p style="text-align: justify;" translate="METERS_II_NUEVE"></td>
             		<td>STRING</td>
             		<td>MySQL format (length:16)</td>
             	</tr>
             	<tr>
               		<th scope="row">MAC</th>
-            		<td>MAC address of the smart meter</td>
+            		<td><p style="text-align: justify;" translate="METERS_III"></td>
             		<td>STRING</td>
             		<td>Variable ( length:6 )</td>
             	</tr>
             	<tr>
               		<th scope="row">TIMESTAMP</th>
-            		<td>Timestamp of data</td>
+            		<td><p style="text-align: justify;" translate="METERS_III_UNO"></td>
             		<td>STRING</td>
             		<td>MySQL format ( length:19 )</td>
             	</tr><tr>
               		<th scope="row">QOS</th>
-            		<td>Quality communications</td>
+            		<td><p style="text-align: justify;" translate="METERS_III_DOS"></td>
             		<td>STRING</td>
             		<td>bad, normal, good, perfect</td>
             	</tr><tr>
               		<th scope="row">STATUS</th>
-            		<td>Meter status</td>
+            		<td><p style="text-align: justify;" translate="METERS_III_TRES"></td>
             		<td>STRING</td>
             		<td>Online, offline </td>
             	</tr><tr>
               		<th scope="row">STATUS_CFE</th>
-            		<td>SICOM status</td>
+            		<td><p style="text-align: justify;" translate="METERS_III_CUATRO"></td>
             		<td>STRING</td>
             		<td>activated, deactivated</td>
             	</tr><tr>
               		<th scope="row">ADDRESS</th>
-            		<td>Address bus</td>
+            		<td><p style="text-align: justify;" translate="METERS_III_CINCO"></td>
             		<td>STRING</td>
             		<td>Variable ( length:4 )</td>
             	</tr><tr>
               		<th scope="row">LATITUDE</th>
-            		<td>Latitude </td>
+            		<td><p style="text-align: justify;" translate="METERS_III_SEIS"></td>
             		<td>STRING</td>
             		<td>Variable ( length:4 )</td>
             	</tr><tr>
               		<th scope="row">LONGITUDE</th>
-            		<td>Longitude</td>
+            		<td><p style="text-align: justify;" translate="METERS_III_SIETE"></td>
             		<td>STRING</td>
             		<td>Variable ( length:10 )</td>
             	</tr><tr>
               		<th scope="row">TIME_REQUEST</th>
-            		<td>Time polling of smart meter</td>
+            		<td><p style="text-align: justify;" translate="METERS_III_OCHO"></td>
             		<td>DOUBLE</td>
             		<td> > 0.0,0.1,..., n</td>
             	</tr>
         	</tbody>
 		</table>
-	<h3>STATUS_METER</h3>
 		<br>
-		<p>STATUS_METER is applicable for all types of smart meters</p>
-			<br>
+	<h2 translate="METERS_III_NUEVE"></h2>
+		<br>
+		<p style="text-align: justify;" translate="METERS_IV">
+		<br>
 			<table class="table table-striped">
         		<thead>
             		<tr>
-        	    	<th>FIELD</th>
-    	        	<th>MEANING</th>
-	            	<th>TYPE</th>
-        	    	<th>VALUES</th>
+        	    	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
     	       		</tr>
 	          	</thead>
 	          	<tbody>
             	<tr>
             		<th scope="row">REAL_TIME_CLOCK</th>
-            		<td>Indicates the status of the RTC (real time clock)</td>
+            		<td><p style="text-align: justify;" translate="METERS_IV_UNO"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
             		<th scope="row">FLASH_MEMORY</th>
-            		<td>Indicates the status of the flash memory</td>
+            		<td><p style="text-align: justify;" translate="METERS_IV_DOS"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
               		<th scope="row">MEMORY_EPROM</th>
-            		<td>Indicates the status of the memory eeprom</td>
+            		<td><p style="text-align: justify;" translate="METERS_IV_TRES"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
               		<th scope="row">MESURE_VOLTAGE</th>
-            		<td>Indicates the status of mesure voltaje</td>
+            		<td><p style="text-align: justify;" translate="METERS_IV_CUATRO"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
             	<tr>
               		<th scope="row">POSITION_METER</th>
-            		<td>Indicates position of Smart meter</td>
+            		<td><p style="text-align: justify;" translate="METERS_IV_CINCO"></td>
             		<td>STRING</td>
             		<td>Left, rigth, correct, inverse, unknow</td>
             	</tr>
             	<tr>
               		<th scope="row">STATE_RELAY</th>
-            		<td>Indicates state of relay</td>
+            		<td><p style="text-align: justify;" translate="METERS_IV_SEIS"></td>
             		<td>BOOLEAN</td>
             		<td>True, False</td>
             	</tr>
@@ -329,163 +329,163 @@ AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1J
 		</table>
 		<br>
 		<br>
-	<h3>CONSUMPTION_PHASES</h3>
+	<h2 translate="METERS_IV_SIETE"></h2>
 	<br>
-		<p>This section contains all consumption of the phases, identifying each of the phase in a different section.
+		<p style="text-align: justify;" translate="METERS_IV_OCHO">
 		<br>
-		<p>Sections availables: 
+		<p style="text-align: justify;" translate="METERS_IV_NUEVE">
 		<ul>
-			<li>PHASE_I </li>
-			<li>PHASE_II </li>
-			<li>PHASE_III</li>
+			<li><p style="text-align: justify;" translate="METERS_V"></li>
+			<li><p style="text-align: justify;" translate="METERS_V_UNO"></li>
+			<li><p style="text-align: justify;" translate="METERS_V_DOS"></li>
 		</ul>.
 		</p>
 		<br>
 			<table class="table table-striped">
         		<thead>
             		<tr>
-        	    	<th>FIELD</th>
-    	        	<th>MEANING</th>
-	            	<th>TYPE</th>
-        	    	<th>VALUES</th>
+        	    	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            		<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
     	       		</tr>
 	          	</thead>
 	          	<tbody>
             	<tr>
             		<th scope="row">TOTAL_KWH_DELIVERED</th>
-            		<td>Total kWh delivered to the customer</td>
+            		<td><p style="text-align: justify;" translate="METERS_V_TRES"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">TOTAL_KWH_RECIEVED</th>
-            		<td>Total CFE KWh delivered by the customer.</td>
+            		<td><p style="text-align: justify;" translate="METERS_V_CUATRO"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">TOTAL_KWH_BALANCE</th>
-            		<td>The total balance of kWh delivered and received</td>
+            		<td><p style="text-align: justify;" translate="METERS_V_CINCO"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">KVARH_I_TOTAL</th>
-            		<td>Total KVArh of the first quadrant</td>
+            		<td><p style="text-align: justify;" translate="METERS_V_SEIS"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">KVARH_II_TOTAL</th>
-            		<td>Total KVArh of the second quadrant</td>
+            		<td><p style="text-align: justify;" translate="METERS_V_SIETE"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">KVARH_III_TOTAL</th>
-            		<td>Total KVArh of the third quadrant</td>
+            		<td><p style="text-align: justify;" translate="METERS_V_OCHO"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">KVARH_IV_TOTAL</th>
-            		<td>Total KVArh of the fourth quadrant</td>
+            		<td><p style="text-align: justify;" translate="METERS_V_NUEVE"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             </tbody>
 		</table>
 		<br>
-	<h3>INSTANTANEOUS_PHASES</h3>
-	<br>
-		<p>This section contains all instantaneous values of the phases, identifying each of the phase in a different section.</p>
+	<h2 translate="METERS_VI"></h2>
+		<br>
+		<p style="text-align: justify;" translate="METERS_VI_I">
 			<br>
-			<p>Sections availables: </p>
+			<p style="text-align: justify;" translate="METERS_IV_NUEVE">
+			<br>
 			<ul>
-				<li>PHASE_I </li>
-				<li>PHASE_II </li>
-				<li>PHASE_III</li>
+				<li><p style="text-align: justify;" translate="METERS_V"></li>
+				<li><p style="text-align: justify;" translate="METERS_V_UNO"></li>
+				<li><p style="text-align: justify;" translate="METERS_V_DOS"></li>
 			</ul>
 			<br>
 			<table class="table table-striped">
         		<thead>
             		<tr>
-        	    	<th>FIELD</th>
-    	        	<th>MEANING</th>
-	            	<th>TYPE</th>
-        	    	<th>VALUES</th>
+        	    		<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
     	       		</tr>
 	          	</thead>
 	          	<tbody>
             	<tr>
             		<th scope="row">VOLTAGE</th>
-            		<td>Last voltage recorded </td>
+            		<td><p style="text-align: justify;" translate="METERS_VI_UNO"></td>
             		<td>DOUBLE</td>
             		<td>> 90.0 ~ <= 250</td>
             	</tr>
             	<tr>
             		<th scope="row">CURRENT</th>
-            		<td>Last current recorded</td>
+            		<td><p style="text-align: justify;" translate="METERS_VI_DOS"></td>
             		<td>DOUBLE</td>
             		<td> > 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">POWER_FACTOR</th>
-            		<td>Last power factor recorded</td>
+            		<td><p style="text-align: justify;" translate="METERS_VI_TRES"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0  ~  <= 1</td>
             	</tr>
             	<tr>
             		<th scope="row">APARENTPOWER</th>
-            		<td>Last apparent power recorded </td>
+            		<td><p style="text-align: justify;" translate="METERS_VI_CUATRO"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">ACTIVE_POWER</th>
-            		<td>Last active power recorded </td>
+            		<td><p style="text-align: justify;" translate="METERS_VI_CINCO"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">REACTIVE_POWER</th>
-            		<td>Last reactive power recorded </td>
+            		<td><p style="text-align: justify;" translate="METERS_VI_SEIS"></td>
             		<td>DOUBLE</td>
             		<td>> 0.0,0.1,..., n</td>
             	</tr>
             	<tr>
             		<th scope="row">FRECUENCY</th>
-            		<td>Last frequency recorded </td>
+            		<td><p style="text-align: justify;" translate="METERS_VI_SIETE"></td>
             		<td>DOUBLE</td>
             		<td>> 49 ~ < 61</td>
             	</tr>
             </tbody>
 		</table>
 		<br>
-	<h3>PEAK_DEMAND_PHASES</h3>
-	<br>
-		<p>This section contains the demand maxim of the phases, identifying each of the phase in a different section</p>
+	<h2 translate="METERS_VI_OCHO"></h2>
 		<br>
-		<p>Sections availables:</p>
+		<p style="text-align: justify;" translate="METERS_VI_NUEVE">
+		<p style="text-align: justify;" translate="METERS_IV_NUEVE">
 		<ul>
-			<li>PHASE_I </li>
-			<li>PHASE_II </li>
-			<li>PHASE_III</li>
+			<li><p style="text-align: justify;" translate="METERS_V"></li>
+			<li><p style="text-align: justify;" translate="METERS_V_UNO"></li>
+			<li><p style="text-align: justify;" translate="METERS_V_DOS"></li>
 		</ul>
-		<br>
+			<br>
 		<table class="table table-striped">
-        		<thead>
-            		<tr>
-        	    	<th>FIELD</th>
-    	        	<th>MEANING</th>
-	            	<th>TYPE</th>
-        	    	<th>VALUES</th>
-    	       		</tr>
-	          	</thead>
-	          	<tbody>
+        	<thead>
+            	<tr>
+        	    	<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+	            	<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+    	        	<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+        		   	<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
+    	    	</tr>
+	        </thead>
+			<tbody>
             	<tr>
             		<th scope="row">TOTAL_DEMAND</th>
-            		<td>Total demand in phase</td>
+            		<td><p style="text-align: justify;" translate="METERS_VII"></td>
             		<td>DOUBLE</td>
             		<td>> 0 ~ n </td>
             	</tr>

@@ -1,7 +1,6 @@
-var moduleProtApi = angular.module("moduleProtApi", []);
-var injectParams = [ "$scope" ];
-var controllerProtApi = function($scope) {
-	console.log("prueba2");
-};
-controllerProtApi.$inject = injectParams;
-moduleProtApi.controller("prot_api", controllerProtApi);
+prot_api.controller('Ctr', ['$scope', 'serveData', function ($scope, serveData) 
+{
+
+	$scope.objetoP = serveData;
+	
+}]);

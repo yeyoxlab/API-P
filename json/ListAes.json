@@ -1,0 +1,267 @@
+[
+		{
+			"Method":"POST",
+			"URL":"Api/v1/login",
+			"Action":"Devuelve el token para la autorizaci\u00F3n",
+			"Refer":"#login"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/version",
+			"Action":"Devuelve la versi\u00F3n del sistema API",
+			"Refer":"#version"			
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters",
+			"Action":"Devuelve todos los datos de Smart Meters",
+			"Refer":"#meters"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters/less",
+			"Action":"Devuelve todos los datos de Smart Meters comprimido",
+			"Refer":"#meters_less"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters/search/?",
+			"Action":"Buscar un medidor inteligente por serie",
+			"Refer":"#meters_search"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters/ search/?/less",
+			"Action":"Buscar un medidor inteligente por serie",
+			"Refer":"#meters_search_less"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters/?",
+			"Action":"Obtiene datos del medidor inteligente por UID",
+			"Refer":"#meters_"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters/?",
+			"Action":"Obtiene datos del medidor inteligente por serie",
+			"Refer":"#meters_"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters/?/Less",
+			"Action":"Obtiene datos del medidor inteligente por UID comprimido",
+			"Refer":"#meters_2"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/meters/?/Less",
+			"Action":"Obtiene datos del medidor inteligente comprimidos en serie",
+			"Refer":"#meters_b_1"
+		},
+		{
+			"Method":"POST",
+			"URL":"/Api/v1/meters",
+			"Action":"A\u00F1adir un nuevo medidor inteligente",
+			"Refer":"#meters_b_2"
+		},
+		{
+			"Method":"PUT",
+			"URL":"/Api/v1/meters/2",
+			"Action":"Actualizar un medidor inteligente por UID",
+			"Refer":"#meters_state_relay"
+		},
+		{
+			"Method":"PUT",
+			"URL":"/Api/v1/meters/20001",
+			"Action":"Actualizar un medidor inteligente por serie",
+			"Refer":"#meters_reset_meter"
+		},
+		{
+			"Method":"DELETE",
+			"URL":"/Api/v1/meters/2",
+			"Action":"Eliminar un medidor inteligente por UID",
+			"Refer":"#alarms_startDate_endDate"
+		},
+		{
+			"Method":"DELETE",
+			"URL":"/Api/v1/meters/XXXXXX",
+			"Action":"Eliminar un medidor inteligente por serie",
+			"Refer":"#alarms_num_serie"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/meters/sync",
+			"Action":"Ping al medidor inteligente",
+			"Refer":"#alarms_SD_ED_NS"
+		},
+		{
+			"Method":"POST",
+			"URL":"/Api/v1/meters/state_relay",
+			"Action":"Establecer el estado de un rel\u00E9 de medidor inteligente",
+			"Refer":"#alarms_SD_ED_Limit"
+		},
+		{
+			"Method":"POST",
+			"URL":"/Api/v1/meters/reset_meter",
+			"Action":"Restablecer el medidor inteligente",
+			"Refer":"#alarms_SD_ED_LT_READ"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/meters/today_profile",
+			"Action":"Leer el perfil actual de los medidores inteligentes",
+			"Refer":"#system"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/meters/XXXXXX/today_profile",
+			"Action":"Lea el perfil actual del medidor inteligente por n\u00FAmero de serie",
+			"Refer":"#system_less"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/meters/XXXXXX/alarm",
+			"Action":"Lectura de las \u00FAltimas 10 alertas por n\u00FAmero de serie"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/meters/operation_mode",
+			"Action":"Obtiene el modo de operaci\u00F3n de los medidores inteligentes"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/meters/A00001/operation_mode",
+			"Action":"Obtiene el modo de operaciones por n\u00FAmero de serie"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/meters/config",
+			"Action":"Obtiene las configuraciones de los medidores inteligentes"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/meters/XXXXXX/config",
+			"Action":"Obtiene las configuraciones por n\u00FAmero de serie"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/meters/config",
+			"Action":"Configuraci\u00F3n de los contadores inteligentes"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/meters/operation_mode",
+			"Action":"Ajuste del modo de funcionamiento de los contadores inteligentes"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/meters/fw",
+			"Action":"Actualizar el firmware de los medidores inteligentes"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/meters/lectura",
+			"Action":"Lectura en tiempo real"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/alarm?StartDate=?&EndDate=?",
+			"Action":"Lista de alarmas del sistema y medidor por fecha"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/alarm?Num_serie=?",
+			"Action":"Lista de medidores de alarmas por n\u00FAmero de serie"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/alarm?StartDate=?&EndDate=?&Num_serie=?",
+			"Action":"Lista de medidores de alarmas por fecha y serie"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/alarm?StartDate=?&EndDate=?&Limit=?",
+			"Action":"Lista de alarmas del sistema y medidor por fecha con l\u00EDmite"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/alarm?StartDate=?&EndDate=?&Limit=?&Type=?",
+			"Action":"Lista de alarmas del sistema y medidor por fecha con l\u00EDmite y tipo"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/system",
+			"Action":"Obtiene el sistema de datos"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/system/less",
+			"Action":"Obtiene el sistema de datos comprimido"
+		},
+		{
+			"Method":"PUT",
+			"URL":"/Api/v1/system",
+			"Action":"Modificar los par\u00E1metros del sistema"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/history_meter/SN_meter/startDate/endDate",
+			"Action":"Obtiene datos hist\u00F3ricos del medidor inteligente por n\u00FAmero de serie y fecha"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/history_meter/SN_meter/startDate/endDate/type",
+			"Action":"Obtiene datos hist\u00F3ricos del medidor inteligente por n\u00FAmero de serie, fecha y tipo"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/instant_record/SN_meter/startDate/endDate",
+			"Action":"Obtiene el instante hist\u00F3rico del medidor inteligente por ID y fecha"
+		},
+		{
+			"Method":"GET",
+			"URL":"/Api/v1/statistics",
+			"Action":"Obtiene las estad\u00EDsticas del sistema"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/displays",
+			"Action":"Lista de pantallas de inicio en casa (IHD)"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/displays",
+			"Action":"A\u00F1adir nuevo In Home Displays (IHD)"
+		},
+		{
+			"Method":"DELETE",
+			"URL":"Api/v1/displays/XXXXX",
+			"Action":"Eliminar una presentaci\u00F3n en casa (IHD) por mac"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/displayMeters",
+			"Action":"Obtener la asociaci\u00F3n smart meters - display"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/displayMeters",
+			"Action":"A\u00F1adir nuevos medidores inteligentes de asociaci\u00F3n - display"
+		},
+		{
+			"Method":"DELETE",
+			"URL":"Api/v1/displayMeters/?",
+			"Action":"Elimina la asociaci\u00F3n por ID"
+		},
+		{
+			"Method":"POST",
+			"URL":"Api/v1/update_firmware",
+			"Action":"Actualizar el firmware del concentrador de datos (DCU)"
+		},
+		{
+			"Method":"GET",
+			"URL":"Api/v1/commands/?",
+			"Action":"Obtener un resultado de acciones por ticket"
+		}
+	]
