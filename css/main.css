@@ -3,6 +3,17 @@
 /* ========================================================================== 
     General 
 ========================================================================== */
+pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+
+ccca:ng-pristine{
+border-color: transparent;
+}
+
 h1,h2,h3,h4,h5,h6,.navbar {
     /*font-family:'Oswald';*/
     font-family: 'News Cycle', sans-serif;
@@ -494,6 +505,7 @@ body {
     width: 95%;
     height: 300px;
     border-radius: 7px
+    position:fixed;
 }
 
 ::-webkit-scrollbar {

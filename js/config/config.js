@@ -1,4 +1,9 @@
-prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
+prot_api.config(function($routeProvider,$translateProvider,$locationProvider,$httpProvider){
+	$httpProvider.defaults.headers.useXDomain=true;
+	$httpProvider.defaults.headers.common={};
+	$httpProvider.defaults.headers.post={};
+	$httpProvider.defaults.headers.put={};
+	$httpProvider.defaults.headers.patch={};
 	$routeProvider.when("/", {
 		templateUrl : "templates/index.html",
 		
@@ -15,6 +20,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/login.html",
 	}).when("/login_1", {
 		templateUrl : "templates/login_1.html",
+		controller:"ctrlConsola"
 	}).when("/version", {
 		templateUrl : "templates/version.html",
 
@@ -1177,7 +1183,6 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	$translateProvider.preferredLanguage('en');
 	$translateProvider.useSanitizeValueStrategy('escape');
 	$locationProvider.hashPrefix('');
-
-	
-	
+	$httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
 });

@@ -16,21 +16,15 @@
       $route.reload();
         //console.log($scope.form_name) 
     };
-    $http.get('https://protcloud.com/apps/v1/version', 
-    {})
-    .then(function(response) {
-            
-            //console.log(response);
-    });
+
+    
     $scope.activeLanguaje = 'en';
 
     $scope.objetoP = serveData;
-  console.log(location);
+  
   $scope.paramDir=location;
     
-    //$scope.activeMenu = $scope.objetoP.us;
-    //console.log($scope.activeMenu);
-    $scope.objetoP.us="error";
+ 
     $scope.gotoBottom = function() {
     
       $location.hash('top1');
