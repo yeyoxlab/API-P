@@ -1,13 +1,10 @@
 prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	$routeProvider.when("/", {
 		templateUrl : "templates/index.html",
-		
-		
 	}).when("/error", {
 		templateUrl : "templates/listE.html",
 		activeMenu:"error",
 		controller : "errorController",
-		
 	}).when("/lista", {
 		templateUrl : "templates/listA.html",
 		controller : "appController"		
@@ -17,7 +14,6 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/login_1.html",
 	}).when("/version", {
 		templateUrl : "templates/version.html",
-
 	}).when("/meters", {
 		templateUrl : "templates/meters.html",
 	}).when("/meters_less", {
@@ -94,14 +90,12 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		templateUrl : "templates/M_766GPW_A.html",
 	}).when("/DM_1", {
 		templateUrl : "templates/DM_1.html",
-	
 	}).when("/commands", {
 		templateUrl : "templates/commands_.html",
 	}).when("/meters_fw", {
 		templateUrl : "templates/meters_fw.html",
 	}).when("/meters_SN_OP", {
 		templateUrl : "templates/meters_sn_op.html",
-
 	}).when("/unsolicited_requests", {
 		templateUrl : "templates/unsolicited_requests.html",
 	}).when("/operation_mode",{
@@ -114,12 +108,13 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	
 	//este es digamos, al igual que en un switch el default, en caso que 
 	//no hayamos concretado que nos redirija a la página principal
-	.otherwise({ reditrectTo : "/" });
-
-
+	.otherwise({ reditrectTo : "login" });
  
 
 	 $translateProvider.translations('en', {
+	 	'LOGIN_PRINC' : 'LOGIN',
+	 	'USER_LOGUEO' : 'User',
+	 	'PASS_LOGUEO' : 'Password',
 	 	//PANEL IZQUIERDO
 	 	'SEARCH' : 'Search :',
 	 	'PANEL_HOME'  : 'HOME', 
@@ -154,7 +149,6 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'PARAG_EIG' : 'name_app: "name_of_app"',
 		'PARAG_NIN' : 'secret_key: "new_secret"',
 		'PARAG_TEN' : 'It will be used to obtain a JWE through a login.',
-
 		//list of error
 		'LOE_TITTLE':'ERRORS API LIST',
 		'LOE_ERROR':'ERROR',
@@ -163,10 +157,7 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LOAA_TITTLE':'AVAILABLE API LIST',
 		'LOAA_METHOD':'METHOD',
 		'LOAA_ACTION':'ACTION',
-
-
 		//TITLE_LOGIN : 'Login or Create an Account'
-
 		//Apartado Login
 		'LOGIN_TITLE' : 'LOGIN TO THE API',
 		'LOGIN_SAUTH' : 'ABOUT APPLICATION-ONLY AUTH',
@@ -648,6 +639,9 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 
 	});
 	$translateProvider.translations('es', {
+		'LOGIN_PRINC' : 'INGRESO',
+		'USER_LOGUEO' : 'Usuario',
+		'PASS_LOGUEO' : 'Contrase\u00F1a',
 		//PANEL IZQUIERDO
 		'SEARCH' : 'Buscar :',
 		'PANEL_HOME'  : 'HOME', 
@@ -1177,7 +1171,6 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 	$translateProvider.preferredLanguage('en');
 	$translateProvider.useSanitizeValueStrategy('escape');
 	$locationProvider.hashPrefix('');
-
-	
-	
 });
+
+prot_api.run(run);
