@@ -9,7 +9,7 @@
 		},
 		{
 			"id":"3",
-			"mean":"API HEAD NO ENCONTRADO"
+			"mean":"API TERMINAL NO ENCONTRADO"
 		},
 		{
 			"id":"4",
@@ -61,15 +61,15 @@
 		},
 		{
 			"id":"16",
-			"mean":"CMD ERROR ON DB"
+			"mean":"CMD ERROR EN DB"
 		},
 		{
 			"id":"17",
-			"mean":"METRO OFFLINE EN RESET"
+			"mean":"MEDIDOR FUERA DE LINEA EN REINICIO"
 		},
 		{
 			"id":"18",
-			"mean":"METRO NO ENCONTRADO EN EL RESET"
+			"mean":"MEDIDOR NO ENCONTRADO EN REINICIO"
 		},
 		{
 			"id":"19",
@@ -77,71 +77,71 @@
 		},
 		{
 			"id":"20",
-			"mean":"MEDIDOR DE DATOS VAC\u00CDO"
+			"mean":"DATOS DE MEDIDOR VAC\u00CDO"
 		},
 		{
 			"id":"21",
-			"mean":"MEDIDOR DE DATOS VAC\u00CDO EN RESET"
+			"mean":"DATOS DE MEDIDOR VAC\u00CDO EN REINICIO"
 		},
 		{
 			"id":"22",
-			"mean":"ERROR CMD EN EL RELE DE ESTADO"
+			"mean":"ERROR CMD EN EL RELAY DE ESTADO"
 		},
 		{
 			"id":"23",
-			"mean":"METRO OFFLINE EN EL REL\u00C9 DEL ESTADO"
+			"mean":"MEDIDOR FUERA DE LINEA EN ESTADO RELAY"
 		},
 		{
 			"id":"24",
-			"mean":"RELAIS ESTATALES NO ENCONTRADOS"
+			"mean":"ESTADO RELAY NO ENCONTRADO"
 		},
 		{
 			"id":"25",
-			"mean":"METRO NO ENCONTRADO EN EL REL\u00C9 ESTATAL"
+			"mean":"MEDIR NO ENCONTRADO EN ESTADO RELAY"
 		},
 		{
 			"id":"26",
-			"mean":"MEDIDOR DE DATOS ERRADO EN SERIAL"
+			"mean":"DATOS DE MEDIDOR INCORRECTO EN SERIAL"
 		},
 		{
 			"id":"27",
-			"mean":"MEDIDOR DE DATOS VAC\u00CDO EN EL REL\u00C9 ESTATAL"
+			"mean":"DATOS DE MEDIDOR VAC\u00CDO EN ESTADO RELAY"
 		},
 		{
 			"id":"28",
-			"mean":"NUEVO MEDIDOR DE DATOS ERRADO"
+			"mean":"NUEVOS DATOS DE MEDIDOR INCORRECTO"
 		},
 		{
 			"id":"29",
-			"mean":"ID METER WRONG"
+			"mean":"ID INCORRECTO DEL MEDIDOR"
 		},
 		{
 			"id":"30",
-			"mean":"DELETE METER FAIL"
+			"mean":"ELIMITAR ERRORES DE MEDIDOR"
 		},
 		{
 			"id":"31",
-			"mean":"DELETE METER FAIL ON DCU"
+			"mean":"ELIMITAR ERRORES DE MEDIDOR EN DCU"
 		},
 		{
 			"id":"32",
-			"mean":"ID METER WRONG"
+			"mean":"ID INCORRECTO DEL MEDIDOR"
 		},
 		{
 			"id":"33",
-			"mean":"ID METER NO ENCONTRADO"
+			"mean":"ID NO ENCONTRADO DEL MEDIDOR"
 		},
 		{
 			"id":"34",
-			"mean":"DATOS ERRADOS EN EL SISTEMA DE ACTUALIZACI\u00D3N"
+			"mean":"DATOS INCORRECTOS DE ACTUALIZACI\u00D3N DEL SISTEMA"
 		},
 		{
 			"id":"35",
-			"mean":"NO HAY DATOS SOBRE EL SISTEMA"
+			"mean":"NO HAY DATOS EN SISTEMA"
 		},
 		{
 			"id":"36",
-			"mean":"NO SE HA ENCONTRADO NINGUNA PANTALLA"
+			"mean":"ALGUN ERROR EN LA PANTALLA"
 		},
 		{
 			"id":"37",
@@ -153,11 +153,11 @@
 		},
 		{
 			"id":"39",
-			"mean":"ADDRESS DISPLAY ERROR"
+			"mean":"DIRECCION DE DISPLAY INCORRECTO"
 		},
 		{
 			"id":"40",
-			"mean":"ERROR EN BASE DE DATOS EN LA EXPRESI\u00D3N DE BORRADO"
+			"mean":"ERROR EN BASE DE DATOS EN PANTALLA BORRADO"
 		},
 		{
 			"id":"41",
@@ -169,11 +169,11 @@
 		},
 		{
 			"id":"43",
-			"mean":"ID DISPLAY ERROR"
+			"mean":"ID INCORRECTO EN PANTALLA"
 		},
 		{
 			"id":"44",
-			"mean":"CUALQUIER ASOCIACI\u00D3N ENCONTRADA"
+			"mean":"NINGUNA ASOCIACI\u00D3N ENCONTRADA"
 		},
 		{
 			"id":"45",
@@ -185,27 +185,27 @@
 		},
 		{
 			"id":"47",
-			"mean":"CUALQUIER METRO ENCONTRADO"
+			"mean":"NINGUN MEDIDOR ENCONTRADO"
 		},
 		{
 			"id":"48",
-			"mean":"CUALQUIER METRO ENCONTRADO EN EL ARREGLO"
+			"mean":"NINGUN MEDIDOR ENCONTRADO EN ARREGLO"
 		},
 		{
 			"id":"49",
-			"mean":"ID DISPLAY ERROR"
+			"mean":"ID INCORRECTO EN PANTALLA"
 		},
 		{
 			"id":"50",
-			"mean":"LA EXHIBICI\u00D3N NO EXISTE"
+			"mean":"PANTALLA NO EXISTENTE"
 		},
 		{
 			"id":"51",
-			"mean":"LA PRESENTACI\u00D3N DE DIRECCI\u00D3N DE FORMATO ES INCORRECTA"
+			"mean":"DIRECCI\u00D3N DE FORMATO DE LA PANTALLA ES INCORRECTO"
 		},
 		{
 			"id":"52",
-			"mean":"VISTA DE DIRECCI\u00D3N NO ENCONTRADA"
+			"mean":"DIRECCI\u00D3N DE PANTALLA NO ENCONTRADA"
 		},
 		{
 			"id":"53",
@@ -213,15 +213,15 @@
 		},
 		{
 			"id":"54",
-			"mean":"DATOS ERRADOS EN EL PUENTE"
+			"mean":"DATOS INCORRECTOS EN EL PUENTE"
 		},
 		{
 			"id":"55",
-			"mean":"EXISTE METRO EN PUENTE"
+			"mean":"MEDIDOR EXISTE EN PUENTE"
 		},
 		{
 			"id":"56",
-			"mean":"ERROR REMOVING BRIDGE"
+			"mean":"ERROR REMOVIDO EN PUENTE"
 		},
 		{
 			"id":"57",
@@ -229,11 +229,11 @@
 		},
 		{
 			"id":"58",
-			"mean":"SERVICIOS DE AHORRO DE ERRORES"
+			"mean":"ERRORES GUARDADOS EN EL SERVICIO"
 		},
 		{
 			"id":"59",
-			"mean":"SERVICIOS EXISTENTES"
+			"mean":"SERVICIOS YA EXISTENTES"
 		},
 		{
 			"id":"60",
@@ -253,11 +253,11 @@
 		},
 		{
 			"id":"64",
-			"mean":"ASOCIACI\u00D3N DE SERVICIO-MEDIDOR"
+			"mean":"NO SERVICIO-MEDIDOR DE ASOCIACI\u00D3N"
 		},
 		{
 			"id":"65",
-			"mean":"ERROR CREATING BRIDGE"
+			"mean":"ERROR CREANDO EL PUENTE"
 		},
 		{
 			"id":"66",
@@ -265,7 +265,7 @@
 		},
 		{
 			"id":"67",
-			"mean":"LIST METER IS WRONG"
+			"mean":"LISTA DE MEDIDOR ES INCORRECTO"
 		},
 		{
 			"id":"68",
@@ -273,27 +273,27 @@
 		},
 		{
 			"id":"69",
-			"mean":"NUEVA ASOCIACI\u00D3N DE SERVICIOS DE MEDIOS DE DATOS ERRADA"
+			"mean":"NUEVOS DATOS SERVICIOS DE MEDIDOR ASOCIACI\u00D3N INCORRECTO"
 		},
 		{
 			"id":"70",
-			"mean":"ERROR REMOVING BRIDGE"
+			"mean":"ERROR REMOVIDO EN PUENTE"
 		},
 		{
 			"id":"71",
-			"mean":"PONER SERVICIO-METRO INCORRECTO"
+			"mean":"PUENTE SERVICIO-MEDIDOR INCORRECTO"
 		},
 		{
 			"id":"72",
-			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
+			"mean":"FORMATO FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"73",
-			"mean":"Sin alertas"
+			"mean":"SIN ALERTAS"
 		},
 		{
 			"id":"74",
-			"mean":"FECHA FUERA DE LA GAMA"
+			"mean":"FECHA FUERA DE RANGO"
 		},
 		{
 			"id":"75",
@@ -301,19 +301,19 @@
 		},
 		{
 			"id":"76",
-			"mean":"FECHA FUERA DE LA GAMA EN EL MEDIDOR DE HISTORIA"
+			"mean":"FECHA FUERA DE RANGO EN EL HISTORIAL DE MEDIDOR"
 		},
 		{
 			"id":"77",
-			"mean":"LA FECHA ES MAYOR QUE LA FECHA INICIAL DEL MEDIDOR DE HISTORIA"
+			"mean":"LA FECHA ES MAYOR QUE LA FECHA INICIAL DEL HISTORIAL DEL MEDIDOR"
 		},
 		{
 			"id":"78",
-			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
+			"mean":"FORMATO FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"79",
-			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
+			"mean":"FORMATO FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"80",
@@ -321,7 +321,7 @@
 		},
 		{
 			"id":"81",
-			"mean":"FECHA FUERA DE LA GAMA"
+			"mean":"FECHA FUERA DE RANGO"
 		},
 		{
 			"id":"82",
@@ -329,11 +329,11 @@
 		},
 		{
 			"id":"83",
-			"mean":"FORMATE LAS FECHAS NO V\u00C1LIDAS"
+			"mean":"FORMATO DE FECHAS NO V\u00C1LIDAS"
 		},
 		{
 			"id":"84",
-			"mean":"ID METER WRONG"
+			"mean":"ID MEDIDOR INCORRECTO"
 		},
 		{
 			"id":"85",
@@ -341,7 +341,7 @@
 		},
 		{
 			"id":"86",
-			"mean":"ERROR DE LA BASE DE DATOS"
+			"mean":"ERROR BASE DE DATOS"
 		},
 		{
 			"id":"87",
@@ -357,11 +357,11 @@
 		},
 		{
 			"id":"90",
-			"mean":"ERROR EN EL TAMA\u00D1O DEL ARCHIVO"
+			"mean":"ERROR EN TAMA\u00D1O DEL ARCHIVO"
 		},
 		{
 			"id":"91",
-			"mean":"FALLO INCORRECTO"
+			"mean":"ARCHIVO INCORRECTO"
 		},
 		{
 			"id":"92",
@@ -370,10 +370,5 @@
 		{
 			"id":"93",
 			"mean":"ESTAD\u00CDSTICAS VAC\u00CDAS"
-		},
-		{
-			"id":"",
-			"mean":""
-		}
-	
+		}	
 ]
