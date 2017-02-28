@@ -1,23 +1,34 @@
-<h1>REST APIs</h1>
+<h1 translate="TITLE_ONE"></h1>
 
-<p>
-	
-	The REST APIs provide programmatic access to read and write Protcloud data. Add new smart meter, delete a smart meter, update a smart meter information, read and write system information, and more. The REST API identifies Protcloud applications and users using JWE; responses are available in JSON.
-</p><br>
-<h1>Authentication JWE </h1>
+<p style="text-align: justify;" translate="PARAG_ONE"></p>
+<br>
+<center>
+	<img src="img/Functionality_API.jpg" title="REST API">	
+</center>
+<br>
 
-<p>
-	
-	JWE represents encrypted content using JSON data structures and base64url encoding. The representation consists of three parts: the JWE Header, the JWE Encrypted Key, and the JWE Ciphertext. The three parts are base64url-encoded for transmission, and typically represented as the concatenation of the encoded strings in that order, with the three strings being separated by period ('.') characters.
-JWE utilizes encryption to ensure the confidentiality of the contents of the Plaintext. JWE does not add a content integrity check if not provided by the underlying encryption algorithm. If such a check is needed, an algorithm providing it such as AES-GCM [NIST 800 38D] can be used, or alternatively, it can be provided through composition by encrypting a representation of the signed content (Jones Michael B., 2011).
-Thanks to the advantages of JWE, PROTCLOUD used JWE-based authentication, which allows interoperability and scalability to new technological needs.
-To obtain a JWT, its necessary login on PROTCLOUD with an app ID and password.
-This can be obtained by registering on the following link <a href="https://protcloud.com/app/v1/Register">https://protcloud.com/app/v1/Register<</a>> 
-After registration of the application, we obtain the following information:
-•	name_app: "name_of_app"
-•	secret_key: "new_secret"
-It will be used to obtain a JWE through a login. 
- 
-The following diagram shows how the API works.
+<h2 translate="TITLE_TWO"></h2>
 
-</p><br>
+<p style="text-align: justify;" translate="PARAG_TWO"></p>
+
+<p style="text-align: justify;" translate="PARAG_THR"></p>
+
+<p style="text-align: justify;" translate="PARAG_FOU"></p>
+
+<p style="text-align: justify;" translate="PARAG_FIV"></p>
+
+<p style="text-align: justify;" translate="PARAG_SIX"></p>
+	<ul>
+		<li>
+			<a class="enlhover" href="https://protcloud.com/app/v1/Register"> https://protcloud.com/app/v1/Register </a>
+		</li>
+	</ul>
+<br>
+<p style="text-align: justify;" translate="PARAG_SEV"></p>
+
+<ul>
+	<li translate="PARAG_EIG"></li>
+	<li translate="PARAG_NIN"></li>
+</ul>
+
+<p style="text-align: justify;" translate="PARAG_TEN"></p>

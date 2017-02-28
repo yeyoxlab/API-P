@@ -1,0 +1,374 @@
+[
+		{
+			"id":"1",
+			"mean":"API ID INCORRECTA"
+		},
+		{
+			"id":"2",
+			"mean":"API VAC\u00CDO"
+		},
+		{
+			"id":"3",
+			"mean":"API TERMINAL NO ENCONTRADO"
+		},
+		{
+			"id":"4",
+			"mean":"ERROR DE FIRMA"
+		},
+		{
+			"id":"5",
+			"mean":"NO AUTORIZADO"
+		},
+		{
+			"id":"6",
+			"mean":"TOKEN INCORRECTO"
+		},
+		{
+			"id":"7",
+			"mean":"TOKEN NO ENCONTRADO"
+		},
+		{
+			"id":"8",
+			"mean":"DATOS NO ENCONTRADOS"
+		},
+		{
+			"id":"9",
+			"mean":"CUALQUIER MEDIDOR INTELIGENTE ENCONTRADO"
+		},
+		{
+			"id":"10",
+			"mean":"ID INCORRECTA"
+		},
+		{
+			"id":"11",
+			"mean":"ERROR DE DATOS DEL MEDIDOR"
+		},
+		{
+			"id":"12",
+			"mean":"EL MEDIDOR INTELIGENTE YA EXISTE"
+		},
+		{
+			"id":"13",
+			"mean":"EL N\u00DAMERO DE SERIE DEL FORMATO ES INCORRECTO"
+		},
+		{
+			"id":"14",
+			"mean":"DIRECCI\u00D3N NO ENCONTRADA"
+		},
+		{
+			"id":"15",
+			"mean":"ERROR CMD"
+		},
+		{
+			"id":"16",
+			"mean":"CMD ERROR EN DB"
+		},
+		{
+			"id":"17",
+			"mean":"MEDIDOR FUERA DE LINEA EN REINICIO"
+		},
+		{
+			"id":"18",
+			"mean":"MEDIDOR NO ENCONTRADO EN REINICIO"
+		},
+		{
+			"id":"19",
+			"mean":"N\u00DAMERO DE SERIE INCORRECTO"
+		},
+		{
+			"id":"20",
+			"mean":"DATOS DE MEDIDOR VAC\u00CDO"
+		},
+		{
+			"id":"21",
+			"mean":"DATOS DE MEDIDOR VAC\u00CDO EN REINICIO"
+		},
+		{
+			"id":"22",
+			"mean":"ERROR CMD EN ESTADO RELAY"
+		},
+		{
+			"id":"23",
+			"mean":"MEDIDOR FUERA DE LINEA EN ESTADO RELAY"
+		},
+		{
+			"id":"24",
+			"mean":"ESTADO RELAY NO ENCONTRADO"
+		},
+		{
+			"id":"25",
+			"mean":"MEDIR NO ENCONTRADO EN ESTADO RELAY"
+		},
+		{
+			"id":"26",
+			"mean":"DATOS DE MEDIDOR INCORRECTO EN SERIAL"
+		},
+		{
+			"id":"27",
+			"mean":"DATOS DE MEDIDOR VAC\u00CDO EN ESTADO RELAY"
+		},
+		{
+			"id":"28",
+			"mean":"NUEVOS DATOS DE MEDIDOR INCORRECTO"
+		},
+		{
+			"id":"29",
+			"mean":"ID INCORRECTO DEL MEDIDOR"
+		},
+		{
+			"id":"30",
+			"mean":"ELIMITAR ERRORES DE MEDIDOR"
+		},
+		{
+			"id":"31",
+			"mean":"ELIMITAR ERRORES DE MEDIDOR EN DCU"
+		},
+		{
+			"id":"32",
+			"mean":"ID INCORRECTO DEL MEDIDOR"
+		},
+		{
+			"id":"33",
+			"mean":"ID NO ENCONTRADO DEL MEDIDOR"
+		},
+		{
+			"id":"34",
+			"mean":"DATOS INCORRECTOS DE ACTUALIZACI\u00D3N DEL SISTEMA"
+		},
+		{
+			"id":"35",
+			"mean":"NO HAY DATOS EN SISTEMA"
+		},
+		{
+			"id":"36",
+			"mean":"ALGUN ERROR EN LA PANTALLA"
+		},
+		{
+			"id":"37",
+			"mean":"ERROR EN EL REGISTRO"
+		},
+		{
+			"id":"38",
+			"mean":"PANTALLA EXISTENTE"
+		},
+		{
+			"id":"39",
+			"mean":"DIRECCION DE DISPLAY INCORRECTO"
+		},
+		{
+			"id":"40",
+			"mean":"ERROR EN BASE DE DATOS EN PANTALLA BORRADO"
+		},
+		{
+			"id":"41",
+			"mean":"LA EXHIBICI\u00D3N NO EXISTE"
+		},
+		{
+			"id":"42",
+			"mean":"FORMATO DE VISUALIZACI\u00D3N DE ID NO ES CORRECTO"
+		},
+		{
+			"id":"43",
+			"mean":"ID INCORRECTO EN PANTALLA"
+		},
+		{
+			"id":"44",
+			"mean":"NINGUNA ASOCIACI\u00D3N ENCONTRADA"
+		},
+		{
+			"id":"45",
+			"mean":"ERROR EN BASE DE DATOS"
+		},
+		{
+			"id":"46",
+			"mean":"EXCESO DE MEDIDORES INTELIGENTES"
+		},
+		{
+			"id":"47",
+			"mean":"NINGUN MEDIDOR ENCONTRADO"
+		},
+		{
+			"id":"48",
+			"mean":"NINGUN MEDIDOR ENCONTRADO EN ARREGLO"
+		},
+		{
+			"id":"49",
+			"mean":"ID INCORRECTO EN PANTALLA"
+		},
+		{
+			"id":"50",
+			"mean":"PANTALLA NO EXISTENTE"
+		},
+		{
+			"id":"51",
+			"mean":"DIRECCI\u00D3N DE FORMATO DE LA PANTALLA ES INCORRECTO"
+		},
+		{
+			"id":"52",
+			"mean":"DIRECCI\u00D3N DE PANTALLA NO ENCONTRADA"
+		},
+		{
+			"id":"53",
+			"mean":"NO SEGURO"
+		},
+		{
+			"id":"54",
+			"mean":"DATOS INCORRECTOS EN EL PUENTE"
+		},
+		{
+			"id":"55",
+			"mean":"MEDIDOR EXISTE EN PUENTE"
+		},
+		{
+			"id":"56",
+			"mean":"ERROR REMOVIDO EN PUENTE"
+		},
+		{
+			"id":"57",
+			"mean":"NO SERVICIOS"
+		},
+		{
+			"id":"58",
+			"mean":"ERRORES GUARDADOS EN EL SERVICIO"
+		},
+		{
+			"id":"59",
+			"mean":"SERVICIOS YA EXISTENTES"
+		},
+		{
+			"id":"60",
+			"mean":"N\u00DAMERO DE CUENTA NO ENCONTRADO"
+		},
+		{
+			"id":"61",
+			"mean":"SERVICIOS DE DATOS ERRADOS"
+		},
+		{
+			"id":"62",
+			"mean":"SERVICIOS DE BORRADO DE ERRORES"
+		},
+		{
+			"id":"63",
+			"mean":"SERVICIOS NO ENCONTRADOS"
+		},
+		{
+			"id":"64",
+			"mean":"NO SERVICIO-MEDIDOR DE ASOCIACI\u00D3N"
+		},
+		{
+			"id":"65",
+			"mean":"ERROR CREANDO EL PUENTE"
+		},
+		{
+			"id":"66",
+			"mean":"N\u00DAMERO DE CUENTA NO ENCONTRADO"
+		},
+		{
+			"id":"67",
+			"mean":"LISTA DE MEDIDOR ES INCORRECTO"
+		},
+		{
+			"id":"68",
+			"mean":"N\u00DAMERO DE CUENTA NO ENCONTRADO EN DATOS"
+		},
+		{
+			"id":"69",
+			"mean":"NUEVOS DATOS SERVICIOS DE MEDIDOR ASOCIACI\u00D3N INCORRECTO"
+		},
+		{
+			"id":"70",
+			"mean":"ERROR REMOVIDO EN PUENTE"
+		},
+		{
+			"id":"71",
+			"mean":"PUENTE SERVICIO-MEDIDOR INCORRECTO"
+		},
+		{
+			"id":"72",
+			"mean":"FORMATO FECHAS NO V\u00C1LIDAS"
+		},
+		{
+			"id":"73",
+			"mean":"SIN ALERTAS"
+		},
+		{
+			"id":"74",
+			"mean":"FECHA FUERA DE RANGO"
+		},
+		{
+			"id":"75",
+			"mean":"LA FECHA DE FINAL ES MAYOR QUE LA FECHA INICIAL"
+		},
+		{
+			"id":"76",
+			"mean":"FECHA FUERA DE RANGO EN EL HISTORIAL DE MEDIDOR"
+		},
+		{
+			"id":"77",
+			"mean":"LA FECHA ES MAYOR QUE LA FECHA INICIAL DEL HISTORIAL DEL MEDIDOR"
+		},
+		{
+			"id":"78",
+			"mean":"FORMATO FECHAS NO V\u00C1LIDAS"
+		},
+		{
+			"id":"79",
+			"mean":"FORMATO FECHAS NO V\u00C1LIDAS"
+		},
+		{
+			"id":"80",
+			"mean":"FECHAS NO ENCONTRADAS"
+		},
+		{
+			"id":"81",
+			"mean":"FECHA FUERA DE RANGO"
+		},
+		{
+			"id":"82",
+			"mean":"LA FECHA DE FINAL ES MAYOR QUE LA FECHA INICIAL"
+		},
+		{
+			"id":"83",
+			"mean":"FORMATO DE FECHAS NO V\u00C1LIDAS"
+		},
+		{
+			"id":"84",
+			"mean":"ID MEDIDOR INCORRECTO"
+		},
+		{
+			"id":"85",
+			"mean":"FECHAS NO ENCONTRADAS"
+		},
+		{
+			"id":"86",
+			"mean":"ERROR BASE DE DATOS"
+		},
+		{
+			"id":"87",
+			"mean":"MOVIMIENTO DE ERRORES"
+		},
+		{
+			"id":"88",
+			"mean":"LA CARPETA NO EXISTE"
+		},
+		{
+			"id":"89",
+			"mean":"EL ARCHIVO NO EXISTE"
+		},
+		{
+			"id":"90",
+			"mean":"ERROR EN TAMA\u00D1O DEL ARCHIVO"
+		},
+		{
+			"id":"91",
+			"mean":"ARCHIVO INCORRECTO"
+		},
+		{
+			"id":"92",
+			"mean":"ERROR DE ARCHIVO"
+		},
+		{
+			"id":"93",
+			"mean":"ESTAD\u00CDSTICAS VAC\u00CDAS"
+		}	
+]

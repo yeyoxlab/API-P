@@ -1,0 +1,331 @@
+<div class="col-md-11">
+	<h2 translate="TITLE_UNO"></h2>
+		<br>
+		<p><ins>https://protcloud.com/api/v1/meters/config</ins></p>
+		<br>
+	<h2 translate="METERS_UNO"></h2>
+	<br>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+        	    	<tr>
+    	    	    	<th><p style="text-align: justify;" translate="METERS_DOS"></th>
+	            		<th><p style="text-align: justify;">GET</th>
+           			</tr>
+        	  	</thead>
+    	      	<tbody>
+	            	<tr>
+            			<th scope="row"><p style="text-align: justify;" translate="METERS_TRES"></th>
+            			<td><p style="text-align: justify;">Encrypted with AES-128 ECB</td>
+            		</tr>
+        	    	<tr>
+    	        		<th scope="row"><p style="text-align: justify;" translate="METERS_CUATRO"></th>
+	            		<td><p style="text-align: justify;">JSON</td>
+            		</tr>
+            		<tr>
+            	  		<th scope="row"><p style="text-align: justify;" translate="METERS_CINCO"></th>
+        	      		<td><p style="text-align: justify;" translate="METERS_SEIS"></td>
+    	        	</tr>
+	            	<tr>
+              			<th scope="row"><p style="text-align: justify;" translate="METERS_SIETE"></th>
+              			<td><p style="text-align: justify;">GATEWAY</td>
+            		</tr>
+        		</tbody>
+			</table>	
+		</div>
+		<br>
+	<h2 translate="METERS_OCHO"></h2>
+		<br>
+			<pre>
+GET /api/v1/meters/config
+HTTP/1.1
+Host: 192.168.3.127
+User-Agent: curl
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOiIxNDQ2MDQxMDU3IiwidWlkIjoiTWpWb
+E56SmpaRGMxWkRKa00yVXdZekV3TmpFNE1UazJPREpqT1RkaFltTmxNVGxoTTJVNE5BPT0iLCJpYXQiOiIxNDQ2MDM3ND
+U3In0.A5vkkzKkHBD_jUj_yX0PfD_rSorNypOvNI6bpHbp2s0em6kyF_gN1JW8BtW96NZXMpLeK4fyVq1B9KzDH8n3DOR
+XUnNJqV8mAMVCFeWSHLyjricYZK_1C4zspWPHynD4_W30TGenhSza22yY7cX5bCBnR_KU3NxrU0qF9tmRMmd9xKhEmwio
+FFVk58VNydJtUykMUDWO3tvjcx-ocZ5jEtd-grg9qNpnirncDK1XBq4FwNkjM4nYGyAO52QV98luSCz9mo7ECxIikkYFi
+fV3LGG1r0Q1K3P_JyTP-UW_hBBSQDoYpWoUuT1_p5nuE-9Mf72Kd42iT6pVqSm3vMgtkA
+Cache-Control: no-cache
+			</pre>
+		<br>
+	<h2 translate="METERS_NUEVE"></h2>
+		<br>
+			<pre>
+HTTP/1.1 200 OK
+Date: Wed, 28 Oct 2015 15:15:10 GMT
+Server: Apache
+Vary: Authorization,Accept-Encoding
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Access-Control-Allow-Orgin: *
+Access-Control-Allow-Methods: *
+Transfer-Encoding: chunked
+Content-Type: application/json
+
+{"PAYLOAD":"SvgFAkRpOZqdkeIrbo7w1NzzQ7x4hnfejH355d4947rJ2LLUGWKeReAyfd\/RT+Yz0NclniJzw0CtG
+8+NQfLgyF+f2g25vMlhxVwLKNPi6wf9EcZLO+WwgBj\/vfOOX3vtEs5pB6YYZPCRkvqJQl5\/KQiKQ3tqlVTm48WKZ
+ymuenmw8A1f9gQGQAL4jnt546b0I3bKZQyLU\/U4daYs0hvmXhjIKllqgl6FOwPsjnUIzivFeEolF3YJuwnDsPg6VA
+Pb16K0G1qAQCTKUI4kjjoVWJaKsbmb0BwnyR8YchJKBUW3b440KDLRxEJZ9wQBHDiN9yK0xh4\/XkYYBZ8Z5xGxviw
+AZBiQsnXbLRrIG+Nov1i5joM6I7CUi2id0Myyy36oE62IbJg3RXjNdjtComhVZOnHYIAS7P20AOLKy1JRl4hdTd..}
+			</pre>
+		<br>
+	<p style="text-align: justify;" translate="METERS_DIEZ">
+		<br>
+	<p>Falta imagen
+		<br>
+	<p style="text-align: justify;" translate="PANEL_RESJS">
+		<br>
+		<pre>[
+	{
+	"CONFIG": {
+	"ADDRESS": "A001",
+	"ALARM_SYSTEM": false,
+	"BAUDRATE":2400,
+	"CHANNEL_I":"DELIVERED_ENERGY",
+	"CHANNEL_II":"ENERGY_RECEIVED",
+	"CHANNEL_III":"DEMAND_DELIVERED",
+	"DATE_BUILD":"Mar 17 2016 12:50:23",
+	"DAY_CUT_PAY": 10,
+	"DAY_OF_PAY": 1,
+	"DECIMAL_DEPLOY": 0,
+	"DURING_TEST_MODE": 30,
+	"ENERGY_FEE":1,
+	"HW_VERSION":"HW version 180315",
+	"IS_ACTIVED_EVENT_PORT": false,
+	"IS_ACTIVED_KEY": false,
+	"IS_ACTIVED_TARIF": false,
+	"KEY_METER":"GAB1",
+	"KH": 1,
+	"MAXIMUM_VOLTAGE":129,
+	"MAX_DEMAND_TO_ALERT":1,
+	"MINUMUM_VOLTAGE":110,
+	"MIN_OUTAGE_FOR_DISC":0,
+	"MODEL":"MCR-3G AMI",
+	"OPERATION_MODE":"UNIDIR_ENERGY",
+	"PULSE_KH":"kWh",
+	"SERIAL_NUMBER":"A00001",
+	"SW_VERSION":"FW BASE version 1.3.8",
+	"TEMPLATE":"FW FUNC. Version 01.00.00",
+	"TIMEZONE":"CENTRO",
+	"TIME_DELAY_LCD":4,
+	"TIME_ZONE":1,
+	"VENDOR":"PROTECSA-IIE"   
+
+	}},
+	....
+]
+		</pre>
+		<br>
+		<br>
+		<div class="table-responsive">
+			<table class="table table-striped">
+        		<thead>
+            		<tr>
+            			<th><p style="text-align: justify;" translate="METERS_TRECE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_CATORCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_QUINCE"></th>
+            			<th><p style="text-align: justify;" translate="METERS_DIECISEIS"></th>
+           			</tr>
+          		</thead>
+          		<tbody>
+            		<tr>
+            			<th scope="row">ADDRESS</th>
+            			<td><p style="text-align: justify;" translate="M_C_I"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">ALARM_SYSTEM</th>
+            			<td><p style="text-align: justify;" translate="M_C_II"></td>
+            			<td>BOOLEAN</td>
+            			<td>True, False</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">BAUDRANTE</th>
+            			<td><p style="text-align: justify;" translate="M_C_III"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CHANNEL_I</th>
+            			<td><p style="text-align: justify;" translate="M_C_IV"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CHANNEL_II</th>
+            			<td><p style="text-align: justify;" translate="M_C_V"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">CHANNEL_III</th>
+            			<td><p style="text-align: justify;" translate="M_C_VI"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">DATE_BUILD</th>
+            			<td><p style="text-align: justify;" translate="M_C_VII"></td>
+            			<td>DATE</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">DAY_CUT_PAY</th>
+            			<td><p style="text-align: justify;" translate="M_C_VIII"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">DAY_OF_PAY</th>
+            			<td><p style="text-align: justify;" translate="M_C_IX"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">DECIMAL_DEPLOY</th>
+            			<td><p style="text-align: justify;" translate="M_C_X"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">DURING_TEST_MODE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XI"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">ENERGY_FEE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XII"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">HW_VERSION</th>
+            			<td><p style="text-align: justify;" translate="M_C_XIII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">IS_ACTIVED_EVENT_PORT</th>
+            			<td><p style="text-align: justify;" translate="M_C_XIV"></td>
+            			<td>BOOLEAN</td>
+            			<td>True, False</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">IS_ACTIVED_KEY</th>
+            			<td><p style="text-align: justify;" translate="M_C_XV"></td>
+            			<td>BOOLEAN</td>
+            			<td>True, False</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">IS_ACTIVED_TARIF</th>
+            			<td><p style="text-align: justify;" translate="M_C_XVI"></td>
+            			<td>BOOLEAN</td>
+            			<td>True, False</td>
+            		</tr>
+            		<tr>
+            			<th scope="row">KEY_METER</th>
+            			<td><p style="text-align: justify;" translate="M_C_XVII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">KH</th>
+            			<td><p style="text-align: justify;" translate="M_C_XVIII"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">MAXIMUM_VOLTAGE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XIX"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">MINUMUM_VOLTAGE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XX"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">MIN_OUTAGE_FOR_DISC</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXI"></td>
+            			<td>DOUBLE</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">MIN_OUT_FOR_ALARM</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXII"></td>
+            			<td>DOUBLE</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">MODEL</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXIII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">OPERATION_MODE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXIV"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">PULSE_KH</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXV"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">SERIAL_NUMBER</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXVI"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">SW_VERSION</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXVII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TEMPLATE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXVIII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TIMEZONE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXIX"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TIME_DELAY_LCD</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXX"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">TIME_ZONE</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXXI"></td>
+            			<td>INTEGER</td>
+            			<td></td>
+            		</tr>
+            		<tr>
+            			<th scope="row">VENDOR</th>
+            			<td><p style="text-align: justify;" translate="M_C_XXXII"></td>
+            			<td>STRING</td>
+            			<td></td>
+            		</tr>
+           		</tbody>
+			</table>
+		</div>
+	<br>		
+</div>
+<div class="col-md-1">
+</div>

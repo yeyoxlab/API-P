@@ -1,29 +1,38 @@
-config.controller("indexController", function indexController($scope){
-	$scope.usuarios = 
-		{
-			nombre : "YeyoxLab",
-			web : "https://fb.com/YeyoxLab",
-			edad : "24 años",
-			profesion : "programador web"
-		};
-		
-	console.log("1");
-})
+ prot_api.controller('CtrlPrin',['$scope', '$route','$translate','serveData','$location','$anchorScroll','$http', function (
+  $scope, $route,$translate,serveData,$location,$anchorScroll,$http) {
+    $scope.changeLanguage = function(key){
+      $translate.use(key);
+      
+      $scope.objetoP.lan =key ;
+      if(key=="es"){
+
+      	$scope.objetoP.lan=key;
+      }else if(key=="en"){
+
+      	$scope.objetoP.lan=key;
+      }
+
+      //console.log($scope.objetoP.qty);
+      $route.reload();
+        //console.log($scope.form_name) 
+    };
+
+    
+    $scope.activeLanguaje = 'en';
+
+    $scope.objetoP = serveData;
+  
+  $scope.paramDir=location;
+    
  
-//más de lo mismo, pero en este caso creamos una variable llamada saludo y una función
-//que gracias al objeto location y al método url nos redirigirá al login al hacer uso de ella
-config.controller("restController", function restController($scope, $location){
-	$scope.saludo = "Hola desde el controlador home";
-	$scope.toLogin = function(){
-		$location.url("/login");
-	}
-	console.log("2");
-});
- 
-config.controller("apiController", function apiController($scope, $location){
-	$scope.saludo = "Hola desde el controlador login";
-	$scope.toHome = function(){
-		$location.url("/home");
-	}
-	console.log("3");
-})
+    $scope.gotoBottom = function() {
+    
+      $location.hash('top1');
+
+      // call $anchorScroll()
+      $anchorScroll();
+     
+    };
+
+  }]);
+

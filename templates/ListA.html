@@ -1,0 +1,31 @@
+
+<div ng-controller="appController">
+<div class="table-responsive" > 
+<h1 translate="LOAA_TITTLE"></h1>
+<br>
+
+  <div style="float: right; text-transform: uppercase;">
+    <label translate="SEARCH"></label>
+    <input class="form-control" id="exampleInputName2" placeholder=". . ." type="text" ng-model="buscador" />
+  </div>
+
+  <br>
+	<table class="table table-striped" class="table table-condensed" ng-click="gotoBottom()">
+          <thead>
+            <tr>
+              <th translate="LOAA_METHOD"></th>
+              <th>URL</th>
+              <th translate="LOAA_ACTION"></th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="x in myData | filter:buscador">
+              <th scope="row">{{ x.Method }}</th>
+              <td><a href='{{x.Refer}}' style="color: red">{{ x.URL }}</a></td>
+              <td class="txtAction">{{ x.Action}}</td>
+            </tr>
+            
+          </tbody>
+		</table>
+    </div>
+</div>

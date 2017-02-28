@@ -1,0 +1,297 @@
+[
+	
+		{
+			"Method":"POST",
+			"URL":"api/v1/login_1",
+			"Action":"Returns token for the authorization",
+			"Refer":"#login_1"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/version",
+			"Action":"Returns version of API system",
+			"Refer":"#version"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters",
+			"Action":"Returns all data of Smart Meters",
+			"Refer":"#meters"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters/less",
+			"Action":"Returns all data of Smart Meters compressed",
+			"Refer":"#meters_less"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters/search/?",
+			"Action":"Search for a Smart Meter per serial",
+			"Refer":"#meters_search"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters/search/?/less",
+			"Action":"Search for a Smart Meter per serial",
+			"Refer":"#meters_search_less"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters/? ",
+			"Action":"Gets data from the Smart Meter by UID",
+			"Refer":"#meters_"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters/?",
+			"Action":"Gets data from the Smart Meter by serial",
+			"Refer":"#meters_"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters/?/less",
+			"Action":"Gets data from the Smart Meter by UID compressed",
+			"Refer":"#meters_2"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/meters/?/less",
+			"Action":"Gets data from the Smart Meter by serial compressed",
+			"Refer":"#meters_b_1"
+		},
+		{
+			"Method":"POST",
+			"URL":"/api/v1/meters",
+			"Action":"Add a new Smart Meter",
+			"Refer":"#meters_b_2"
+		},
+		{
+			"Method":"PUT",
+			"URL":"/api/v1/meters/2",
+			"Action":"Update a smart meter by UID",
+			"Refer":"#meters_state_relay"
+		},
+		{
+			"Method":"PUT",
+			"URL":"/api/v1/meters/20001 ",
+			"Action":"Update a smart meter by serial",
+			"Refer":"#meters_reset_meter"
+		},
+		{
+			"Method":"DELETE",
+			"URL":"/api/v1/meters/2",
+			"Action":"Delete a smart meter by UID",
+			"Refer":"#alarms_startDate_endDate"
+		},
+		{
+			"Method":"DELETE",
+			"URL":"/api/v1/meters/XXXXXX",
+			"Action":"Delete a smart meter by serial",
+			"Refer":"#alarms_num_serie"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/meters/sync",
+			"Action":"Ping to the smart meter",
+			"Refer":"#alarms_SD_ED_NS"
+		},
+		{
+			"Method":"POST",
+			"URL":"/api/v1/meters/state_relay",
+			"Action":"Set the status of a smart meter relay",
+			"Refer":"#alarms_SD_ED_Limit"
+		},
+		{
+			"Method":"POST",
+			"URL":"/api/v1/meters/reset_meter",
+			"Action":"Reset the smart meter",
+			"Refer":"#alarms_SD_ED_LT_READ"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/meters/today_profile",
+			"Action":"Read the current profile of smart meters",
+			"Refer":"#system"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/meters/XXXXXX/today_profile",
+			"Action":"Read the current profile of smart meter by serial number",
+			"Refer":"#system_less"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/meters/XXXXXX/alarms",
+			"Action":"Reading the latest 10 alerts by serial number",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET ",
+			"URL":"api/v1/meters/operation_mode",
+			"Action":"Gets the operation mode of smart meters ",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/meters/A00001/operation_mode",
+			"Action":"Gets the mode of operations by serial number",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/meters/config",
+			"Action":"Gets the configurations of smart meters",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/meters/XXXXXX/config",
+			"Action":"Gets the configurations by serial number",
+			"Refer":"#"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/meters/config ",
+			"Action":"Set configuration of smart meters",
+			"Refer":"#"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/meters/operation_mode",
+			"Action":"Set  the operating mode of smart meters",
+			"Refer":"#"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/meters/fw",
+			"Action":"Update the firmware of smart meters",
+			"Refer":"#"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/meters/reading",
+			"Action":"Real-time readings",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/alarms?startDate=?&endDate=?",
+			"Action":"List of system alarms and meter by date",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/alarms?num_serie=?",
+			"Action":"List of alarms meter by serial number",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/alarms?startDate=?&endDate=?&num_serie=?",
+			"Action":"List of alarms meter by date and serial",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/alarms?startDate=?&endDate=?&limit=?",
+			"Action":"List of system alarms and meter by date with limit",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/alarms?startDate=?&endDate=?&limit=?&type=?",
+			"Action":"List of system alarms and meter by date with limit and type",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET ",
+			"URL":"/api/v1/system",
+			"Action":"Obtains data system",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET ",
+			"URL":"/api/v1/system/LESS",
+			"Action":"Obtains data system compressed",
+			"Refer":"#"
+		},
+		{
+			"Method":"PUT",
+			"URL":"/api/v1/system",
+			"Action":"Modify the system parameters ",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/history_meter/SN_meter/startDate/endDate ",
+			"Action":"Obtains historical data of smart meter by serial number and date",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/history_meter/SN_meter/startDate/endDate/type ",
+			"Action":"Obtains historical data of smart meter by serial number, date and type",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"/api/v1/instant_record/SN_meter/startDate/endDate ",
+			"Action":"Gets the historical instant of smart meter by ID and date",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET ",
+			"URL":"/api/v1/statistics",
+			"Action":"Gets the statistics of system",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/displays",
+			"Action":"List of In Home Displays (IHD)",
+			"Refer":"#"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/displays",
+			"Action":"Add new In Home Displays (IHD)",
+			"Refer":"#"
+		},
+		{
+			"Method":"DELETE",
+			"URL":"api/v1/displays/XXXXXX",
+			"Action":"Delete an In Home Display  (IHD) by mac",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/displayMeters",
+			"Action":"Get the association smart meters/ display",
+			"Refer":"#"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/displayMeters",
+			"Action":"Add new association smart meters/ display",
+			"Refer":"#"
+		},
+		{
+			"Method":"DELETE ",
+			"URL":"api/v1/displayMeters/?",
+			"Action":"Removes the association by ID",
+			"Refer":"#"
+		},
+		{
+			"Method":"POST",
+			"URL":"api/v1/update_firmware",
+			"Action":"Update the firmware of data concentrator (DCU)",
+			"Refer":"#"
+		},
+		{
+			"Method":"GET",
+			"URL":"api/v1/commands/?",
+			"Action":"Get a result of actions by ticket ",
+			"Refer":"#"
+		}
+	]
