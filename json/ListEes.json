@@ -37,11 +37,11 @@
 		},
 		{
 			"id":"10",
-			"mean":"ID ERRADA"
+			"mean":"ID INCORRECTA"
 		},
 		{
 			"id":"11",
-			"mean":"ERROR DEL METRO DE DATOS"
+			"mean":"ERROR DE DATOS DEL MEDIDOR"
 		},
 		{
 			"id":"12",
@@ -49,7 +49,7 @@
 		},
 		{
 			"id":"13",
-			"mean":"EL FORMATO DE N\u00DAMERO DE SERIE ES INCORRECTO"
+			"mean":"EL N\u00DAMERO DE SERIE DEL FORMATO ES INCORRECTO"
 		},
 		{
 			"id":"14",
@@ -85,7 +85,7 @@
 		},
 		{
 			"id":"22",
-			"mean":"ERROR CMD EN EL RELAY DE ESTADO"
+			"mean":"ERROR CMD EN ESTADO RELAY"
 		},
 		{
 			"id":"23",

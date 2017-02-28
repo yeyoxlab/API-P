@@ -677,7 +677,6 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'PARAG_NIN' : 'secret_key: "new_secret"',
 		'PARAG_TEN' : 'Se utilizará para obtener un JWE a través de un inicio de sesión.',
 
-		
 		//list of error
 		'LOE_TITTLE':'LISTA DE ERRORES DE API',
 		'LOE_ERROR':'ERROR',
@@ -687,7 +686,6 @@ prot_api.config(function($routeProvider,$translateProvider,$locationProvider){
 		'LOAA_METHOD':'MÉTODO',
 		'LOAA_ACTION':'ACCIÓN',
 		
-
 		//
 		'TITLE_LOGIN' : 'Iniciar Sesi\u00F3n',
 
